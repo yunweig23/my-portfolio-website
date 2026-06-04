@@ -1,0 +1,1938 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Business Analyst / Data Analyst Portfolio</title>
+    <meta
+      name="description"
+      content="A polished editable portfolio framework for Business Analyst and Data Analyst roles."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar" aria-label="Primary navigation">
+      <a class="brand" href="#home" aria-label="Go to homepage">
+        <span class="brand-mark" data-editable data-key="site.initials">YG</span>
+        <span class="brand-copy">
+          <strong data-editable data-key="site.brand">顾芸玮</strong>
+        </span>
+      </a>
+      <nav class="nav-links" aria-label="Sections">
+        <a href="#home" data-ui="nav.home">首页</a>
+        <a href="#projects" data-ui="nav.projects">项目</a>
+        <a href="#experience" data-ui="nav.experience">经历</a>
+        <a href="#ai" data-ui="nav.ai">AI</a>
+        <a href="#volunteer" data-ui="nav.volunteer">志愿者</a>
+        <a href="#about" data-ui="nav.about">关于我</a>
+        <a href="#contact" data-ui="nav.contact">联系</a>
+      </nav>
+      <div class="editor-actions" aria-label="Editor controls">
+        <button class="lang-toggle" id="languageToggle" type="button" aria-label="Switch language">
+          <span>中文</span>
+          <i></i>
+          <span>EN</span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section-band" id="home">
+        <div class="hero-copy">
+          <p class="eyebrow" data-editable data-key="hero.eyebrow">Business & Data Analytics Portfolio</p>
+          <h1 data-editable data-key="hero.title"><span class="hero-title-line">用数据理解业务，</span><span class="hero-title-line">用洞察支持决策。</span></h1>
+          <p class="hero-summary" data-editable data-key="hero.summary">
+            面向技术与业务交织的岗位，展示我在需求梳理、数据分析、可视化汇报与跨团队协作中的实践积累。
+          </p>
+          <div class="hero-meta" aria-label="Career highlights">
+            <span data-editable data-key="hero.meta.one">Python</span>
+            <span data-editable data-key="hero.meta.two">SQL / NoSQL</span>
+            <span data-editable data-key="hero.meta.three">Power BI / Tableau / Dashboard / KPI</span>
+            <span data-editable data-key="hero.meta.four">Business Storytelling</span>
+          </div>
+          <div class="hero-cta">
+            <a class="primary-link magnetic-link" href="#projects" data-ui="cta.projects">查看项目</a>
+            <a class="secondary-link magnetic-link" href="#contact" data-ui="cta.contact">联系方式</a>
+          </div>
+        </div>
+        <figure class="hero-visual" aria-label="Portrait with analytics portfolio preview">
+          <div class="portrait-stage" data-tilt>
+            <div class="dashboard-shot">
+              <div class="dash-head">
+                <span></span>
+                <span></span>
+                <span></span>
+                <em data-editable data-key="visual.window.title">Portfolio Analytics</em>
+              </div>
+              <div class="metric-row">
+                <div>
+                  <small data-editable data-key="visual.metric.one.label">Conversion</small>
+                  <strong data-editable data-key="visual.metric.one.value">+18.4%</strong>
+                </div>
+                <div>
+                  <small data-editable data-key="visual.metric.two.label">Retention</small>
+                  <strong data-editable data-key="visual.metric.two.value">72%</strong>
+                </div>
+                <div>
+                  <small data-editable data-key="visual.metric.three.label">Cycle Time</small>
+                  <strong data-editable data-key="visual.metric.three.value">-2.1d</strong>
+                </div>
+              </div>
+              <div class="chart-grid" aria-hidden="true">
+                <div class="bars">
+                  <i style="--h: 42%"></i>
+                  <i style="--h: 68%"></i>
+                  <i style="--h: 54%"></i>
+                  <i style="--h: 78%"></i>
+                  <i style="--h: 63%"></i>
+                  <i style="--h: 88%"></i>
+                </div>
+                <div class="insight-card">
+                  <b></b>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+              <div class="query-strip" aria-hidden="true">
+                <span>SELECT insight</span>
+                <span>FROM business_context</span>
+                <span>WHERE action = 'clear'</span>
+              </div>
+            </div>
+            <img
+              class="portrait-cutout"
+              src="assets/portrait-transparent.png"
+              alt="Portrait of the portfolio owner"
+              width="1254"
+              height="1254"
+            />
+            <div class="portrait-badge badge-one" aria-hidden="true">
+              <strong>BA / DA</strong>
+              <span>Portfolio</span>
+            </div>
+            <div class="portrait-badge badge-two" aria-hidden="true">
+              <strong>SQL</strong>
+              <span>insight ready</span>
+            </div>
+          </div>
+        </figure>
+      </section>
+
+      <section class="section-band projects" id="projects" aria-labelledby="projects-title">
+        <div class="section-inner reveal">
+          <div class="section-heading split">
+            <div>
+              <p class="eyebrow" data-ui="projects.eyebrow">PROJECT EXPERIENCE</p>
+              <h2 id="projects-title" data-editable data-key="projects.title">项目经历</h2>
+            </div>
+            <button class="text-command editor-only" type="button" data-add-target="projectList" data-ui="action.addProject">添加项目</button>
+          </div>
+          <div class="project-explorer" aria-label="Project filters">
+            <div class="project-filter-group" role="list" aria-label="Project themes">
+              <button class="is-active" type="button" data-project-filter="all" data-ui="project.filter.all">全部</button>
+              <button type="button" data-project-filter="analytics" data-ui="project.filter.analytics">数据分析与商业智能</button>
+              <button type="button" data-project-filter="ml" data-ui="project.filter.ml">深度学习与算法建模</button>
+              <button type="button" data-project-filter="web" data-ui="project.filter.web">Web 产品与系统开发</button>
+              <button type="button" data-project-filter="security" data-ui="project.filter.security">网络安全与隐私计算</button>
+            </div>
+          </div>
+          <div class="project-list" id="projectList" data-list="project">
+            <article
+              class="project-card interactive-card"
+              data-item
+              data-project-category="analytics"
+              data-project-year="999999"
+              data-project-image="assets/project-shipping-north-sea-routes.svg"
+              data-project-image-fit="contain"
+              data-project-image-transparent="true"
+              data-project-hide-meta="true"
+            >
+              <div class="project-topline">
+                <span data-editable data-key="project.1.type">数据分析与商业智能</span>
+                <span data-editable data-key="project.1.time">进行中</span>
+              </div>
+              <h3 data-editable data-key="project.1.title">基于交互式数据可视化的北海航运排放理解深化研究</h3>
+              <p data-editable data-key="project.1.body">
+                进行中项目：基于 FuelEU 航运排放数据，构建北海航线排放可视化原型，重点呈现英国与荷兰、比利时、法国、德国、挪威等重点国家间的 CO₂ 排放流向。
+              </p>
+              <div class="tag-row">
+                <span data-editable data-key="project.1.tag.one">Python</span>
+                <span data-editable data-key="project.1.tag.two">3D可视化</span>
+                <span data-editable data-key="project.1.tag.three">空间数据分析</span>
+              </div>
+              <div class="project-detail-source" hidden>
+                <article>
+                  <span>01</span>
+                  <h3 data-editable data-key="project.1.detail.one.title">项目背景</h3>
+                  <p data-editable data-key="project.1.detail.one.body">围绕 Tyrell Centre for Climate Change Research 与 AMBS 的合作研究场景，探索如何将北海航运排放数据转化为可解释的交互式可视化原型，并服务大学 Data Visualisation Observatory 的展示需求。</p>
+                </article>
+                <article>
+                  <span>02</span>
+                  <h3 data-editable data-key="project.1.detail.two.title">分析过程</h3>
+                  <p data-editable data-key="project.1.detail.two.body">基于 FuelEU 航运排放数据，识别英国与欧陆国家之间的高排放航线与船型结构；当前重点使用 Python 进行数据整理、空间映射与可视化原型设计。</p>
+                </article>
+                <article>
+                  <span>03</span>
+                  <h3 data-editable data-key="project.1.detail.three.title">期望产出</h3>
+                  <p data-editable data-key="project.1.detail.three.body">计划交付可交互的 Streamlit 可视化应用，呈现英国-荷兰、比利时、法国、德国、挪威等重点航线的 CO₂ 排放规模、船型贡献与空间分布。</p>
+                </article>
+                <article class="project-detail-tool-card">
+                  <span>04</span>
+                  <h3 data-editable data-key="project.1.detail.four.title">工具与能力</h3>
+                  <div class="tool-code-panel" aria-hidden="true">
+                    <div>
+                      <b>python</b>
+                      <em>clean emissions</em>
+                    </div>
+                    <div>
+                      <b>streamlit</b>
+                      <em>prototype app</em>
+                    </div>
+                    <div>
+                      <b>spatial</b>
+                      <em>route visualisation</em>
+                    </div>
+                  </div>
+                  <p data-editable data-key="project.1.detail.four.body">Python / Streamlit / 3D可视化 / 空间数据分析</p>
+                </article>
+              </div>
+            </article>
+            <article
+              class="project-card interactive-card"
+              data-item
+              data-project-category="analytics"
+              data-project-year="202605"
+              data-project-image="assets/project-oxford-road-flow.svg"
+              data-project-image-fit="contain"
+              data-project-image-transparent="true"
+              data-project-hide-meta="true"
+            >
+              <div class="project-topline">
+                <span data-editable data-key="project.2.type">数据分析与商业智能</span>
+                <span data-editable data-key="project.2.time">2026.05</span>
+              </div>
+              <h3 data-editable data-key="project.2.title">牛津路车站关闭影响分析</h3>
+              <p data-editable data-key="project.2.body">
+                基于预测模型与空间流向可视化，评估 Oxford Road Station 关闭后客流向 Manchester Piccadilly、Manchester Victoria 与牛津路走廊热点区域转移的影响。
+              </p>
+              <div class="tag-row">
+                <span data-editable data-key="project.2.tag.one">预测建模</span>
+                <span data-editable data-key="project.2.tag.two">城市规划</span>
+                <span data-editable data-key="project.2.tag.three">空间数据分析</span>
+              </div>
+              <div class="project-detail-source" hidden>
+                <article>
+                  <span>01</span>
+                  <h3 data-editable data-key="project.2.detail.one.title">项目背景</h3>
+                  <p data-editable data-key="project.2.detail.one.body">评估 Oxford Road Station 关闭后，客流向 Manchester Piccadilly、Manchester Victoria 及牛津路走廊关键目的地转移对城市出行与站点承载的影响。</p>
+                </article>
+                <article>
+                  <span>02</span>
+                  <h3 data-editable data-key="project.2.detail.two.title">分析过程</h3>
+                  <p data-editable data-key="project.2.detail.two.body">结合预测需求、路线距离、步行时间与空间热点图，识别替代出行路径、走廊压力点和潜在导流区域。</p>
+                </article>
+                <article>
+                  <span>03</span>
+                  <h3 data-editable data-key="project.2.detail.three.title">关键结果</h3>
+                  <p data-editable data-key="project.2.detail.three.body">预测四个牛津路走廊热点簇将新增约 17,515 人/日；University of Manchester / MRI（约 8,929 人/日）与 Circle Square（约 5,120 人/日）为优先导流和容量管理区域。</p>
+                </article>
+            <article class="project-detail-tool-card">
+              <span>04</span>
+              <h3 data-editable data-key="project.2.detail.four.title">工具与能力</h3>
+              <div class="tool-code-panel" aria-hidden="true">
+                <div>
+                  <b>model</b>
+                  <em>predict demand</em>
+                </div>
+                <div>
+                  <b>geo</b>
+                  <em>map flows</em>
+                </div>
+                <div>
+                  <b>plan</b>
+                  <em>prioritise hotspots</em>
+                </div>
+              </div>
+              <p data-editable data-key="project.2.detail.four.body">预测建模 / 城市规划 / 空间数据分析 / 流向可视化</p>
+            </article>
+              </div>
+            </article>
+            <article
+              class="project-card interactive-card"
+              data-item
+              data-project-category="analytics"
+              data-project-year="202604"
+              data-project-image="assets/project-gender-tda-dimensional-decomposition.png"
+              data-project-image-fit="contain"
+              data-project-hide-meta="true"
+            >
+              <div class="project-topline">
+                <span data-editable data-key="project.11.type">数据分析与商业智能</span>
+                <span data-editable data-key="project.11.time">2026.04</span>
+              </div>
+              <h3 data-editable data-key="project.11.title">基于拓扑数据分析的英国性别平等指标与地方行政区特征关联研究</h3>
+              <p data-editable data-key="project.11.body">
+                通过 TDA 分析英国 LAD 层级性别平等指标，发现教育与健康领域接近平等，但权力与无偿劳动等结构性差异仍呈现显著空间分布。
+              </p>
+              <div class="tag-row">
+                <span data-editable data-key="project.11.tag.one">TDA</span>
+                <span data-editable data-key="project.11.tag.two">LAD Level Analysis</span>
+                <span data-editable data-key="project.11.tag.three">GEI</span>
+              </div>
+              <div class="project-detail-source" hidden>
+                <article>
+                  <span>01</span>
+                  <h3 data-editable data-key="project.11.detail.one.title">研究对象</h3>
+                  <p data-editable data-key="project.11.detail.one.body">以英国地方行政区（LAD）为分析层级，评估性别平等指标与地区人口、社会及经济特征之间的关联。</p>
+                </article>
+                <article>
+                  <span>02</span>
+                  <h3 data-editable data-key="project.11.detail.two.title">方法框架</h3>
+                  <p data-editable data-key="project.11.detail.two.body">使用拓扑数据分析方法识别高维指标结构，比较不同维度下地方行政区之间的相似性与差异。</p>
+                </article>
+                <article>
+                  <span>03</span>
+                  <h3 data-editable data-key="project.11.detail.three.title">分析输出</h3>
+                  <p data-editable data-key="project.11.detail.three.body">基于维度分解、拓扑聚类与区域可视化，得出性别不平等不能仅由南北经济差异解释，政策应面向不同空间集群进行地方化干预。</p>
+                </article>
+                <article class="project-detail-visual-only" aria-label="UK local authority district map visual">
+                  <img src="assets/project-gender-tda-uk-map-cutout.png" alt="UK local authority district gender equality map" />
+                </article>
+              </div>
+            </article>
+            <article
+              class="project-card interactive-card"
+              data-item
+              data-project-category="analytics"
+              data-project-year="202503"
+              data-project-image="assets/project-philips-kpi-dashboard.svg"
+              data-project-image-fit="contain"
+              data-project-image-transparent="true"
+              data-project-hide-meta="true"
+            >
+              <div class="project-topline">
+                <span data-editable data-key="project.3.type">数据分析与商业智能</span>
+                <span data-editable data-key="project.3.time">2025.03</span>
+              </div>
+              <h3 data-editable data-key="project.3.title">飞利浦2025年IT部KPI报表</h3>
+              <p data-editable data-key="project.3.body">
+                基于项目组内部 Excel 数据搭建 Power BI KPI Dashboard，覆盖 IT 服务管理、系统性能、网络安全、项目交付、财务业务价值与人员组织等15个年度 KPI；部分目标值以人工设定为主，并通过 DAX 动态计算完成率、目标差异与绩效状态。
+              </p>
+              <div class="tag-row">
+                <span data-editable data-key="project.3.tag.one">Power BI</span>
+                <span data-editable data-key="project.3.tag.two">DAX</span>
+                <span data-editable data-key="project.3.tag.three">Excel 数据</span>
+                <span data-editable data-key="project.3.tag.four">KPI 分析</span>
+              </div>
+              <div class="project-detail-source" hidden>
+                <article class="project-detail-kpi-card">
+                  <span>01</span>
+                  <h3 data-editable data-key="project.3.detail.one.title">KPI 指标框架</h3>
+                  <p data-editable data-key="project.3.detail.one.body">报表共覆盖15个 IT 部门 KPI；以下为典型指标示例，按管理视角归入服务管理、系统性能、网络安全、项目交付、财务业务价值与人员组织六类，便于管理层快速定位绩效主题。</p>
+                </article>
+                <article>
+                  <span>02</span>
+                  <h3 data-editable data-key="project.3.detail.two.title">数据基础与目标设定</h3>
+                  <p data-editable data-key="project.3.detail.two.body">主要分析基于项目组内部 Excel 数据，完成字段整理、口径核对、数据清洗与模型关系梳理；KPI 目标值以人工设定为主，因此报表重点放在指标结构化、状态追踪与可视化表达。</p>
+                </article>
+                <article>
+                  <span>03</span>
+                  <h3 data-editable data-key="project.3.detail.three.title">DAX 动态计算</h3>
+                  <p data-editable data-key="project.3.detail.three.body">首页设置15个 KPI 目录标签，并通过 DAX 根据后台数据自动判断 Achieved、Nearly Achieved、Not Achieved 及 Red / Amber / Green 状态；完成率 ≥100% 为 Achieved，80%-99% 为 Nearly Achieved，低于80% 为 Not Achieved。</p>
+                </article>
+                <article class="project-detail-tool-card">
+                  <span>04</span>
+                  <h3 data-editable data-key="project.3.detail.four.title">工具与能力</h3>
+                  <div class="tool-code-panel" aria-hidden="true">
+                    <div>
+                      <b>Power BI</b>
+                      <em>dashboard design</em>
+                    </div>
+                    <div>
+                      <b>DAX</b>
+                      <em>dynamic status</em>
+                    </div>
+                    <div>
+                      <b>Excel</b>
+                      <em>project data</em>
+                    </div>
+                    <div>
+                      <b>KPI</b>
+                      <em>performance logic</em>
+                    </div>
+                  </div>
+                  <p data-editable data-key="project.3.detail.four.body">Power BI / DAX / Excel 数据整理 / KPI 绩效分析</p>
+                </article>
+                <div class="project-detail-kpi-strip" aria-label="KPI category examples">
+                  <div class="kpi-strip-head">
+                    <span class="kpi-strip-title kpi-lang-zh">KPI 示例指标</span>
+                    <span class="kpi-strip-title kpi-lang-en">Selected KPI Examples</span>
+                    <p class="kpi-strip-note">
+                      <span class="kpi-lang-zh">以下仅展示典型 KPI 示例，实际报表共覆盖15个 IT 部门 KPI。</span>
+                      <span class="kpi-lang-en">Examples only. The full dashboard covers 15 IT department KPIs.</span>
+                    </p>
+                  </div>
+                  <div class="kpi-category-board">
+                    <div><b>Service Management</b><span>Ticket Resolution Rate (%) / Average Resolution Time</span></div>
+                    <div><b>System Performance</b><span>Critical Incidents / MTTR</span></div>
+                    <div><b>Cybersecurity</b><span>Patch Compliance (%) / Vulnerabilities Closed (%)</span></div>
+                    <div><b>Project Delivery</b><span>On-Time Delivery (%)</span></div>
+                    <div><b>Financial & Business Value</b><span>IT Budget Utilization (%)</span></div>
+                    <div><b>People & Culture</b><span>Employee Happiness Index</span></div>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article
+              class="project-card interactive-card"
+              data-item
+              data-project-category="analytics"
+              data-project-year="202512"
+              data-project-image="assets/project-university-tycoon-board.png"
+              data-project-image-fit="contain"
+              data-project-hide-meta="true"
+            >
+              <div class="project-topline">
+                <span data-editable data-key="project.4.type">数据分析与商业智能</span>
+                <span data-editable data-key="project.4.time">2025.12</span>
+              </div>
+              <h3 data-editable data-key="project.4.title">曼彻斯特大学版大富翁游戏</h3>
+              <p data-editable data-key="project.4.body">
+                基于曼彻斯特大学教学建筑设计并实现 University Tycoon 关系型数据库，将棋盘游戏规则转化为 SQLite 表结构、约束、查询与触发器逻辑。
+              </p>
+              <div class="tag-row">
+                <span data-editable data-key="project.4.tag.one">SQLite</span>
+                <span data-editable data-key="project.4.tag.two">数据库设计</span>
+                <span data-editable data-key="project.4.tag.three">触发器</span>
+              </div>
+              <div class="project-detail-source" hidden>
+                <article>
+                  <span>01</span>
+                  <h3 data-editable data-key="project.4.detail.one.title">项目背景</h3>
+                  <p data-editable data-key="project.4.detail.one.body">围绕曼彻斯特大学主题大富翁游戏，建模玩家、代币、棋盘位置、建筑资产、特殊事件、资金余额与回合审计记录。</p>
+                </article>
+                <article>
+                  <span>02</span>
+                  <h3 data-editable data-key="project.4.detail.two.title">数据库实现</h3>
+                  <p data-editable data-key="project.4.detail.two.body">完成 ERD、SQLite schema、初始数据填充与 leaderboard 视图，支持按玩家余额、当前位置与持有建筑输出游戏状态。</p>
+                </article>
+                <article>
+                  <span>03</span>
+                  <h3 data-editable data-key="project.4.detail.three.title">分析过程</h3>
+                  <p data-editable data-key="project.4.detail.three.body">通过 6 个触发器自动处理建筑购买、学费支付、欢迎周奖励、停学状态、RAG/Hearing 事件与审计日志更新。</p>
+                </article>
+                <article>
+                  <span>04</span>
+                  <h3 data-editable data-key="project.4.detail.four.title">最终产出</h3>
+                  <p data-editable data-key="project.4.detail.four.body">交付可运行的 SQL 脚本、视图查询、三轮 gameplay 更新脚本与设计说明，将复杂规则落地为可验证的数据库逻辑。</p>
+                </article>
+              </div>
+            </article>
+            <article
+              class="project-card interactive-card"
+              data-item
+              data-project-category="ml"
+              data-project-year="202504"
+              data-project-image="assets/project-cnn-bird-classifier.svg"
+              data-project-image-fit="contain"
+              data-project-image-transparent="true"
+              data-project-hide-meta="true"
+            >
+              <div class="project-topline">
+                <span data-editable data-key="project.5.type">深度学习与算法建模</span>
+                <span data-editable data-key="project.5.time">2025.04</span>
+              </div>
+              <h3 data-editable data-key="project.5.title">基于卷积神经网络的加利福尼亚鸟类识别研究</h3>
+              <p data-editable data-key="project.5.body">
+                基于 CUB200-2011 鸟类图像数据集构建 CNN 识别流程，比较并优化 VGG16 与 ResNet-50 模型；优化后 ResNet-50 验证集准确率提升至 93.55%。
+              </p>
+              <div class="tag-row">
+                <span data-editable data-key="project.5.tag.one">Python</span>
+                <span data-editable data-key="project.5.tag.two">Deep Learning</span>
+                <span data-editable data-key="project.5.tag.three">CNN</span>
+              </div>
+              <div class="project-detail-source" hidden>
+                <article>
+                  <span>01</span>
+                  <h3 data-editable data-key="project.5.detail.one.title">项目背景</h3>
+                  <p data-editable data-key="project.5.detail.one.body">面向加利福尼亚鸟类细粒度识别任务，处理鸟种外观相近、拍摄姿态差异与复杂自然背景带来的分类难点。</p>
+                </article>
+                <article>
+                  <span>02</span>
+                  <h3 data-editable data-key="project.5.detail.two.title">建模方法</h3>
+                  <p data-editable data-key="project.5.detail.two.body">使用 Python 完成图像清洗、数据增强与样本处理，基于迁移学习训练并对比 VGG16 与 ResNet-50 CNN 模型。</p>
+                </article>
+                <article>
+                  <span>03</span>
+                  <h3 data-editable data-key="project.5.detail.three.title">关键结果</h3>
+                  <p data-editable data-key="project.5.detail.three.body">优化后 ResNet-50 表现最佳，训练准确率接近 98%，验证集准确率由 44.75% 提升至 93.55%，整体优于 VGG16。</p>
+                </article>
+                <article class="project-detail-tool-card">
+                  <span>04</span>
+                  <h3 data-editable data-key="project.5.detail.four.title">工具与能力</h3>
+                  <div class="tool-code-panel" aria-hidden="true">
+                    <div>
+                      <b>python</b>
+                      <em>preprocessing</em>
+                    </div>
+                    <div>
+                      <b>cnn</b>
+                      <em>feature extraction</em>
+                    </div>
+                    <div>
+                      <b>transfer</b>
+                      <em>fine-tuning</em>
+                    </div>
+                    <div>
+                      <b>metrics</b>
+                      <em>accuracy review</em>
+                    </div>
+                  </div>
+                  <p data-editable data-key="project.5.detail.four.body">Python / CNN / 迁移学习 / 模型评估</p>
+                </article>
+              </div>
+            </article>
+            <article
+              class="project-card interactive-card"
+              data-item
+              data-project-category="web"
+              data-project-year="202411"
+              data-project-image="assets/project-dunhuang-gallery.jpg"
+              data-project-hide-meta="true"
+            >
+              <div class="project-topline">
+                <span data-editable data-key="project.6.type">Web 产品与数据库设计</span>
+                <span data-editable data-key="project.6.time">2024.11</span>
+              </div>
+              <h3 data-editable data-key="project.6.title">敦煌主题线上美术馆</h3>
+              <p data-editable data-key="project.6.body">
+                50人团队项目；带领4人数据库小组完成用户需求分析、数据结构设计与数据库搭建，支撑作品浏览、搜索筛选、评论点赞与用户账户等核心功能。
+              </p>
+              <div class="tag-row">
+                <span data-editable data-key="project.6.tag.one">数据库设计</span>
+                <span data-editable data-key="project.6.tag.two">用户需求分析</span>
+                <span data-editable data-key="project.6.tag.three">团队协作</span>
+              </div>
+              <div class="project-detail-source" hidden>
+                <article>
+                  <span>01</span>
+                  <h3 data-editable data-key="project.6.detail.one.title">项目背景</h3>
+                  <p data-editable data-key="project.6.detail.one.body">围绕敦煌文化搭建线上美术馆 Desert Oasis，通过数字化方式呈现艺术作品、文化背景与用户浏览路径，降低传统展览的时间与空间限制。</p>
+                </article>
+                <article>
+                  <span>02</span>
+                  <h3 data-editable data-key="project.6.detail.two.title">职责范围</h3>
+                  <p data-editable data-key="project.6.detail.two.body">在50人项目中担任 Team Phoenix 负责人，协调跨团队资源，并带领4人数据库小组完成用户需求分析、数据采集规划、ER 图、数据库 schema 与实施方案。</p>
+                </article>
+                <article>
+                  <span>03</span>
+                  <h3 data-editable data-key="project.6.detail.three.title">关键产出</h3>
+                  <p data-editable data-key="project.6.detail.three.body">交付数据库设计、数据收集与实施基础，并完成 V2.0 安装与用户手册；系统覆盖注册登录、作品浏览、搜索筛选、评论点赞、购物购买、隐私条款与反馈支持。</p>
+                </article>
+                <article class="project-detail-tool-card">
+                  <span>04</span>
+                  <h3 data-editable data-key="project.6.detail.four.title">工具与能力</h3>
+                  <div class="tool-code-panel" aria-hidden="true">
+                    <div>
+                      <b>requirements</b>
+                      <em>user stories</em>
+                    </div>
+                    <div>
+                      <b>schema</b>
+                      <em>ER modelling</em>
+                    </div>
+                    <div>
+                      <b>database</b>
+                      <em>core tables</em>
+                    </div>
+                    <div>
+                      <b>delivery</b>
+                      <em>manuals</em>
+                    </div>
+                  </div>
+                  <p data-editable data-key="project.6.detail.four.body">用户需求分析 / 数据库设计 / 文档交付 / 跨团队协作</p>
+                </article>
+              </div>
+            </article>
+            <article
+              class="project-card interactive-card"
+              data-item
+              data-project-category="web"
+              data-project-year="202312"
+              data-project-image="assets/project-market-master-ecommerce.svg"
+              data-project-image-fit="contain"
+              data-project-image-transparent="true"
+              data-project-hide-meta="true"
+            >
+              <div class="project-topline">
+                <span data-editable data-key="project.7.type">Web 产品与系统开发</span>
+                <span data-editable data-key="project.7.time">2023.12</span>
+              </div>
+              <h3 data-editable data-key="project.7.title">Market Master 电商网站</h3>
+              <p data-editable data-key="project.7.body">
+                设计并实现 Market Master 电商网站原型，覆盖前端页面、后端逻辑与完整数据库，支持游客、注册用户与管理员三类角色的差异化访问权限。
+              </p>
+              <div class="tag-row">
+                <span data-editable data-key="project.7.tag.one">全栈开发</span>
+                <span data-editable data-key="project.7.tag.two">雏形开发</span>
+                <span data-editable data-key="project.7.tag.three">Demo</span>
+              </div>
+              <div class="project-detail-source" hidden>
+                <article>
+                  <span>01</span>
+                  <h3 data-editable data-key="project.7.detail.one.title">项目背景</h3>
+                  <p data-editable data-key="project.7.detail.one.body">围绕 Market Master 电商平台搭建课程项目原型，目标是模拟真实线上购物流程，并将商品展示、用户账户、购物车与订单结算等核心业务环节串联为完整系统。</p>
+                </article>
+                <article>
+                  <span>02</span>
+                  <h3 data-editable data-key="project.7.detail.two.title">系统功能</h3>
+                  <p data-editable data-key="project.7.detail.two.body">实现游客、注册用户与管理员三层级访问权限；支持用户登录、商品搜索、商品详情查看、加入购物车、购物车管理与结算等典型电商交互。</p>
+                </article>
+                <article>
+                  <span>03</span>
+                  <h3 data-editable data-key="project.7.detail.three.title">开发实现</h3>
+                  <p data-editable data-key="project.7.detail.three.body">完成前端页面、后端业务逻辑与数据库设计，实现商品、用户、购物车、订单及权限相关数据的存储与调用，让 Demo 具备从浏览到结算的完整闭环。</p>
+                </article>
+                <article class="project-detail-tool-card">
+                  <span>04</span>
+                  <h3 data-editable data-key="project.7.detail.four.title">工具与能力</h3>
+                  <div class="tool-code-panel" aria-hidden="true">
+                    <div>
+                      <b>frontend</b>
+                      <em>storefront UI</em>
+                    </div>
+                    <div>
+                      <b>backend</b>
+                      <em>business logic</em>
+                    </div>
+                    <div>
+                      <b>database</b>
+                      <em>schema design</em>
+                    </div>
+                    <div>
+                      <b>demo</b>
+                      <em>checkout flow</em>
+                    </div>
+                  </div>
+                  <p data-editable data-key="project.7.detail.four.body">全栈开发 / 雏形开发 / 数据库设计 / Demo 展示</p>
+                </article>
+              </div>
+            </article>
+            <article
+              class="project-card interactive-card"
+              data-item
+              data-project-category="security"
+              data-project-year="202507"
+              data-project-hide-meta="true"
+              data-project-carousel="assets/project-ai-governance-tongji-01.jpg|assets/project-ai-governance-tongji-02.jpg|assets/project-ai-governance-tongji-03.jpg|assets/project-ai-governance-tongji-04.jpg"
+              data-project-carousel-delay="3000"
+            >
+              <div class="project-topline">
+                <span data-editable data-key="project.8.type">AI治理与隐私合规</span>
+                <span data-editable data-key="project.8.time">2025.07</span>
+              </div>
+              <h3 data-editable data-key="project.8.title">同济大学人工智能安全与法治暑期训练营</h3>
+              <p data-editable data-key="project.8.body">
+                参加同济大学人工智能安全与法治暑期训练营，围绕生成式 AI 的算法伦理、数据安全与隐私合规开展研讨和走访；担任六人小组组长与汇报人，比较中、美、欧监管框架并形成企业合规分析。
+              </p>
+              <div class="tag-row">
+                <span data-editable data-key="project.8.tag.one">人工智能治理</span>
+                <span data-editable data-key="project.8.tag.two">算法伦理</span>
+                <span data-editable data-key="project.8.tag.three">隐私合规</span>
+              </div>
+              <div class="project-detail-source" hidden>
+                <article>
+                  <span>01</span>
+                  <h3 data-editable data-key="project.8.detail.one.title">项目背景</h3>
+                  <p data-editable data-key="project.8.detail.one.body">参加同济大学人工智能安全与法治暑期训练营，围绕生成式 AI 发展带来的算法伦理、数据安全、隐私保护与监管合规问题进行集中学习、研讨和实地走访。</p>
+                </article>
+                <article>
+                  <span>02</span>
+                  <h3 data-editable data-key="project.8.detail.two.title">团队职责</h3>
+                  <p data-editable data-key="project.8.detail.two.body">担任六人团队组长与演讲者，组织资料检索、监管框架拆解、观点整合与最终汇报，推动团队围绕中、美、欧 AI 监管体系形成可比较的分析结构。</p>
+                </article>
+                <article>
+                  <span>03</span>
+                  <h3 data-editable data-key="project.8.detail.three.title">分析产出</h3>
+                  <p data-editable data-key="project.8.detail.three.body">比较中国、美国与欧盟在 AI 治理路径、算法透明度、数据安全责任、隐私保护要求和企业合规压力方面的主要差异，并结合企业全球合规需求形成分析报告与展示材料。</p>
+                </article>
+                <article class="project-detail-tool-card">
+                  <span>04</span>
+                  <h3 data-editable data-key="project.8.detail.four.title">工具与能力</h3>
+                  <div class="tool-code-panel" aria-hidden="true">
+                    <div>
+                      <b>governance</b>
+                      <em>AI regulation</em>
+                    </div>
+                    <div>
+                      <b>ethics</b>
+                      <em>algorithm review</em>
+                    </div>
+                    <div>
+                      <b>privacy</b>
+                      <em>data compliance</em>
+                    </div>
+                    <div>
+                      <b>presentation</b>
+                      <em>team delivery</em>
+                    </div>
+                  </div>
+                  <p data-editable data-key="project.8.detail.four.body">人工智能治理 / 算法伦理 / 隐私合规 / 英文汇报</p>
+                </article>
+              </div>
+            </article>
+            <article
+              class="project-card interactive-card"
+              data-item
+              data-project-category="security"
+              data-project-year="202311"
+              data-project-hide-meta="true"
+              data-project-carousel="assets/project-cyberace-deloitte-01.jpg|assets/project-cyberace-deloitte-02.jpg|assets/project-cyberace-deloitte-03.jpg"
+              data-project-carousel-delay="3000"
+            >
+              <div class="project-topline">
+                <span data-editable data-key="project.9.type">网络安全与AI解决方案</span>
+                <span data-editable data-key="project.9.time">2023.11</span>
+              </div>
+              <h3 data-editable data-key="project.9.title">Deloitte CyberAce 网络安全训练营</h3>
+              <p data-editable data-key="project.9.body">
+                带领团队进入 Deloitte x AWS CyberAce 总决赛，基于模拟客户 RFP 梳理安全场景与业务需求，设计 COSEC 生成式 AI 运维方案，并完成竞品研究、方案论证与最终汇报。
+              </p>
+              <div class="tag-row">
+                <span data-editable data-key="project.9.tag.one">网络安全</span>
+                <span data-editable data-key="project.9.tag.two">人工智能</span>
+                <span data-editable data-key="project.9.tag.three">用户需求分析</span>
+                <span data-editable data-key="project.9.tag.four">RFP反馈</span>
+              </div>
+              <div class="project-detail-source" hidden>
+                <article>
+                  <span>01</span>
+                  <h3 data-editable data-key="project.9.detail.one.title">项目背景</h3>
+                  <p data-editable data-key="project.9.detail.one.body">参与 Deloitte 与 AWS 亚马逊云科技合办的 2023 CyberAce 网络安全训练营，并进入总决赛；项目围绕企业网络安全、生成式 AI 应用与客户需求响应展开。</p>
+                </article>
+                <article>
+                  <span>02</span>
+                  <h3 data-editable data-key="project.9.detail.two.title">方案设计</h3>
+                  <p data-editable data-key="project.9.detail.two.body">在人工智能赛道中，基于模拟客户的特定需求与 RFP，带领团队设计名为 COSEC 的生成式 AI 维护解决方案，梳理应用场景、目标用户、核心功能与交付逻辑。</p>
+                </article>
+                <article>
+                  <span>03</span>
+                  <h3 data-editable data-key="project.9.detail.three.title">分析过程</h3>
+                  <p data-editable data-key="project.9.detail.three.body">负责组织数据收集与处理、竞品分析及市场研究，将客户需求转化为方案判断依据，并支持最终展示材料与答辩内容。</p>
+                </article>
+                <article class="project-detail-tool-card">
+                  <span>04</span>
+                  <h3 data-editable data-key="project.9.detail.four.title">工具与能力</h3>
+                  <div class="tool-code-panel" aria-hidden="true">
+                    <div>
+                      <b>security</b>
+                      <em>risk context</em>
+                    </div>
+                    <div>
+                      <b>AI</b>
+                      <em>COSEC solution</em>
+                    </div>
+                    <div>
+                      <b>requirements</b>
+                      <em>client RFP</em>
+                    </div>
+                    <div>
+                      <b>strategy</b>
+                      <em>final pitch</em>
+                    </div>
+                  </div>
+                  <p data-editable data-key="project.9.detail.four.body">网络安全 / 人工智能 / 用户需求分析 / RFP反馈</p>
+                </article>
+              </div>
+            </article>
+            <article
+              class="project-card interactive-card"
+              data-item
+              data-project-category="security"
+              data-project-year="202305"
+              data-project-hide-meta="true"
+              data-project-image="assets/project-field-research-shihui.jpg"
+              data-project-image-ratio="4-3"
+            >
+              <div class="project-topline">
+                <span data-editable data-key="project.10.type">法律科技与数据合规</span>
+                <span data-editable data-key="project.10.time">2023.05</span>
+              </div>
+              <h3 data-editable data-key="project.10.title">实地调研</h3>
+              <p data-editable data-key="project.10.body">
+                发起并带领四人小组完成世辉律师事务所上海办公室英文商务访谈，围绕个人信息保护、跨境数据传输、网络安全与生成式 AI 等议题，设计18个递进问题、协调现场采访与多机位拍摄，并完成字幕视频与个人调研报告。
+              </p>
+              <div class="tag-row">
+                <span data-editable data-key="project.10.tag.one">实地调研</span>
+                <span data-editable data-key="project.10.tag.two">英文访谈</span>
+                <span data-editable data-key="project.10.tag.three">数据合规</span>
+                <span data-editable data-key="project.10.tag.four">法律科技</span>
+              </div>
+              <div class="project-detail-source" hidden>
+                <article>
+                  <span>01</span>
+                  <h3 data-editable data-key="project.10.detail.one.title">调研背景</h3>
+                  <p data-editable data-key="project.10.detail.one.body">以世辉律师事务所上海办公室为调研对象，采访专注网络安全、个人信息保护、数据合规与跨境交易的英格兰执业律师，探索法律视角下的信息系统建设与数据管理实践。</p>
+                </article>
+                <article>
+                  <span>02</span>
+                  <h3 data-editable data-key="project.10.detail.two.title">访谈设计</h3>
+                  <p data-editable data-key="project.10.detail.two.body">作为调研发起者与采访者之一，完成对象筛选、受访者沟通、时间地点协调，并组织小组围绕律所运营、专业领域、团队文化与个人发展设计18个递进式英文问题。</p>
+                </article>
+                <article>
+                  <span>03</span>
+                  <h3 data-editable data-key="project.10.detail.three.title">关键洞察</h3>
+                  <p data-editable data-key="project.10.detail.three.body">调研聚焦 PIPL、GDPR、跨境数据传输、数据映射、加密、假名化与匿名化等议题，梳理律所在数字化平台、客户数据保护和生成式 AI 发展中的合规机会与挑战。</p>
+                </article>
+                <article class="project-detail-tool-card">
+                  <span>04</span>
+                  <h3 data-editable data-key="project.10.detail.four.title">工具与能力</h3>
+                  <div class="tool-code-panel" aria-hidden="true">
+                    <div>
+                      <b>research</b>
+                      <em>field interview</em>
+                    </div>
+                    <div>
+                      <b>privacy</b>
+                      <em>PIPL / GDPR</em>
+                    </div>
+                    <div>
+                      <b>mapping</b>
+                      <em>data flows</em>
+                    </div>
+                    <div>
+                      <b>video</b>
+                      <em>subtitled output</em>
+                    </div>
+                  </div>
+                  <p data-editable data-key="project.10.detail.four.body">实地调研 / 英文访谈 / 数据合规 / 视频剪辑</p>
+                </article>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-band professional-experience" id="experience" aria-labelledby="experience-title">
+        <div class="section-inner reveal">
+          <div class="section-heading split">
+            <div>
+              <p class="eyebrow" data-ui="experience.eyebrow">CAREER TIMELINE</p>
+              <h2 id="experience-title" data-editable data-key="experience.title">工作经历</h2>
+            </div>
+            <p class="section-note experience-note" data-editable data-key="experience.note">
+              两段实习经历聚焦 IT 运营、业务流程、数据可视化、客户关系与合规研究，体现从业务问题到可执行分析产出的能力。
+            </p>
+          </div>
+          <div class="experience-card-grid" id="professionalExperienceList">
+            <article class="experience-case interactive-card" data-item data-experience-card data-experience-visual="philips">
+              <div class="experience-case-head">
+                <figure class="experience-company-logo experience-company-logo-philips">
+                  <img src="assets/experience-philips.svg" alt="Philips logo" loading="lazy" />
+                </figure>
+                <time data-editable data-key="experience.1.time">2024.10 - 2025.03</time>
+              </div>
+              <div class="experience-case-copy">
+                <p class="experience-company-name" data-editable data-key="experience.1.company">飞利浦（中国）投资有限公司</p>
+                <h3 data-editable data-key="experience.1.title">信息技术业务专家实习生 · IT部门</h3>
+                <p data-editable data-key="experience.1.body">
+                  聚焦供应商绩效评估、内部流程优化、Power BI KPI Dashboard 与信息安全合规，将 IT 运营数据转化为管理洞察。
+                </p>
+                <div class="tag-row">
+                  <span data-editable data-key="experience.1.tag.one">Power BI</span>
+                  <span data-editable data-key="experience.1.tag.two">数据分析</span>
+                  <span data-editable data-key="experience.1.tag.three">流程优化</span>
+                  <span data-editable data-key="experience.1.tag.four">供应商评估</span>
+                </div>
+              </div>
+              <div class="experience-detail-source" hidden>
+                <article>
+                  <span>01</span>
+                  <h3 data-editable data-key="experience.1.detail.1.title">供应商绩效评估</h3>
+                  <p data-editable data-key="experience.1.detail.1.body">评估并与财务、采购团队协同管理供应商表现，推动持续改进业务计划，达到内部高层领导95%满意度。</p>
+                </article>
+                <article>
+                  <span>02</span>
+                  <h3 data-editable data-key="experience.1.detail.2.title">流程优化与系统运维</h3>
+                  <p data-editable data-key="experience.1.detail.2.body">负责公司内部报销审批系统的日常运维及账号管理，编写面向业务用户的使用手册，提升公费审批效率和合规性至98%。</p>
+                </article>
+                <article>
+                  <span>03</span>
+                  <h3 data-editable data-key="experience.1.detail.3.title">KPI Dashboard</h3>
+                  <p data-editable data-key="experience.1.detail.3.body">基于 Power BI 搭建2025年度 KPI Dashboard，覆盖信息技术部门15项核心年度业务指标，负责数据清理、筛选及可视化开发，为内部投资组合调整与资源配置提供数字驱动依据。</p>
+                </article>
+                <article>
+                  <span>04</span>
+                  <h3 data-editable data-key="experience.1.detail.4.title">信息安全与数据合规</h3>
+                  <p data-editable data-key="experience.1.detail.4.body">监督内部信息技术部门与外部供应商，确保已交付及即将投入使用的信息系统符合信息安全等级保护要求，并在跨境数据传输场景下遵守个人信息保护与通用数据保护要求。</p>
+                </article>
+              </div>
+            </article>
+
+            <article class="experience-case interactive-card" data-item data-experience-card data-experience-visual="itc">
+              <div class="experience-case-head">
+                <figure class="experience-company-logo experience-company-logo-itc">
+                  <img src="assets/experience-itc.png" alt="ITC logo" loading="lazy" />
+                </figure>
+                <time data-editable data-key="experience.2.time">2024.07 - 2024.09</time>
+              </div>
+              <div class="experience-case-copy">
+                <p class="experience-company-name" data-editable data-key="experience.2.company">朗高投资咨询（上海）有限公司</p>
+                <h3 data-editable data-key="experience.2.title">售前咨询助理实习生 · 产品部</h3>
+                <p data-editable data-key="experience.2.body">
+                  参与 CRM 数据管理、销售机会分析、数字平台咨询与隐私合规研究，支持客户关系优化与跨境业务判断。
+                </p>
+                <div class="tag-row">
+                  <span data-editable data-key="experience.2.tag.one">CRM</span>
+                  <span data-editable data-key="experience.2.tag.two">销售数据分析</span>
+                  <span data-editable data-key="experience.2.tag.three">数字化产品交付</span>
+                  <span data-editable data-key="experience.2.tag.four">隐私合规</span>
+                </div>
+              </div>
+              <div class="experience-detail-source" hidden>
+                <article>
+                  <span>01</span>
+                  <h3 data-editable data-key="experience.2.detail.1.title">数字平台咨询</h3>
+                  <p data-editable data-key="experience.2.detail.1.body">协助项目总监、设计团队及开发团队为客户提供官方网站、微信小程序及企业微信前端 UI/UX、后端 Drupal 系统升级维护、系统集成可行性与交付流程咨询。</p>
+                </article>
+                <article>
+                  <span>02</span>
+                  <h3 data-editable data-key="experience.2.detail.2.title">CRM 与本地化策略</h3>
+                  <p data-editable data-key="experience.2.detail.2.body">协助开发团队为客户提供本地化营销技术客户关系系统咨询，包括 Salesforce CRM 与企业微信客户营销工具在中国市场的可行性分析及策略建议。</p>
+                </article>
+                <article>
+                  <span>03</span>
+                  <h3 data-editable data-key="experience.2.detail.3.title">跨境合规研究</h3>
+                  <p data-editable data-key="experience.2.detail.3.body">协助项目总监向对华经营的境外企业提供私域流量隐私保护、跨境数据传输及 ICP 备案合规咨询，主要基于个人信息保护、网络安全与电子商务相关法律框架。</p>
+                </article>
+                <article>
+                  <span>04</span>
+                  <h3 data-editable data-key="experience.2.detail.4.title">销售机会分析</h3>
+                  <p data-editable data-key="experience.2.detail.4.body">支持客户与销售机会信息整理，围绕客户需求、业务场景和平台可行性形成结构化输入，辅助团队推进售前沟通与方案判断。</p>
+                </article>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-band ai-section" id="ai" aria-labelledby="ai-title">
+        <div class="section-inner reveal">
+          <div class="section-heading split">
+            <div>
+              <p class="eyebrow" data-ui="ai.eyebrow">AI Workflow</p>
+              <h2 id="ai-title" data-editable data-key="ai.title">AI 使用情况</h2>
+            </div>
+          </div>
+          <div class="ai-layout">
+            <article class="ai-panel interactive-card">
+              <h3 data-editable data-key="ai.workflow.title">我的 AI 辅助分析流程</h3>
+              <div class="ai-workflow-grid">
+                <div class="ai-step">
+                  <span>01</span>
+                  <strong data-editable data-key="ai.step.one.title">问题定义</strong>
+                  <p data-editable data-key="ai.step.one.body">先让 AI 帮助拆解业务背景、利益相关人诉求与分析目标，再人工确认真正需要回答的问题。</p>
+                </div>
+                <div class="ai-step">
+                  <span>02</span>
+                  <strong data-editable data-key="ai.step.two.title">分析草稿</strong>
+                  <p data-editable data-key="ai.step.two.body">用 AI 快速生成 SQL/Python 思路、指标拆分和可视化结构，再根据数据口径进行调整。</p>
+                </div>
+                <div class="ai-step">
+                  <span>03</span>
+                  <strong data-editable data-key="ai.step.three.title">人工校验</strong>
+                  <p data-editable data-key="ai.step.three.body">对 AI 输出进行字段核对、SQL 复算、异常值检查与业务口径确认，保证结论可解释。</p>
+                </div>
+                <div class="ai-code-card" aria-label="AI prompt and SQL workflow example">
+                  <div class="ai-code-top">
+                    <span></span><span></span><span></span>
+                    <strong data-editable data-key="ai.code.title">示例：Prompt → SQL 草稿</strong>
+                  </div>
+                  <pre><code data-editable data-key="ai.code.body">use_case:
+  "以下 SQL 仅作为 AI 辅助分析流程中的一个示例。"
+
+prompt:
+  "拆解这个业务问题，列出核心指标、数据字段和可能的异常值。"
+
+sql_draft:
+  SELECT segment, COUNT(*) AS users,
+         AVG(conversion_rate) AS avg_conversion
+  FROM analysis_table
+  WHERE data_quality_flag = 'valid'
+  GROUP BY segment;</code></pre>
+                </div>
+              </div>
+            </article>
+            <aside class="ai-chart interactive-card" aria-label="AI tool usage chart">
+              <div class="ai-chart-heading">
+                <h3 data-editable data-key="ai.chart.title">AI 工具图谱</h3>
+                <span data-editable data-key="ai.chart.caption">按常用分析场景整理</span>
+              </div>
+              <div class="ai-bars">
+                <div class="ai-bar" style="--value: 92%">
+                  <span class="ai-icon" aria-hidden="true"><img src="assets/ai-chatgpt.png" alt="" /></span>
+                  <div>
+                    <strong data-editable data-key="ai.tool.one.name">ChatGPT</strong>
+                    <span data-editable data-key="ai.tool.one.use">问题定义 / 指标设计 / 分析草稿</span>
+                  </div>
+                  <i><b></b></i>
+                  <em data-editable data-key="ai.tool.one.value">92%</em>
+                </div>
+                <div class="ai-bar" style="--value: 78%">
+                  <span class="ai-icon" aria-hidden="true"><img src="assets/ai-claude.svg" alt="" /></span>
+                  <div>
+                    <strong data-editable data-key="ai.tool.two.name">Claude</strong>
+                    <span data-editable data-key="ai.tool.two.use">长文总结 / 需求文档 / 案例复盘</span>
+                  </div>
+                  <i><b></b></i>
+                  <em data-editable data-key="ai.tool.two.value">78%</em>
+                </div>
+                <div class="ai-bar" style="--value: 70%">
+                  <span class="ai-icon" aria-hidden="true"><img src="assets/ai-gemini.png" alt="" /></span>
+                  <div>
+                    <strong data-editable data-key="ai.tool.three.name">Gemini</strong>
+                    <span data-editable data-key="ai.tool.three.use">多模态理解 / 表格整理 / 内容润色</span>
+                  </div>
+                  <i><b></b></i>
+                  <em data-editable data-key="ai.tool.three.value">70%</em>
+                </div>
+                <div class="ai-bar" style="--value: 20%">
+                  <span class="ai-icon" aria-hidden="true"><img src="assets/ai-copilot.png" alt="" /></span>
+                  <div>
+                    <strong data-editable data-key="ai.tool.four.name">Microsoft Copilot</strong>
+                    <span data-editable data-key="ai.tool.four.use">Office 文档 / 会议总结 / 汇报辅助</span>
+                  </div>
+                  <i><b></b></i>
+                  <em data-editable data-key="ai.tool.four.value">20%</em>
+                </div>
+              </div>
+            </aside>
+          </div>
+          <div class="ai-evidence">
+            <article class="ai-evidence-card">
+              <span>✓</span>
+              <p data-editable data-key="ai.evidence.one">Prompt 用于拆解问题、定义指标和整理汇报结构，不直接替代分析判断。</p>
+            </article>
+            <article class="ai-evidence-card">
+              <span>↔</span>
+              <p data-editable data-key="ai.evidence.two">所有 AI 生成的 SQL、解释和结论都会经过复算、字段口径核对与人工修订。</p>
+            </article>
+            <article class="ai-evidence-card">
+              <span>↗</span>
+              <p data-editable data-key="ai.evidence.three">主要提升在于快速形成分析框架、减少重复性文档整理，并加快 dashboard 文案迭代。</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-band volunteer" id="volunteer" aria-labelledby="volunteer-title">
+        <div class="section-inner reveal">
+          <div class="section-heading split">
+            <div>
+              <p class="eyebrow" data-ui="volunteer.eyebrow">Volunteer Experience</p>
+              <h2 id="volunteer-title" data-editable data-key="volunteerSection.title">志愿者经历</h2>
+            </div>
+            <button class="text-command editor-only" type="button" data-add-target="volunteerList" data-ui="action.addVolunteer">添加志愿者经历</button>
+          </div>
+          <div class="volunteer-grid" id="volunteerList" data-list="volunteer">
+            <article class="volunteer-card interactive-card volunteer-card-featured" data-item data-volunteer-card="marathon">
+              <figure class="volunteer-photo-card volunteer-photo-wide">
+                <img src="assets/volunteer-manchester-marathon.jpg" alt="2026 Manchester Marathon volunteer team" loading="lazy" />
+                <figcaption>
+                  <span data-editable data-key="volunteer.marathon.photo.kicker">赛事志愿者</span>
+                  <strong data-editable data-key="volunteer.marathon.photo.title">曼彻斯特马拉松</strong>
+                </figcaption>
+              </figure>
+              <div class="volunteer-copy-panel">
+                <figure class="volunteer-event-mark marathon-event-mark">
+                  <img src="assets/marathon-date-announced.webp" alt="Manchester Marathon 19 April 2026 event mark" loading="lazy" />
+                </figure>
+                <p class="volunteer-label" data-editable data-key="volunteer.marathon.label">Marathon / Volunteer</p>
+                <h3 data-editable data-key="volunteer.marathon.title">2026曼彻斯特马拉松</h3>
+                <p data-editable data-key="volunteer.marathon.body">
+                  负责出发团队、所有志愿者及相关人员的签到签退、证件与高可视背心发放、物资整理、餐饮支持、制服盘点及收尾清洁；获得团队经理评价其执行可靠、主动补位，积极支持现场顺畅运作。
+                </p>
+                <div class="volunteer-meta">
+                  <span data-editable data-key="volunteer.marathon.time">马拉松</span>
+                  <span data-editable data-key="volunteer.marathon.role">体育活动志愿者</span>
+                </div>
+              </div>
+            </article>
+            <article class="volunteer-card interactive-card volunteer-card-featured" data-item data-volunteer-card="team">
+              <figure class="volunteer-photo-card">
+                <img src="assets/volunteer-team-final.jpg" alt="Volunteer teamwork session" loading="lazy" />
+                <figcaption>
+                  <span data-ui="volunteer.photo.kicker">团队协作记录</span>
+                  <strong data-ui="volunteer.photo.title">实践型协作经历</strong>
+                </figcaption>
+              </figure>
+              <div class="volunteer-copy-panel">
+                <figure class="volunteer-event-mark volunteer-event-mark-single volunteer-event-mark-wise">
+                  <img src="assets/logo-wise.jpg" alt="WISE Women in Science and Engineering logo" loading="lazy" />
+                </figure>
+                <p class="volunteer-label" data-editable data-key="volunteer.1.label">WISE Society / Campus Volunteer</p>
+                <h3 data-editable data-key="volunteer.1.title">WISE社团活动志愿者</h3>
+                <p data-editable data-key="volunteer.1.body">
+                  协助约50名八年级学生理解桥梁结构与建造原理，引导其使用纸板、笔、吸管等材料完成稳固桥梁模型，激发学生尤其是女生对科学与工程的兴趣。
+                </p>
+                <div class="volunteer-meta">
+                  <span data-editable data-key="volunteer.1.time">活动协作</span>
+                  <span data-editable data-key="volunteer.1.role">STEM启发</span>
+                  <span data-editable data-key="volunteer.1.focus">女性科学与工程</span>
+                </div>
+              </div>
+            </article>
+            <article class="volunteer-card interactive-card volunteer-card-featured" data-item data-volunteer-card="utas-visit">
+              <figure class="volunteer-photo-card volunteer-photo-wide">
+                <img src="assets/volunteer-utas-shou-visit-v2.jpg" alt="University of Tasmania delegation visit to Shanghai Ocean University" loading="lazy" />
+                <figcaption>
+                  <span data-editable data-key="volunteer.utas.photo.kicker">跨校访问</span>
+                  <strong data-editable data-key="volunteer.utas.photo.title">塔大 x 上海海洋大学</strong>
+                </figcaption>
+              </figure>
+              <div class="volunteer-copy-panel">
+                <figure class="volunteer-event-mark volunteer-event-mark-duo">
+                  <img src="assets/logo-shou-round.jpeg" alt="Shanghai Ocean University logo" loading="lazy" />
+                  <img src="assets/logo-utas-stacked.png" alt="University of Tasmania logo" loading="lazy" />
+                </figure>
+                <p class="volunteer-label" data-editable data-key="volunteer.utas.label">Cross-university Visit / Interpretion</p>
+                <h3 data-editable data-key="volunteer.utas.title">2024年秋季塔斯马尼亚大学领导参访上海海洋大学随行翻译</h3>
+                <p data-editable data-key="volunteer.utas.body">
+                  协助带领塔斯马尼亚大学代表团参观上海海洋大学校史馆，并进行中英文随行翻译与学校历史介绍，支持两校交流与现场沟通。
+                </p>
+                <div class="volunteer-meta">
+                  <span data-editable data-key="volunteer.utas.time">随行翻译</span>
+                  <span data-editable data-key="volunteer.utas.role">参访支持</span>
+                  <span data-editable data-key="volunteer.utas.focus">校间合作</span>
+                </div>
+              </div>
+            </article>
+            <article class="volunteer-card interactive-card volunteer-card-featured volunteer-card-portrait" data-item data-volunteer-card="graduation">
+              <figure class="volunteer-photo-card volunteer-photo-portrait">
+                <img src="assets/volunteer-graduation-interpreter.jpg" alt="Graduation ceremony interpreter at AEN College Shanghai Ocean University" loading="lazy" />
+              </figure>
+              <div class="volunteer-copy-panel">
+                <figure class="volunteer-event-mark volunteer-event-mark-duo">
+                  <img src="assets/logo-shou-round.jpeg" alt="Shanghai Ocean University logo" loading="lazy" />
+                  <img src="assets/logo-utas-stacked.png" alt="University of Tasmania logo" loading="lazy" />
+                </figure>
+                <p class="volunteer-label" data-editable data-key="volunteer.graduation.label">Graduation Ceremony / Interpretion</p>
+                <h3 data-editable data-key="volunteer.graduation.title">2024年上海海洋大学爱恩学院毕业典礼翻译</h3>
+                <p data-editable data-key="volunteer.graduation.body">
+                  负责2024年上海海洋大学爱恩学院毕业典礼全程中英口译与现场沟通支持，协助典礼环节顺畅衔接并保障中英文信息准确传达。
+                </p>
+                <div class="volunteer-meta">
+                  <span data-editable data-key="volunteer.graduation.time">毕业典礼</span>
+                  <span data-editable data-key="volunteer.graduation.role">翻译 / 口译</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-band about" id="about" aria-labelledby="about-title">
+        <div class="section-inner about-layout reveal">
+          <div class="section-heading sticky-heading">
+            <p class="eyebrow" data-ui="about.eyebrow">ABOUT ME</p>
+            <h2 id="about-title" data-editable data-key="about.title">关于我</h2>
+          </div>
+          <div class="about-panels">
+            <article class="detail-panel">
+              <h3 data-editable data-key="about.skill.title">核心能力</h3>
+              <div class="skill-cloud" aria-label="Skills">
+                <button class="skill-pill" type="button" data-editable data-key="about.skill.one">需求分析</button>
+                <button class="skill-pill" type="button" data-editable data-key="about.skill.two">SQL / NoSQL</button>
+                <button class="skill-pill" type="button" data-editable data-key="about.skill.three">Python</button>
+                <button class="skill-pill" type="button" data-editable data-key="about.skill.four">Power BI / Tableau</button>
+                <button class="skill-pill" type="button" data-editable data-key="about.skill.five">KPI 设计</button>
+                <button class="skill-pill" type="button" data-editable data-key="about.skill.six">Excel / Power Query</button>
+                <button class="skill-pill" type="button" data-editable data-key="about.skill.seven">DAX / 数据建模</button>
+                <button class="skill-pill" type="button" data-editable data-key="about.skill.eight">Dashboard 汇报</button>
+                <button class="skill-pill" type="button" data-editable data-key="about.skill.nine">用户研究</button>
+                <button class="skill-pill" type="button" data-editable data-key="about.skill.ten">业务流程梳理</button>
+                <button class="skill-pill" type="button" data-editable data-key="about.skill.eleven">利益相关人沟通</button>
+                <button class="skill-pill" type="button" data-editable data-key="about.skill.twelve">洞察叙事</button>
+                <button class="skill-pill" type="button" data-editable data-key="about.skill.thirteen">批判性思维</button>
+                <button class="skill-pill" type="button" data-editable data-key="about.skill.fourteen">跨团队协作</button>
+                <button class="skill-pill" type="button" data-editable data-key="about.skill.fifteen">跨文化沟通</button>
+                <button class="skill-pill" type="button" data-editable data-key="about.skill.sixteen">细节至上</button>
+                <button class="skill-pill" type="button" data-editable data-key="about.skill.seventeen">项目管理</button>
+                <button class="skill-pill" type="button" data-editable data-key="about.skill.eighteen">数据质量控制</button>
+                <button class="skill-pill" type="button" data-editable data-key="about.skill.nineteen">结构化文档写作</button>
+                <button class="skill-pill" type="button" data-editable data-key="about.skill.twenty">商业敏感度</button>
+              </div>
+            </article>
+            <article class="detail-panel education-card interactive-card">
+              <div class="education-heading">
+                <h3 data-editable data-key="education.title">教育经历</h3>
+              </div>
+              <div class="education-list">
+                <section class="education-item">
+                  <div class="education-logo logo-image">
+                    <img src="assets/logo-manchester.png" alt="The University of Manchester logo" />
+                  </div>
+                  <div class="education-copy">
+                    <div class="education-topline">
+                      <h4 data-editable data-key="education.1.school">曼彻斯特大学</h4>
+                      <span data-editable data-key="education.1.time">2025.09 - 2026.09</span>
+                    </div>
+                    <p data-editable data-key="education.1.degree">硕士 · 数据科学（商业与管理）</p>
+                    <div class="education-placeholder" data-editable data-key="education.1.details">
+                      🏅 荣誉：Stellify奖<br />
+                      📈 预计成绩：一等学位（70+）<br />
+                      📚 核心课程：统计学与机器学习、拓扑数据分析、隐私、保密性与信息披露控制。
+                    </div>
+                    <button class="campus-trigger" type="button" data-campus-open="manchester" data-ui="campus.view">
+                      查看校园经历
+                    </button>
+                  </div>
+                </section>
+                <section class="education-item">
+                  <div class="education-logo logo-image">
+                    <img src="assets/logo-tasmania.png" alt="University of Tasmania logo" />
+                  </div>
+                  <div class="education-copy">
+                    <div class="education-topline">
+                      <h4 data-editable data-key="education.2.school">塔斯马尼亚大学</h4>
+                      <span data-editable data-key="education.2.time">2022.09 - 2025.06</span>
+                    </div>
+                    <p data-editable data-key="education.2.degree">学士 · 信息系统</p>
+                    <div class="education-placeholder" data-editable data-key="education.2.details">
+                      GPA：6.88/7.0<br />
+                      🏅 荣誉：2025年塔斯马尼亚大学最优毕业生；院长名录获得者。<br />
+                      📌 研究与能力：强化研究设计、系统分析与数据驱动问题解决能力，关注信息系统如何支持业务流程优化、用户需求识别与组织决策。<br />
+                      💡 输出能力：文献综述、需求分析、数据建模、研究写作与英文汇报。
+                    </div>
+                    <button class="campus-trigger" type="button" data-campus-open="utas" data-ui="campus.view">
+                      查看校园经历
+                    </button>
+                  </div>
+                </section>
+                <section class="education-item">
+                  <div class="education-logo logo-image">
+                    <img src="assets/logo-shanghai-ocean.png" alt="Shanghai Ocean University logo" />
+                  </div>
+                  <div class="education-copy">
+                    <div class="education-topline">
+                      <h4 data-editable data-key="education.3.school">上海海洋大学</h4>
+                      <span data-editable data-key="education.3.time">2021.09 - 2025.06</span>
+                    </div>
+                    <p data-editable data-key="education.3.degree">学士 · 信息管理与信息系统</p>
+                    <div class="education-placeholder" data-editable data-key="education.3.details">
+                      绩点：3.75/4.0（年级前1%）<br />
+                      🎓 毕业设计：基于卷积神经网络的加利福尼亚鸟类识别研究（优秀毕业论文）。
+                    </div>
+                    <button class="campus-trigger" type="button" data-campus-open="shou" data-ui="campus.view">
+                      查看校园经历
+                    </button>
+                  </div>
+                </section>
+              </div>
+            </article>
+            <article class="detail-panel interactive-card">
+              <h3 data-editable data-key="extra.title">认证与补充资料</h3>
+              <div class="credential-card">
+                <div class="credential-logo">
+                  <img src="assets/cert-pl300.png" alt="Microsoft Certified Power BI Data Analyst badge" />
+                </div>
+                <div class="credential-copy">
+                  <p class="credential-kicker" data-editable data-key="cert.kicker">Certification</p>
+                  <h4 data-editable data-key="cert.name">Microsoft Certified: Power BI 数据分析师认证</h4>
+                  <div class="credential-meta">
+                    <span data-editable data-key="cert.issuer">颁发机构：微软</span>
+                    <span data-editable data-key="cert.date">获得时间：2025年2月</span>
+                  </div>
+                  <div class="credential-skills" aria-label="Certification skills">
+                    <span data-editable data-key="cert.skill.one">Power BI</span>
+                    <span data-editable data-key="cert.skill.two">DAX</span>
+                    <span data-editable data-key="cert.skill.three">Power Query</span>
+                    <span data-editable data-key="cert.skill.four">Data Modelling</span>
+                    <span data-editable data-key="cert.skill.five">Data Analytics</span>
+                  </div>
+                  <a
+                    class="credential-link"
+                    href="https://learn.microsoft.com/en-us/users/yunweigu-8199/credentials/c9e919e39e9feefa?ref=https%3A%2F%2Fwww.linkedin.com%2F"
+                    target="_self"
+                    data-ui="cert.verify"
+                  >
+                    查看认证
+                  </a>
+                </div>
+              </div>
+              <div class="credential-card credential-card-green">
+                <div class="credential-logo">
+                  <img
+                    src="assets/cert-excel-expert.png"
+                    alt="Microsoft Office Specialist Excel Expert badge"
+                  />
+                </div>
+                <div class="credential-copy">
+                  <p class="credential-kicker" data-editable data-key="cert.excel.kicker">Certification</p>
+                  <h4 data-editable data-key="cert.excel.name">Microsoft Office Specialist: Excel Expert 认证</h4>
+                  <div class="credential-meta">
+                    <span data-editable data-key="cert.excel.issuer">颁发机构：微软</span>
+                    <span data-editable data-key="cert.excel.date">获得时间：2024年9月</span>
+                  </div>
+                  <div class="credential-skills" aria-label="Excel certification skills">
+                    <span data-editable data-key="cert.excel.skill.one">Excel</span>
+                    <span data-editable data-key="cert.excel.skill.two">Advanced Formulas</span>
+                    <span data-editable data-key="cert.excel.skill.three">PivotTables</span>
+                    <span data-editable data-key="cert.excel.skill.four">Data Cleaning</span>
+                    <span data-editable data-key="cert.excel.skill.five">Data Analysis</span>
+                  </div>
+                  <a
+                    class="credential-link"
+                    href="https://www.credly.com/badges/3d271fd6-1f2b-449b-aebb-045a641e9731/linked_in_profile"
+                    target="_self"
+                    data-ui="cert.verify"
+                  >
+                    查看认证
+                  </a>
+                </div>
+              </div>
+              <div class="credential-card credential-card-red">
+                <div class="credential-logo">
+                  <img src="assets/cert-ielts.webp" alt="British Council IELTS Official Test Centre logo" />
+                </div>
+                <div class="credential-copy">
+                  <p class="credential-kicker" data-editable data-key="cert.ielts.kicker">Certification</p>
+                  <h4 data-editable data-key="cert.ielts.name">IELTS Academic 英语能力成绩</h4>
+                  <div class="credential-meta">
+                    <span data-editable data-key="cert.ielts.issuer">考试机构：British Council</span>
+                    <span data-editable data-key="cert.ielts.date">考试时间：2023年10月</span>
+                  </div>
+                  <div class="credential-skills credential-scores" aria-label="IELTS score breakdown">
+                    <span class="score-overall" data-editable data-key="cert.ielts.score.one">总分 7.0</span>
+                    <span data-editable data-key="cert.ielts.score.two">听力 8.5</span>
+                    <span data-editable data-key="cert.ielts.score.three">阅读 7.0</span>
+                    <span data-editable data-key="cert.ielts.score.four">写作 6.5</span>
+                    <span data-editable data-key="cert.ielts.score.five">口语 6.5</span>
+                  </div>
+                  <button
+                    class="credential-link"
+                    type="button"
+                    data-credential-proof
+                    data-proof-src="assets/ielts-score-report.webp"
+                    data-ui="cert.verify"
+                  >
+                    查看认证
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- MAP SECTION LOCKED: keep this block unchanged unless the user explicitly asks to redesign or fix the map. -->
+      <section class="section-band global-section" id="global" aria-labelledby="global-title">
+        <div class="section-inner global-wide reveal">
+          <div class="global-heading">
+            <p class="eyebrow" data-ui="global.eyebrow">Global Perspective</p>
+            <h2 id="global-title" data-editable data-key="global.title">全球视角 / 跨文化协作</h2>
+          </div>
+          <div class="world-map-shell" aria-label="Interactive world map">
+            <div class="map-controls" aria-label="Map zoom controls">
+              <button type="button" data-map-control="out" aria-label="Zoom out">−</button>
+              <button type="button" data-map-control="in" aria-label="Zoom in">+</button>
+              <button type="button" data-map-control="reset" aria-label="Reset map">↺</button>
+            </div>
+            <div class="map-canvas">
+              <img class="world-map-line" src="assets/world-outline.svg" alt="Line-drawn world map" draggable="false" />
+              <button class="map-flag" style="--x: 49.22%; --y: 27.25%;" type="button" data-global-country="uk" aria-label="United Kingdom">
+                <span>🇬🇧</span>
+              </button>
+              <button class="map-flag" style="--x: 22.8%; --y: 32.2%;" type="button" data-global-country="us" aria-label="United States">
+                <span>🇺🇸</span>
+              </button>
+              <button class="map-flag" style="--x: 50.36%; --y: 31.15%;" type="button" data-global-country="france" aria-label="France">
+                <span>🇫🇷</span>
+              </button>
+              <button class="map-flag" style="--x: 51.13%; --y: 29.45%;" type="button" data-global-country="netherlands" aria-label="Netherlands">
+                <span>🇳🇱</span>
+              </button>
+              <button class="map-flag" style="--x: 51.88%; --y: 23.22%;" type="button" data-global-country="norway" aria-label="Norway">
+                <span>🇳🇴</span>
+              </button>
+              <button class="map-flag" style="--x: 52.72%; --y: 29.35%;" type="button" data-global-country="germany" aria-label="Germany">
+                <span>🇩🇪</span>
+              </button>
+              <button class="map-flag" style="--x: 53.58%; --y: 34.52%;" type="button" data-global-country="italy" aria-label="Italy">
+                <span>🇮🇹</span>
+              </button>
+              <button class="map-flag" style="--x: 71.7%; --y: 44.1%;" type="button" data-global-country="india" aria-label="India">
+                <span>🇮🇳</span>
+              </button>
+              <button class="map-flag" style="--x: 79.05%; --y: 49.75%;" type="button" data-global-country="vietnam" aria-label="Vietnam">
+                <span>🇻🇳</span>
+              </button>
+              <button class="map-flag" style="--x: 78.25%; --y: 57.95%;" type="button" data-global-country="singapore" aria-label="Singapore">
+                <span>🇸🇬</span>
+              </button>
+              <button class="map-flag" style="--x: 82.55%; --y: 49.95%;" type="button" data-global-country="philippines" aria-label="Philippines">
+                <span>🇵🇭</span>
+              </button>
+              <button class="map-flag" style="--x: 87.3%; --y: 34.2%;" type="button" data-global-country="japan" aria-label="Japan">
+                <span>🇯🇵</span>
+              </button>
+              <button class="map-flag" style="--x: 81.65%; --y: 39.8%;" type="button" data-global-country="china" aria-label="China">
+                <span>🇨🇳</span>
+              </button>
+              <button class="map-flag" style="--x: 87.2%; --y: 76.9%;" type="button" data-global-country="australia" aria-label="Australia">
+                <span>🇦🇺</span>
+              </button>
+            </div>
+            <div class="global-popover" aria-live="polite">
+              <p class="global-detail-kicker" data-editable data-key="global.detail.kicker">Selected context</p>
+              <div class="global-detail is-active" data-global-detail="uk">
+                <h4 data-editable data-key="global.uk.name">英国</h4>
+                <span data-editable data-key="global.uk.type">Education / Analytics Context</span>
+                <p data-editable data-key="global.uk.body">曼彻斯特硕士阶段带来的英文学习环境、商业数据分析语境和跨文化团队协作基础。</p>
+              </div>
+              <div class="global-detail" data-global-detail="us">
+                <h4 data-editable data-key="global.us.name">美国</h4>
+                <span data-editable data-key="global.us.type">Expert Network / Industry Reference</span>
+                <p data-editable data-key="global.us.body">可补充与美国专家、行业资料、数据产品案例或分析方法相关的学习与交流经历。</p>
+              </div>
+              <div class="global-detail" data-global-detail="france">
+                <h4 data-editable data-key="global.france.name">法国</h4>
+                <span data-editable data-key="global.france.type">Cross-cultural Collaboration</span>
+                <p data-editable data-key="global.france.body">可补充与法国背景同学、专家或项目语境中的沟通协作经历。</p>
+              </div>
+              <div class="global-detail" data-global-detail="italy">
+                <h4 data-editable data-key="global.italy.name">意大利</h4>
+                <span data-editable data-key="global.italy.type">Cross-cultural Collaboration</span>
+                <p data-editable data-key="global.italy.body">可补充与意大利背景团队成员或专家交流中形成的多元观点与协作经验。</p>
+              </div>
+              <div class="global-detail" data-global-detail="vietnam">
+                <h4 data-editable data-key="global.vietnam.name">越南</h4>
+                <span data-editable data-key="global.vietnam.type">Regional Perspective</span>
+                <p data-editable data-key="global.vietnam.body">可补充东南亚市场、团队协作、课程项目或跨文化沟通相关背景。</p>
+              </div>
+              <div class="global-detail" data-global-detail="singapore">
+                <h4 data-editable data-key="global.singapore.name">新加坡</h4>
+                <span data-editable data-key="global.singapore.type">Business / Technology Context</span>
+                <p data-editable data-key="global.singapore.body">可补充新加坡相关商业分析、科技生态、项目案例或专家交流经历。</p>
+              </div>
+              <div class="global-detail" data-global-detail="australia">
+                <h4 data-editable data-key="global.australia.name">澳大利亚</h4>
+                <span data-editable data-key="global.australia.type">Education / Research Context</span>
+                <p data-editable data-key="global.australia.body">塔斯马尼亚大学信息系统学习与 Honours 研究训练，体现英文环境下的系统分析、研究写作和跨文化协作能力。</p>
+              </div>
+              <div class="global-detail" data-global-detail="philippines">
+                <h4 data-editable data-key="global.philippines.name">菲律宾</h4>
+                <span data-editable data-key="global.philippines.type">Multicultural Collaboration</span>
+                <p data-editable data-key="global.philippines.body">可补充多文化团队合作、志愿者语境或跨区域沟通经历。</p>
+              </div>
+              <div class="global-detail" data-global-detail="india">
+                <h4 data-editable data-key="global.india.name">印度</h4>
+                <span data-editable data-key="global.india.type">Data / Technology Collaboration</span>
+                <p data-editable data-key="global.india.body">可补充与印度背景专家、同学或数据技术语境相关的协作经历。</p>
+              </div>
+              <div class="global-detail" data-global-detail="japan">
+                <h4 data-editable data-key="global.japan.name">日本</h4>
+                <span data-editable data-key="global.japan.type">Regional Perspective / Business Context</span>
+                <p data-editable data-key="global.japan.body">可补充与日本相关的行业案例、项目资料、跨文化讨论或区域商业分析背景。</p>
+              </div>
+              <div class="global-detail" data-global-detail="china">
+                <h4 data-editable data-key="global.china.name">中国</h4>
+                <span data-editable data-key="global.china.type">本土市场 / 数据与商业语境</span>
+                <p data-editable data-key="global.china.body">以中国商业语境、数据产品使用场景和中英文沟通能力为基础，将本土洞察转化为结构化分析与跨文化表达。</p>
+              </div>
+              <div class="global-detail" data-global-detail="netherlands">
+                <h4 data-editable data-key="global.netherlands.name">荷兰</h4>
+                <span data-editable data-key="global.netherlands.type">International Collaboration</span>
+                <p data-editable data-key="global.netherlands.body">可补充荷兰相关专家、研究资料、项目语境或跨文化讨论经历。</p>
+              </div>
+              <div class="global-detail" data-global-detail="norway">
+                <h4 data-editable data-key="global.norway.name">挪威</h4>
+                <span data-editable data-key="global.norway.type">Nordic Perspective / Expert Context</span>
+                <p data-editable data-key="global.norway.body">可补充与挪威相关专家、北欧行业视角、项目资料或跨文化交流经历。</p>
+              </div>
+              <div class="global-detail" data-global-detail="germany">
+                <h4 data-editable data-key="global.germany.name">德国</h4>
+                <span data-editable data-key="global.germany.type">Expert Collaboration / Industry Lens</span>
+                <p data-editable data-key="global.germany.body">可补充与德国专家、行业视角、流程管理或数据分析实践相关的交流经历。</p>
+              </div>
+            </div>
+          </div>
+          <div class="global-region-list" aria-label="Global exposure countries grouped by region">
+            <div class="global-region">
+              <div class="region-heading">
+                <span>EU</span>
+                <strong data-ui="global.region.europe">欧洲</strong>
+                <em data-ui="global.region.europe.count">6 countries</em>
+              </div>
+              <div class="global-tags">
+                <button type="button" data-global-country="france"><span>🇫🇷</span><i data-ui="global.tag.france">法国</i></button>
+                <button type="button" data-global-country="germany"><span>🇩🇪</span><i data-ui="global.tag.germany">德国</i></button>
+                <button type="button" data-global-country="italy"><span>🇮🇹</span><i data-ui="global.tag.italy">意大利</i></button>
+                <button type="button" data-global-country="netherlands"><span>🇳🇱</span><i data-ui="global.tag.netherlands">荷兰</i></button>
+                <button type="button" data-global-country="norway"><span>🇳🇴</span><i data-ui="global.tag.norway">挪威</i></button>
+                <button type="button" data-global-country="uk"><span>🇬🇧</span><i data-ui="global.tag.uk">英国</i></button>
+              </div>
+            </div>
+            <div class="global-region">
+              <div class="region-heading">
+                <span>AS</span>
+                <strong data-ui="global.region.asia">亚洲</strong>
+                <em data-ui="global.region.asia.count">6 个国家</em>
+              </div>
+              <div class="global-tags">
+                <button class="global-tag-featured" type="button" data-global-country="china"><span>🇨🇳</span><i data-ui="global.tag.china">中国</i></button>
+                <button type="button" data-global-country="india"><span>🇮🇳</span><i data-ui="global.tag.india">印度</i></button>
+                <button type="button" data-global-country="japan"><span>🇯🇵</span><i data-ui="global.tag.japan">日本</i></button>
+                <button type="button" data-global-country="philippines"><span>🇵🇭</span><i data-ui="global.tag.philippines">菲律宾</i></button>
+                <button type="button" data-global-country="singapore"><span>🇸🇬</span><i data-ui="global.tag.singapore">新加坡</i></button>
+                <button type="button" data-global-country="vietnam"><span>🇻🇳</span><i data-ui="global.tag.vietnam">越南</i></button>
+              </div>
+            </div>
+            <div class="global-region">
+              <div class="region-heading">
+                <span>OC</span>
+                <strong data-ui="global.region.oceania">大洋洲</strong>
+                <em data-ui="global.region.oceania.count">1 country</em>
+              </div>
+              <div class="global-tags">
+                <button type="button" data-global-country="australia"><span>🇦🇺</span><i data-ui="global.tag.australia">澳大利亚</i></button>
+              </div>
+            </div>
+            <div class="global-region">
+              <div class="region-heading">
+                <span>NA</span>
+                <strong data-ui="global.region.northAmerica">北美洲</strong>
+                <em data-ui="global.region.northAmerica.count">1 country</em>
+              </div>
+              <div class="global-tags">
+                <button type="button" data-global-country="us"><span>🇺🇸</span><i data-ui="global.tag.us">美国</i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-band contact" id="contact" aria-labelledby="contact-title">
+        <div class="section-inner contact-layout reveal">
+          <div>
+            <p class="eyebrow" data-ui="contact.eyebrow">CONTACT ME</p>
+            <h2 id="contact-title" data-editable data-key="contact.title">欢迎联系潜在的岗位机会</h2>
+            <p class="contact-body-note" data-editable data-key="contact.body">
+              这里可以放你的邮箱、LinkedIn、GitHub，以及你当前正在寻找的岗位类型和城市。
+            </p>
+          </div>
+          <div class="contact-panel">
+            <a href="mailto:yunweigu@outlook.com" data-editable data-key="contact.email">邮件：yunweigu@outlook.com</a>
+            <a href="https://www.linkedin.com/in/yunweig/" data-editable data-key="contact.linkedin">领英：https://www.linkedin.com/in/yunweig/</a>
+            <a href="https://github.com/yunweig23" data-editable data-key="contact.github">GitHub主页：https://github.com/yunweig23</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="project-modal" id="projectModal" aria-hidden="true">
+      <div class="project-modal-backdrop" data-project-close></div>
+      <section class="project-dialog" role="dialog" aria-modal="true" aria-labelledby="projectModalTitle">
+        <button class="project-close" type="button" data-project-close aria-label="Close">×</button>
+        <p class="project-modal-kicker" id="projectModalKicker">Project Detail</p>
+        <div class="project-modal-layout">
+          <figure class="project-modal-visual" id="projectModalVisual">
+            <img id="projectModalImage" src="" alt="Project visual" hidden />
+            <figcaption id="projectModalVisualText">Dashboard / report / screenshots to add</figcaption>
+          </figure>
+          <div class="project-modal-copy">
+            <div class="project-modal-meta" id="projectModalMeta"></div>
+            <h2 id="projectModalTitle"></h2>
+            <p id="projectModalSummary"></p>
+            <div class="tag-row project-modal-tags" id="projectModalTags"></div>
+          </div>
+        </div>
+        <div class="project-detail-grid" id="projectModalDetails"></div>
+      </section>
+    </div>
+
+    <div class="project-modal experience-modal" id="experienceModal" aria-hidden="true">
+      <div class="project-modal-backdrop" data-experience-close></div>
+      <section class="project-dialog experience-dialog" role="dialog" aria-modal="true" aria-labelledby="experienceModalTitle">
+        <button class="project-close" type="button" data-experience-close aria-label="Close">×</button>
+        <p class="project-modal-kicker" id="experienceModalKicker">Professional Experience Detail</p>
+        <div class="project-modal-layout">
+          <figure class="project-modal-visual experience-modal-visual">
+            <div class="experience-evidence-board" id="experienceEvidenceBoard" hidden></div>
+            <img id="experienceModalImage" src="" alt="Experience visual" hidden />
+            <figcaption id="experienceModalVisualText">Work materials / dashboard / photos to add</figcaption>
+          </figure>
+          <div class="project-modal-copy">
+            <div class="project-modal-meta" id="experienceModalMeta"></div>
+            <h2 id="experienceModalTitle"></h2>
+            <p id="experienceModalSummary"></p>
+          </div>
+        </div>
+        <div class="project-detail-grid experience-detail-grid" id="experienceModalDetails"></div>
+      </section>
+    </div>
+
+    <div class="credential-proof-modal" id="credentialProofModal" aria-hidden="true">
+      <div class="credential-proof-stage" role="dialog" aria-modal="true" aria-labelledby="credentialProofTitle">
+        <p class="credential-proof-kicker" data-ui="cert.proof.kicker">Credential preview</p>
+        <h2 id="credentialProofTitle" data-ui="cert.proof.title">认证照片待添加</h2>
+        <img id="credentialProofImage" src="" alt="Credential proof" hidden />
+        <p class="credential-proof-empty" id="credentialProofEmpty" data-ui="cert.proof.empty">
+          之后把成绩单照片发给我，我会把这里替换成可点击查看的大图。
+        </p>
+      </div>
+    </div>
+
+    <div class="campus-modal" id="campusModal" aria-hidden="true">
+      <div class="campus-backdrop" data-campus-close></div>
+      <section class="campus-dialog" role="dialog" aria-modal="true" aria-labelledby="campusModalTitle">
+        <button class="campus-close" type="button" data-campus-close aria-label="Close">×</button>
+        <p class="eyebrow" id="campusModalEyebrow">CAMPUS HIGHLIGHTS</p>
+        <h2 id="campusModalTitle"></h2>
+        <div class="campus-modal-body">
+          <article class="campus-story is-active" data-campus-panel="manchester">
+            <p data-editable data-key="campus.manchester.summary">
+              🎓 这里可以补充曼彻斯特硕士期间的课程项目、商业分析案例、团队汇报和求职相关活动。重点体现你如何把 Data Science 和 Business Management 结合起来。
+            </p>
+            <div class="campus-highlight-grid">
+              <div class="campus-award-card">
+                <span class="campus-award-mark">🏆</span>
+                <img class="stellify-logo" src="assets/stellify-logo.png" alt="Stellify logo" />
+                <strong data-editable data-key="campus.manchester.one.title">Stellify奖</strong>
+                <p data-editable data-key="campus.manchester.one.body">鼓励学生在学习之外参与志愿服务、领导力实践及伦理与社会责任挑战项目，沉淀更完整的个人发展能力。</p>
+              </div>
+              <div class="campus-award-card campus-photo-card">
+                <span class="campus-award-mark">🗣️</span>
+                <img class="campus-flat-photo" src="assets/campus-student-representative.png" alt="Student representative meeting highlight" />
+                <strong data-editable data-key="campus.manchester.two.title">学生代表</strong>
+                <p data-editable data-key="campus.manchester.two.body">作为本专业学生代表，收集并整理同学在学习体验、校园生活、职业发展与心理健康支持等方面的意见建议，向项目团队反馈学生需求并促进沟通改进。</p>
+              </div>
+              <div class="campus-award-card campus-photo-card">
+                <span class="campus-award-mark">💼</span>
+                <img class="campus-flat-photo campus-career-photo" src="assets/campus-career-exploration.jpg" alt="Career Connect and employer presentation highlight" />
+                <strong data-editable data-key="campus.manchester.three.title">职业探索</strong>
+                <p data-editable data-key="campus.manchester.three.body">参加学校 Career Connect 项目，与导师进行一对一 CV Review、面试辅导与求职方向咨询，并参与面向 Data Science 专业的企业宣讲会，持续完善职业定位与求职材料。</p>
+              </div>
+            </div>
+          </article>
+          <article class="campus-story" data-campus-panel="utas">
+            <p data-editable data-key="campus.utas.summary">
+              🏅 UTAS 阶段可以突出 Honours 学习、Information Systems 背景和研究训练，作为你从系统理解走向商业/数据分析的过渡证据。
+            </p>
+            <div class="campus-composite-card utas-showcase-card">
+              <div class="campus-composite-visual">
+                <img class="campus-composite-bg" src="assets/utas-graduation-scene.jpg" alt="UTAS and SHOU graduation ceremony group photo shown in full" />
+              </div>
+              <div class="campus-composite-copy">
+                <span data-editable data-key="campus.utas.hero.kicker">Honours / Recognition</span>
+                <p data-editable data-key="campus.utas.hero.body">荣获塔斯马尼亚大学2025年信息系统学士学位院长名录（Roll of Excellence），并获得最优毕业生荣誉称号。</p>
+              </div>
+            </div>
+            <div class="campus-highlight-grid">
+              <div>
+                <span>01</span>
+                <strong data-editable data-key="campus.utas.one.title">综合能力</strong>
+                <p data-editable data-key="campus.utas.one.body">在跨文化学习与小组项目中持续训练团队协作、批判性思维和主动沟通能力。</p>
+              </div>
+              <div>
+                <span>02</span>
+                <strong data-editable data-key="campus.utas.two.title">系统分析</strong>
+                <p data-editable data-key="campus.utas.two.body">学习从用户需求、业务流程和系统限制出发，描述问题并提出改进方向。</p>
+              </div>
+              <div>
+                <span>03</span>
+                <strong data-editable data-key="campus.utas.three.title">研究表达</strong>
+                <p data-editable data-key="campus.utas.three.body">通过文献综述、研究设计、数据建模与英文汇报，形成结构化分析和专业表达能力。</p>
+              </div>
+            </div>
+          </article>
+          <article class="campus-story" data-campus-panel="shou">
+            <p data-editable data-key="campus.shou.summary">
+              🌊 上海海洋大学阶段可以作为本科早期的信息管理基础，补充你对信息系统、管理流程和数据意识的起点。
+            </p>
+            <div class="campus-composite-card shou-showcase-card">
+              <div class="campus-composite-visual campus-carousel" data-campus-carousel data-carousel-delay="5000" aria-label="Shanghai Ocean University campus photo carousel">
+                <img class="campus-composite-bg campus-carousel-slide is-active" src="assets/shou-business-competition-team.jpg" alt="Shanghai Ocean University business competition team portrait" />
+                <img class="campus-composite-bg campus-carousel-slide" src="assets/shou-graduation-team-carousel.jpg" alt="Graduation group photo with classmates and teachers" />
+                <img class="campus-composite-bg campus-carousel-slide" src="assets/shou-award-carousel.jpg" alt="Graduation award photo with University of Tasmania and Shanghai Ocean University teachers" />
+                <div class="campus-carousel-dots" aria-hidden="true">
+                  <span class="is-active"></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+              <div class="campus-composite-copy">
+                <span data-editable data-key="campus.shou.hero.kicker">Competition / Leadership</span>
+                <p data-editable data-key="campus.shou.hero.body">带领7人团队参与2024年全国高校商业精英挑战赛国际贸易竞赛，获得全国特等奖、上海市一等奖。在校期间担任小班班长、爱恩学院易班工作站运营部负责人等职务。</p>
+              </div>
+            </div>
+            <div class="campus-highlight-grid">
+              <div>
+                <span>01</span>
+                <strong data-editable data-key="campus.shou.one.title">英语表达力</strong>
+                <p data-editable data-key="campus.shou.one.body">多次参与国家级、省市级英语竞赛并获奖，具备英文辩论、即兴演讲与公开表达经验。</p>
+              </div>
+              <div>
+                <span>02</span>
+                <strong data-editable data-key="campus.shou.two.title">校园运营</strong>
+                <p data-editable data-key="campus.shou.two.body">担任爱恩学院易班工作站运营部负责人，参与活动策划、组织协调与跨部门协作。</p>
+              </div>
+              <div>
+                <span>03</span>
+                <strong data-editable data-key="campus.shou.three.title">ERP实训</strong>
+                <p data-editable data-key="campus.shou.three.body">通过ERP实训理解企业资源计划、业务流程协同与信息系统在组织运营中的作用。</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </div>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="script.js"></script>
+    <script>
+      (() => {
+        const fallbackMode = !window.__baDaPortfolioPrimaryReady;
+        const body = document.body;
+        const toggle = document.getElementById("languageToggle");
+        const mapShell = document.querySelector(".world-map-shell");
+        const mapCanvas = document.querySelector(".map-canvas");
+        const popover = document.querySelector(".global-popover");
+        const levels = [1, 1.55, 2.3, 3.15];
+        // Temporarily disable the country chips below the map while keeping the code ready for later.
+        const ENABLE_GLOBAL_REGION_TAG_ACTIONS = false;
+        const state = { index: 0, scale: 1, x: 0, y: 0, dragging: false, moved: false };
+        let start = { x: 0, y: 0, mapX: 0, mapY: 0 };
+
+        function setLang(lang) {
+          body.dataset.lang = lang;
+          document.documentElement.lang = lang === "en" ? "en" : "zh-CN";
+          document.querySelectorAll("[data-ui]").forEach((node) => {
+            const key = node.dataset.ui;
+            const en = {
+              "nav.home": "Home",
+              "nav.projects": "Projects",
+              "nav.ai": "AI",
+              "nav.experience": "Experience",
+              "nav.volunteer": "Volunteer",
+              "nav.about": "About",
+              "nav.contact": "Contact",
+              "global.tag.uk": "United Kingdom",
+              "global.tag.us": "United States",
+              "global.tag.france": "France",
+              "global.tag.italy": "Italy",
+              "global.tag.vietnam": "Vietnam",
+              "global.tag.singapore": "Singapore",
+              "global.tag.australia": "Australia",
+              "global.tag.philippines": "Philippines",
+              "global.tag.india": "India",
+              "global.tag.japan": "Japan",
+              "global.tag.china": "China",
+              "global.tag.netherlands": "Netherlands",
+              "global.tag.norway": "Norway",
+              "global.tag.germany": "Germany",
+              "global.region.europe": "Europe",
+              "global.region.asia": "Asia",
+              "global.region.oceania": "Oceania",
+              "global.region.northAmerica": "North America",
+              "global.region.europe.count": "6 countries",
+              "global.region.asia.count": "6 countries",
+              "global.region.oceania.count": "1 country",
+              "global.region.northAmerica.count": "1 country",
+              "volunteer.photo.kicker": "Teamwork Snapshot",
+              "volunteer.photo.title": "Hands-on collaboration",
+              "cta.projects": "View Projects",
+              "cta.contact": "Contact"
+            };
+            const zh = {
+              "nav.home": "首页",
+              "nav.projects": "项目",
+              "nav.ai": "AI",
+              "nav.experience": "经历",
+              "nav.volunteer": "志愿者",
+              "nav.about": "关于我",
+              "nav.contact": "联系",
+              "global.tag.uk": "英国",
+              "global.tag.us": "美国",
+              "global.tag.france": "法国",
+              "global.tag.italy": "意大利",
+              "global.tag.vietnam": "越南",
+              "global.tag.singapore": "新加坡",
+              "global.tag.australia": "澳大利亚",
+              "global.tag.philippines": "菲律宾",
+              "global.tag.india": "印度",
+              "global.tag.japan": "日本",
+              "global.tag.china": "中国",
+              "global.tag.netherlands": "荷兰",
+              "global.tag.norway": "挪威",
+              "global.tag.germany": "德国",
+              "global.region.europe": "欧洲",
+              "global.region.asia": "亚洲",
+              "global.region.oceania": "大洋洲",
+              "global.region.northAmerica": "北美洲",
+              "global.region.europe.count": "6 个国家",
+              "global.region.asia.count": "6 个国家",
+              "global.region.oceania.count": "1 个国家",
+              "global.region.northAmerica.count": "1 个国家",
+              "volunteer.photo.kicker": "团队协作记录",
+              "volunteer.photo.title": "实践型协作经历",
+              "cta.projects": "查看项目",
+              "cta.contact": "联系方式"
+            };
+            node.textContent = (lang === "en" ? en : zh)[key] || node.textContent;
+          });
+        }
+
+        function clamp() {
+          if (!mapShell || state.scale <= 1) {
+            state.x = 0;
+            state.y = 0;
+            return;
+          }
+          const rect = mapShell.getBoundingClientRect();
+          state.x = Math.min(0, Math.max(rect.width * (1 - state.scale), state.x));
+          state.y = Math.min(0, Math.max(rect.height * (1 - state.scale), state.y));
+        }
+
+        function applyMap() {
+          if (!mapCanvas) return;
+          clamp();
+          mapCanvas.style.setProperty("--map-scale", state.scale.toFixed(2));
+          mapCanvas.style.setProperty("--flag-scale", (1 / state.scale).toFixed(3));
+          mapCanvas.style.setProperty("--map-x", `${state.x.toFixed(1)}px`);
+          mapCanvas.style.setProperty("--map-y", `${state.y.toFixed(1)}px`);
+        }
+
+        function positionPopover(id) {
+          const flag = document.querySelector(`.map-flag[data-global-country="${id}"]`);
+          if (!mapShell || !popover || !flag) return;
+          const margin = 16;
+          const gap = 24;
+          const shellRect = mapShell.getBoundingClientRect();
+          const flagRect = flag.getBoundingClientRect();
+          const popoverRect = popover.getBoundingClientRect();
+          const anchorX = flagRect.left - shellRect.left + flagRect.width / 2;
+          const anchorY = flagRect.top - shellRect.top + flagRect.height / 2;
+          const popoverWidth = Math.min(popoverRect.width || 360, shellRect.width - margin * 2);
+          const popoverHeight = popoverRect.height || 190;
+          let side = "right";
+          let x = anchorX + gap;
+          let y = anchorY - popoverHeight / 2;
+          if (x + popoverWidth > shellRect.width - margin) {
+            side = "left";
+            x = anchorX - popoverWidth - gap;
+          }
+          x = Math.max(margin, Math.min(shellRect.width - popoverWidth - margin, x));
+          y = Math.max(margin, Math.min(shellRect.height - popoverHeight - margin, y));
+          popover.style.setProperty("--popover-x", `${x.toFixed(1)}px`);
+          popover.style.setProperty("--popover-y", `${y.toFixed(1)}px`);
+          popover.dataset.side = side;
+        }
+
+        function showCountry(id) {
+          document.querySelectorAll("[data-global-country]").forEach((node) => node.classList.toggle("is-active", node.dataset.globalCountry === id));
+          document.querySelectorAll("[data-global-detail]").forEach((node) => node.classList.toggle("is-active", node.dataset.globalDetail === id));
+          popover?.classList.add("is-visible");
+          positionPopover(id);
+          requestAnimationFrame(() => positionPopover(id));
+        }
+
+        function focusCountry(id) {
+          const flag = document.querySelector(`.map-flag[data-global-country="${id}"]`);
+          if (!mapShell || !flag) return;
+          const rect = mapShell.getBoundingClientRect();
+          state.index = ["uk", "france", "netherlands", "germany", "italy", "norway"].includes(id) ? 3 : 2;
+          state.scale = levels[state.index];
+          state.x = rect.width / 2 - flag.offsetLeft * state.scale;
+          state.y = rect.height / 2 - flag.offsetTop * state.scale;
+          applyMap();
+          showCountry(id);
+          setTimeout(() => positionPopover(id), 380);
+          mapShell.scrollIntoView({ behavior: "smooth", block: "center" });
+        }
+
+        function zoom(mode, event) {
+          if (!mapShell) return;
+          const rect = mapShell.getBoundingClientRect();
+          const fx = event ? event.clientX - rect.left : rect.width / 2;
+          const fy = event ? event.clientY - rect.top : rect.height / 2;
+          const mx = (fx - state.x) / state.scale;
+          const my = (fy - state.y) / state.scale;
+          if (mode === "in") state.index = Math.min(state.index + 1, levels.length - 1);
+          else if (mode === "out") state.index = Math.max(state.index - 1, 0);
+          else state.index = 0;
+          state.scale = levels[state.index];
+          state.x = mode === "reset" ? 0 : fx - mx * state.scale;
+          state.y = mode === "reset" ? 0 : fy - my * state.scale;
+          applyMap();
+        }
+
+        if (fallbackMode) {
+          toggle?.addEventListener("click", (event) => {
+            event.preventDefault();
+            setLang(body.dataset.lang === "en" ? "zh" : "en");
+          });
+        }
+
+        document.addEventListener("click", (event) => {
+          const country = event.target.closest("[data-global-country]");
+          if (country) {
+            event.preventDefault();
+            if (!ENABLE_GLOBAL_REGION_TAG_ACTIONS && country.closest(".global-region-list")) {
+              popover?.classList.remove("is-visible");
+              document.querySelectorAll("[data-global-country]").forEach((node) => node.classList.remove("is-active"));
+              country.blur?.();
+              return;
+            }
+            focusCountry(country.dataset.globalCountry);
+            return;
+          }
+          const control = event.target.closest("[data-map-control]");
+          if (control) {
+            event.preventDefault();
+            zoom(control.dataset.mapControl, event);
+          }
+        });
+
+        if (mapShell) {
+          mapShell.addEventListener("click", (event) => {
+            if (event.target.closest("[data-global-country], [data-map-control], .global-popover")) return;
+            if (state.moved) {
+              state.moved = false;
+              return;
+            }
+            popover?.classList.remove("is-visible");
+            zoom("in", event);
+          });
+          mapShell.addEventListener("pointerdown", (event) => {
+            if (event.target.closest("[data-global-country], [data-map-control], .global-popover")) return;
+            state.dragging = true;
+            state.moved = false;
+            start = { x: event.clientX, y: event.clientY, mapX: state.x, mapY: state.y };
+            mapShell.classList.add("is-dragging");
+          });
+          document.addEventListener("pointermove", (event) => {
+            if (!state.dragging || state.scale <= 1) return;
+            const dx = event.clientX - start.x;
+            const dy = event.clientY - start.y;
+            state.moved = Math.abs(dx) + Math.abs(dy) > 5;
+            state.x = start.mapX + dx;
+            state.y = start.mapY + dy;
+            applyMap();
+          });
+          document.addEventListener("pointerup", () => {
+            state.dragging = false;
+            mapShell.classList.remove("is-dragging");
+          });
+          mapShell.addEventListener("wheel", (event) => {
+            event.preventDefault();
+            zoom(event.deltaY < 0 ? "in" : "out", event);
+          }, { passive: false });
+        }
+
+        if (fallbackMode) setLang(body.dataset.lang || "zh");
+      })();
+    </script>
+  </body>
+</html>

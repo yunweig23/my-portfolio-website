@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 520" role="img" aria-label="Animated pedestrian flow from Manchester Piccadilly and Manchester Victoria to Oxford Road corridor hotspots">
+  <defs>
+    <linearGradient id="piccadillyFlow" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0" stop-color="#1f5f8f"/>
+      <stop offset="1" stop-color="#1f766c"/>
+    </linearGradient>
+    <linearGradient id="victoriaFlow" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0" stop-color="#8f3f5c"/>
+      <stop offset="1" stop-color="#1f766c"/>
+    </linearGradient>
+    <linearGradient id="corridorWash" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#f8fbfb" stop-opacity=".94"/>
+      <stop offset="1" stop-color="#e7f0ed" stop-opacity=".76"/>
+    </linearGradient>
+    <filter id="softGlow" x="-35%" y="-35%" width="170%" height="170%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <style>
+      .boundary { fill: url(#corridorWash); stroke: #cfdfe5; stroke-width: 1.2; }
+      .street { fill: none; stroke: #d7e2e6; stroke-width: 1.6; opacity: .92; }
+      .minor-street { fill: none; stroke: #e5ecef; stroke-width: 1; opacity: .78; }
+      .corridor { fill: none; stroke: #b68858; stroke-width: 8; stroke-linecap: round; opacity: .22; }
+      .corridor-line { fill: none; stroke: #b77a45; stroke-width: 2; stroke-linecap: round; stroke-dasharray: 9 10; opacity: .55; }
+      .flow { fill: none; stroke-linecap: round; stroke-dasharray: 12 18; animation: flowDash 2.45s linear infinite; filter: url(#softGlow); }
+      .flow.pic { stroke: url(#piccadillyFlow); }
+      .flow.vic { stroke: url(#victoriaFlow); animation-duration: 2.9s; }
+      .flow-shadow { fill: none; stroke: #123347; stroke-linecap: round; opacity: .08; }
+      .node { fill: #fff; stroke: #cadce3; stroke-width: 2; filter: drop-shadow(0 8px 16px rgba(22,48,64,.16)); }
+      .hub { fill: #17364a; }
+      .cluster { fill: #fdfefe; stroke: #bcd5dc; stroke-width: 2; }
+      .label-bg { fill: rgba(255,255,255,.9); stroke: #d6e3e8; stroke-width: 1.1; }
+      .label { font: 750 15px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #17364a; }
+      .small { font: 650 12px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #687986; }
+      .metric { font: 800 13px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #8f3f5c; }
+      .chip { fill: rgba(255,255,255,.88); stroke: #d4e1e7; stroke-width: 1.4; filter: drop-shadow(0 12px 20px rgba(22,48,64,.08)); }
+      .legend-title { font: 850 18px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #174465; }
+      .title-main { font: 850 17px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #17364a; }
+      .title-sub { font: 700 12px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #687986; }
+      .pulse { transform-origin: center; animation: pulse 2.4s ease-in-out infinite; }
+      @keyframes flowDash {
+        from { stroke-dashoffset: 0; }
+        to { stroke-dashoffset: -60; }
+      }
+      @keyframes pulse {
+        0%, 100% { opacity: .74; transform: scale(1); }
+        50% { opacity: 1; transform: scale(1.08); }
+      }
+    </style>
+  </defs>
+
+  <rect class="boundary" x="76" y="70" width="608" height="382" rx="34"/>
+
+  <!-- Approximate central Manchester street structure: Victoria north-west, Piccadilly east/south-east, Oxford Road corridor southbound. -->
+  <g>
+    <path class="minor-street" d="M116 128 C180 110 252 116 308 150 S425 182 520 158 S636 126 674 158"/>
+    <path class="minor-street" d="M112 404 C184 352 257 354 338 386 S514 434 666 376"/>
+    <path class="minor-street" d="M106 248 C182 212 286 214 382 244 S538 288 672 246"/>
+    <path class="minor-street" d="M188 86 C206 150 210 228 196 302 S180 393 218 444"/>
+    <path class="minor-street" d="M560 92 C538 158 546 220 594 284 S652 386 638 444"/>
+    <path class="street" d="M226 156 C286 180 352 202 414 214 S528 222 604 188"/>
+    <path class="street" d="M176 260 C248 238 330 246 400 278 S508 326 626 304"/>
+    <path class="street" d="M230 364 C310 336 402 346 492 388 S620 420 670 390"/>
+    <path class="street" d="M330 100 C318 168 338 232 382 288 S436 378 430 446"/>
+  </g>
+
+  <path class="corridor" d="M330 166 C350 222 356 277 374 330 S405 394 426 438"/>
+  <path class="corridor-line" d="M330 166 C350 222 356 277 374 330 S405 394 426 438"/>
+
+  <g>
+    <path class="flow-shadow" stroke-width="12" d="M580 346 C500 362 440 392 426 438"/>
+    <path class="flow pic" stroke-width="9.4" d="M580 346 C500 362 440 392 426 438"/>
+    <path class="flow-shadow" stroke-width="7.2" d="M580 346 C500 324 434 306 382 292"/>
+    <path class="flow pic" stroke-width="6" d="M580 346 C500 324 434 306 382 292"/>
+    <path class="flow-shadow" stroke-width="4.6" d="M580 346 C488 346 408 342 354 334"/>
+    <path class="flow pic" stroke-width="3.7" d="M580 346 C488 346 408 342 354 334"/>
+    <path class="flow-shadow" stroke-width="4.4" d="M580 346 C472 304 378 244 334 214"/>
+    <path class="flow pic" stroke-width="3.5" d="M580 346 C472 304 378 244 334 214"/>
+
+    <path class="flow-shadow" stroke-width="8" d="M214 134 C286 212 360 310 426 438"/>
+    <path class="flow vic" stroke-width="6" d="M214 134 C286 212 360 310 426 438"/>
+    <path class="flow-shadow" stroke-width="5.4" d="M214 134 C286 184 340 230 382 292"/>
+    <path class="flow vic" stroke-width="4.3" d="M214 134 C286 184 340 230 382 292"/>
+    <path class="flow-shadow" stroke-width="4.2" d="M214 134 C280 208 318 270 354 334"/>
+    <path class="flow vic" stroke-width="3.2" d="M214 134 C280 208 318 270 354 334"/>
+    <path class="flow-shadow" stroke-width="4" d="M214 134 C258 152 302 182 334 214"/>
+    <path class="flow vic" stroke-width="3" d="M214 134 C258 152 302 182 334 214"/>
+  </g>
+
+  <g>
+    <circle class="node pulse" cx="580" cy="346" r="31"/>
+    <circle class="hub" cx="580" cy="346" r="8"/>
+    <rect class="label-bg" x="500" y="374" width="178" height="30" rx="15"/>
+    <text class="label" x="516" y="394">Manchester Piccadilly</text>
+
+    <circle class="node pulse" cx="214" cy="134" r="31"/>
+    <circle class="hub" cx="214" cy="134" r="8"/>
+    <rect class="label-bg" x="144" y="82" width="174" height="30" rx="15"/>
+    <text class="label" x="160" y="102">Manchester Victoria</text>
+  </g>
+
+  <g>
+    <circle class="cluster" cx="426" cy="438" r="34"/>
+    <rect class="label-bg" x="450" y="424" width="142" height="46" rx="18"/>
+    <text class="label" x="466" y="443">UoM / MRI</text>
+    <text class="metric" x="466" y="461">8,929/day</text>
+
+    <circle class="cluster" cx="382" cy="292" r="31"/>
+    <rect class="label-bg" x="405" y="274" width="152" height="46" rx="18"/>
+    <text class="label" x="421" y="293">Circle Square</text>
+    <text class="metric" x="421" y="311">5,120/day</text>
+
+    <circle class="cluster" cx="354" cy="334" r="27"/>
+    <rect class="label-bg" x="206" y="318" width="126" height="44" rx="18"/>
+    <text class="label" x="222" y="337">RNCM</text>
+    <text class="metric" x="222" y="355">1,815/day</text>
+
+    <circle class="cluster" cx="334" cy="214" r="27"/>
+    <rect class="label-bg" x="180" y="194" width="134" height="46" rx="18"/>
+    <text class="label" x="196" y="213">MMU North</text>
+    <text class="metric" x="196" y="231">1,651/day</text>
+  </g>
+
+  <g>
+    <rect class="chip" x="166" y="478" width="428" height="38" rx="19"/>
+    <text class="legend-title" x="215" y="493">17,515 added pedestrians/day</text>
+    <text class="small" x="215" y="510">Piccadilly + Victoria → Oxford Road corridor hotspots</text>
+  </g>
+</svg>

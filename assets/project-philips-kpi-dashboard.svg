@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" role="img" aria-labelledby="title desc">
+  <title id="title">Power BI style KPI dashboard illustration</title>
+  <desc id="desc">Transparent dashboard illustration with KPI cards, bar charts, trend line and filter chips.</desc>
+  <defs>
+    <linearGradient id="barGradient" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#2d6e9f"/>
+      <stop offset="1" stop-color="#24706d"/>
+    </linearGradient>
+    <linearGradient id="goldGradient" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#f6d44f"/>
+      <stop offset="1" stop-color="#f2b705"/>
+    </linearGradient>
+    <linearGradient id="panelStroke" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#d8e4ec"/>
+      <stop offset="1" stop-color="#bfd2df"/>
+    </linearGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="20" stdDeviation="18" flood-color="#123348" flood-opacity=".16"/>
+    </filter>
+    <filter id="smallShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#123348" flood-opacity=".12"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#softShadow)">
+    <rect x="78" y="58" width="744" height="444" rx="28" fill="#fffefa" fill-opacity=".86" stroke="url(#panelStroke)" stroke-width="2"/>
+    <rect x="78" y="58" width="744" height="62" rx="28" fill="#f8fbfa" fill-opacity=".92"/>
+    <line x1="78" y1="120" x2="822" y2="120" stroke="#e7ecec" stroke-width="2"/>
+    <circle cx="114" cy="90" r="7" fill="#9a4058"/>
+    <circle cx="138" cy="90" r="7" fill="#c37a3d"/>
+    <circle cx="162" cy="90" r="7" fill="#24706d"/>
+    <text x="648" y="96" fill="#6d7d8b" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="800">IT KPI Dashboard</text>
+  </g>
+
+  <g filter="url(#smallShadow)">
+    <rect x="116" y="154" width="178" height="86" rx="16" fill="#ffffff" fill-opacity=".94" stroke="#dde8ef"/>
+    <text x="138" y="185" fill="#788697" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="760">Billing Cycle</text>
+    <text x="138" y="222" fill="#17384e" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="860">-36%</text>
+    <path d="M242 216h34" stroke="#24706d" stroke-width="8" stroke-linecap="round"/>
+  </g>
+
+  <g filter="url(#smallShadow)">
+    <rect x="318" y="154" width="178" height="86" rx="16" fill="#ffffff" fill-opacity=".94" stroke="#dde8ef"/>
+    <text x="340" y="185" fill="#788697" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="760">Compliance</text>
+    <text x="340" y="222" fill="#17384e" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="860">100%</text>
+    <circle cx="458" cy="207" r="18" fill="url(#goldGradient)"/>
+    <path d="M449 207l7 7 15-18" fill="none" stroke="#17384e" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <g filter="url(#smallShadow)">
+    <rect x="520" y="154" width="178" height="86" rx="16" fill="#ffffff" fill-opacity=".94" stroke="#dde8ef"/>
+    <text x="542" y="185" fill="#788697" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="760">Reporting Cycle</text>
+    <text x="542" y="222" fill="#17384e" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="860">-18%</text>
+    <path d="M652 217c16-20 24-12 34-32" fill="none" stroke="#9a4058" stroke-width="5" stroke-linecap="round"/>
+  </g>
+
+  <g filter="url(#smallShadow)">
+    <rect x="116" y="268" width="420" height="174" rx="18" fill="#ffffff" fill-opacity=".94" stroke="#dde8ef"/>
+    <text x="140" y="306" fill="#17384e" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="840">Monthly IT KPI Trend</text>
+    <line x1="142" y1="394" x2="504" y2="394" stroke="#edf1f1" stroke-width="2"/>
+    <line x1="142" y1="352" x2="504" y2="352" stroke="#edf1f1" stroke-width="2"/>
+    <line x1="142" y1="310" x2="504" y2="310" stroke="#edf1f1" stroke-width="2"/>
+    <rect x="160" y="352" width="40" height="42" rx="8" fill="url(#barGradient)"/>
+    <rect x="220" y="326" width="40" height="68" rx="8" fill="url(#barGradient)"/>
+    <rect x="280" y="342" width="40" height="52" rx="8" fill="url(#barGradient)"/>
+    <rect x="340" y="300" width="40" height="94" rx="8" fill="url(#barGradient)"/>
+    <rect x="400" y="318" width="40" height="76" rx="8" fill="url(#barGradient)"/>
+    <rect x="460" y="286" width="40" height="108" rx="8" fill="url(#barGradient)"/>
+    <path d="M160 350c60-38 102-14 160-44s94 6 160-50" fill="none" stroke="#f2c811" stroke-width="6" stroke-linecap="round"/>
+  </g>
+
+  <g filter="url(#smallShadow)">
+    <rect x="568" y="268" width="238" height="174" rx="18" fill="#ffffff" fill-opacity=".94" stroke="#dde8ef"/>
+    <text x="592" y="306" fill="#17384e" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="840">Supplier Score</text>
+    <circle cx="688" cy="369" r="58" fill="none" stroke="#edf1f1" stroke-width="18"/>
+    <circle cx="688" cy="369" r="58" fill="none" stroke="#f2c811" stroke-width="18" stroke-linecap="round" stroke-dasharray="274 90" transform="rotate(-90 688 369)"/>
+    <text x="654" y="380" fill="#17384e" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="880">96.7</text>
+    <text x="720" y="380" fill="#788697" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="760">%</text>
+  </g>
+
+  <g>
+    <rect x="122" y="466" width="124" height="34" rx="17" fill="#ffffff" fill-opacity=".88" stroke="#d7e3eb"/>
+    <text x="146" y="488" fill="#17384e" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="780">Power BI</text>
+    <rect x="260" y="466" width="132" height="34" rx="17" fill="#ffffff" fill-opacity=".88" stroke="#d7e3eb"/>
+    <text x="284" y="488" fill="#17384e" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="780">KPI Design</text>
+    <rect x="406" y="466" width="168" height="34" rx="17" fill="#ffffff" fill-opacity=".88" stroke="#d7e3eb"/>
+    <text x="430" y="488" fill="#17384e" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="780">Process Insight</text>
+  </g>
+</svg>

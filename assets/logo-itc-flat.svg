@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 160" role="img" aria-labelledby="title">
+  <title id="title">ITC</title>
+  <rect width="360" height="160" fill="none"/>
+  <g transform="translate(42 52)">
+    <path d="M34 0 62 12 78 40 66 70 34 82 8 66 0 38 14 12z" fill="#b84a39"/>
+    <path d="M34 0 62 12 35 40 14 12z" fill="#d2604a"/>
+    <path d="M35 40 78 40 66 70z" fill="#8c2d27"/>
+    <path d="M35 40 66 70 34 82 8 66z" fill="#74302b"/>
+    <path d="M35 40 62 12 78 40z" fill="#a53e31"/>
+    <path d="M35 40 8 66 0 38 14 12z" fill="#c8503f"/>
+    <path d="M35 40 34 0 14 12z" fill="#c95542"/>
+  </g>
+  <circle cx="159" cy="51" r="10" fill="#050607"/>
+  <text x="145" y="115"
+    font-family="Avenir Next, Arial Rounded MT Bold, Arial, Helvetica, sans-serif"
+    font-size="94"
+    font-weight="800"
+    letter-spacing="-4"
+    fill="#050607">itc</text>
+</svg>
