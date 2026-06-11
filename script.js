@@ -279,6 +279,26 @@
     "project.11.detail.two.body": "Applies topological data analysis methods to identify high-dimensional indicator structures and compare similarities and differences across LADs.",
     "project.11.detail.three.title": "Analytical Output",
     "project.11.detail.three.body": "Based on dimensional decomposition, topological clustering, and regional visualisation, the analysis concludes that UK gender inequality cannot be explained by the North-South divide alone and requires place-based policy responses.",
+    "project.12.type": "GIS Mapping & Protected Area Management",
+    "project.12.time": "December 2024",
+    "project.12.title": "Lamington National Park Protected Area Management & Endangered Species Spatial Analysis",
+    "project.12.body":
+      "Analysed Lamington National Park in Queensland, Australia through QGIS mapping, protected-area management frameworks, and evidence-based review, covering park boundaries, ecological value, endangered species distribution, management threats, and climate adaptation responses.",
+    "project.12.tag.one": "QGIS",
+    "project.12.tag.two": "Protected Area Management",
+    "project.12.tag.three": "Spatial Analysis",
+    "project.12.tag.four": "Climate Adaptation",
+    "project.12.detail.one.title": "Project Context",
+    "project.12.detail.one.body":
+      "Focused on Lamington National Park as part of the Gondwana Rainforests of Australia World Heritage Area, reviewing its ecological value, IUCN Category II national park classification, and conservation management objectives.",
+    "project.12.detail.two.title": "GIS Mapping",
+    "project.12.detail.two.body":
+      "Used QGIS to combine park boundaries, road networks, urban footprint, vegetation cover, and endangered species records into a spatial map showing conservation priorities and nearby human-activity pressures.",
+    "project.12.detail.three.title": "Management Analysis",
+    "project.12.detail.three.body":
+      "Evaluated long-term management threats including invasive species, bushfire, tourism pressure, and climate change, then linked regulatory, economic, and voluntary instruments to policy, community, and scientific monitoring responses.",
+    "project.12.detail.four.title": "Tools & Skills",
+    "project.12.detail.four.body": "QGIS mapping / spatial data analysis / protected area management / climate adaptation strategy",
     "ai.title": "AI Workflow",
     "ai.workflow.title": "My AI-assisted analysis workflow",
     "ai.step.one.title": "Problem Definition",
@@ -1193,6 +1213,15 @@
       imageFit: "contain",
       hideMeta: true,
     },
+    {
+      id: 12,
+      category: "analytics",
+      year: 202412,
+      image: "assets/project-lamington-national-park-map.webp",
+      imageFit: "contain",
+      imageRatio: "4-3",
+      hideMeta: true,
+    },
   ];
 
   function projectContent(content, id, key) {
@@ -1544,8 +1573,8 @@
           </article>
         </div>`;
     }
-    if (project.id !== 11) return "";
-    return `
+    if (project.id === 11) {
+      return `
         <div class="project-detail-source" hidden>
           <article>
             <span>01</span>
@@ -1566,6 +1595,51 @@
             <img src="assets/project-gender-tda-uk-map-cutout.png" alt="UK local authority district gender equality map" />
           </article>
         </div>`;
+    }
+    if (project.id === 12) {
+      return `
+        <div class="project-detail-source" hidden>
+          <article>
+            <span>01</span>
+            <h3 data-editable data-key="project.12.detail.one.title">${projectContent(content, 12, "detail.one.title")}</h3>
+            <p data-editable data-key="project.12.detail.one.body">${projectContent(content, 12, "detail.one.body")}</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3 data-editable data-key="project.12.detail.two.title">${projectContent(content, 12, "detail.two.title")}</h3>
+            <p data-editable data-key="project.12.detail.two.body">${projectContent(content, 12, "detail.two.body")}</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3 data-editable data-key="project.12.detail.three.title">${projectContent(content, 12, "detail.three.title")}</h3>
+            <p data-editable data-key="project.12.detail.three.body">${projectContent(content, 12, "detail.three.body")}</p>
+          </article>
+          <article class="project-detail-tool-card">
+            <span>04</span>
+            <h3 data-editable data-key="project.12.detail.four.title">${projectContent(content, 12, "detail.four.title")}</h3>
+            <div class="tool-code-panel" aria-hidden="true">
+              <div>
+                <b>QGIS</b>
+                <em>spatial mapping</em>
+              </div>
+              <div>
+                <b>GIS</b>
+                <em>layer integration</em>
+              </div>
+              <div>
+                <b>framework</b>
+                <em>threat review</em>
+              </div>
+              <div>
+                <b>reporting</b>
+                <em>strategy output</em>
+              </div>
+            </div>
+            <p data-editable data-key="project.12.detail.four.body">${projectContent(content, 12, "detail.four.body")}</p>
+          </article>
+        </div>`;
+    }
+    return "";
   }
 
   function projectCardTemplate(project, content) {
@@ -2840,6 +2914,44 @@ sql_draft:
       "基于维度分解、拓扑聚类与区域可视化，得出性别不平等不能仅由南北经济差异解释，政策应面向不同空间集群进行地方化干预。",
     );
     ensureContent(zh, "project.11.detail.three.body", "基于维度分解、拓扑聚类与区域可视化，得出性别不平等不能仅由南北经济差异解释，政策应面向不同空间集群进行地方化干预。");
+    migratePlaceholder(zh, "project.12.type", ["GIS制图与保护地管理"], "数据分析与商业智能");
+    ensureContent(zh, "project.12.type", "数据分析与商业智能");
+    ensureContent(zh, "project.12.time", "2024.12");
+    ensureContent(zh, "project.12.title", "拉明顿国家公园保护地管理与濒危物种空间分析");
+    migratePlaceholder(
+      zh,
+      "project.12.body",
+      ["围绕澳大利亚昆士兰州 Lamington National Park，结合 QGIS 制图、保护地管理框架与文献证据，分析公园边界、生态价值、濒危物种分布、管理威胁与气候变化适应策略。"],
+      "围绕澳大利亚昆士兰州拉明顿国家公园，结合 QGIS 制图、保护地管理框架与文献证据，分析公园边界、生态价值、濒危物种分布、管理威胁与气候变化适应策略。",
+    );
+    ensureContent(zh, "project.12.body", "围绕澳大利亚昆士兰州拉明顿国家公园，结合 QGIS 制图、保护地管理框架与文献证据，分析公园边界、生态价值、濒危物种分布、管理威胁与气候变化适应策略。");
+    ensureContent(zh, "project.12.tag.one", "QGIS");
+    migratePlaceholder(zh, "project.12.tag.two", ["Protected Area Management"], "保护地管理");
+    migratePlaceholder(zh, "project.12.tag.three", ["Spatial Analysis"], "空间分析");
+    migratePlaceholder(zh, "project.12.tag.four", ["Climate Adaptation"], "气候适应");
+    ensureContent(zh, "project.12.tag.two", "保护地管理");
+    ensureContent(zh, "project.12.tag.three", "空间分析");
+    ensureContent(zh, "project.12.tag.four", "气候适应");
+    ensureContent(zh, "project.12.detail.one.title", "项目背景");
+    migratePlaceholder(
+      zh,
+      "project.12.detail.one.body",
+      ["以 Lamington National Park 为研究对象，梳理其作为 Gondwana Rainforests of Australia World Heritage Area 组成部分的生态价值、IUCN Category II 国家公园定位与管理目标。"],
+      "以拉明顿国家公园为研究对象，梳理其作为澳大利亚冈瓦纳雨林世界遗产区域组成部分的生态价值、国际自然保护联盟第二类国家公园定位与管理目标。",
+    );
+    ensureContent(zh, "project.12.detail.one.body", "以拉明顿国家公园为研究对象，梳理其作为澳大利亚冈瓦纳雨林世界遗产区域组成部分的生态价值、国际自然保护联盟第二类国家公园定位与管理目标。");
+    ensureContent(zh, "project.12.detail.two.title", "GIS制图");
+    migratePlaceholder(
+      zh,
+      "project.12.detail.two.body",
+      ["使用 QGIS 整合国家公园边界、道路、城市足迹、植被覆盖与濒危物种记录，制作 Lamington National Park 濒危物种空间分布地图，突出保护对象与周边人类活动压力。"],
+      "使用 QGIS 整合国家公园边界、道路、城市足迹、植被覆盖与濒危物种记录，制作拉明顿国家公园濒危物种空间分布地图，突出保护对象与周边人类活动压力。",
+    );
+    ensureContent(zh, "project.12.detail.two.body", "使用 QGIS 整合国家公园边界、道路、城市足迹、植被覆盖与濒危物种记录，制作拉明顿国家公园濒危物种空间分布地图，突出保护对象与周边人类活动压力。");
+    ensureContent(zh, "project.12.detail.three.title", "管理分析");
+    ensureContent(zh, "project.12.detail.three.body", "从入侵物种、林火、旅游活动与气候变化等维度评估长期管理威胁，并结合监管、经济与自愿型管理工具，提出面向气候变化的政策、社区参与和科学监测建议。");
+    ensureContent(zh, "project.12.detail.four.title", "工具与能力");
+    ensureContent(zh, "project.12.detail.four.body", "QGIS 制图 / 空间数据分析 / 保护地管理 / 气候适应策略");
     migratePlaceholder(zh, "about.skill.one", ["需求拆解"], "需求分析");
     migratePlaceholder(zh, "about.skill.two", ["SQL / 数据清洗"], "SQL / NoSQL");
     migratePlaceholder(zh, "about.skill.three", ["Python 分析", "Python 数据分析"], "Python");
@@ -3502,6 +3614,22 @@ sql_draft:
       "Based on dimensional decomposition, topological clustering, and regional visualisation, the analysis concludes that UK gender inequality cannot be explained by the North-South divide alone and requires place-based policy responses.",
     );
     ensureContent(en, "project.11.detail.three.body", "Based on dimensional decomposition, topological clustering, and regional visualisation, the analysis concludes that UK gender inequality cannot be explained by the North-South divide alone and requires place-based policy responses.");
+    ensureContent(en, "project.12.type", "GIS Mapping & Protected Area Management");
+    ensureContent(en, "project.12.time", "December 2024");
+    ensureContent(en, "project.12.title", "Lamington National Park Protected Area Management & Endangered Species Spatial Analysis");
+    ensureContent(en, "project.12.body", "Analysed Lamington National Park in Queensland, Australia through QGIS mapping, protected-area management frameworks, and evidence-based review, covering park boundaries, ecological value, endangered species distribution, management threats, and climate adaptation responses.");
+    ensureContent(en, "project.12.tag.one", "QGIS");
+    ensureContent(en, "project.12.tag.two", "Protected Area Management");
+    ensureContent(en, "project.12.tag.three", "Spatial Analysis");
+    ensureContent(en, "project.12.tag.four", "Climate Adaptation");
+    ensureContent(en, "project.12.detail.one.title", "Project Context");
+    ensureContent(en, "project.12.detail.one.body", "Focused on Lamington National Park as part of the Gondwana Rainforests of Australia World Heritage Area, reviewing its ecological value, IUCN Category II national park classification, and conservation management objectives.");
+    ensureContent(en, "project.12.detail.two.title", "GIS Mapping");
+    ensureContent(en, "project.12.detail.two.body", "Used QGIS to combine park boundaries, road networks, urban footprint, vegetation cover, and endangered species records into a spatial map showing conservation priorities and nearby human-activity pressures.");
+    ensureContent(en, "project.12.detail.three.title", "Management Analysis");
+    ensureContent(en, "project.12.detail.three.body", "Evaluated long-term management threats including invasive species, bushfire, tourism pressure, and climate change, then linked regulatory, economic, and voluntary instruments to policy, community, and scientific monitoring responses.");
+    ensureContent(en, "project.12.detail.four.title", "Tools & Skills");
+    ensureContent(en, "project.12.detail.four.body", "QGIS mapping / spatial data analysis / protected area management / climate adaptation strategy");
     migratePlaceholder(en, "about.skill.one", ["Requirement Framing"], "Requirements Analysis");
     migratePlaceholder(en, "about.skill.two", ["SQL / Data Cleaning"], "SQL / NoSQL");
     migratePlaceholder(en, "about.skill.three", ["Python Analysis", "Python Analytics"], "Python");
@@ -4327,4 +4455,151 @@ sql_draft:
     console.error("Interaction initialization failed:", error);
     body.classList.remove("js-enhanced");
   }
+})();
+
+
+(() => {
+  const root = document.querySelector("[data-guestbook]");
+  if (!root) return;
+
+  const fab = root.querySelector(".guestbook-fab");
+  const panel = root.querySelector(".guestbook-panel");
+  const closeButton = root.querySelector(".guestbook-close");
+  const form = root.querySelector("[data-guestbook-form]");
+  const track = root.querySelector("[data-guestbook-track]");
+  const status = root.querySelector("[data-guestbook-status]");
+  const submitButton = form?.querySelector('button[type="submit"]');
+  const configuredApiBase =
+    window.GUESTBOOK_API_BASE ||
+    document.querySelector('meta[name="guestbook-api-base"]')?.content?.trim() ||
+    "";
+  const API_BASE = configuredApiBase || (window.location.protocol === "file:" ? "http://127.0.0.1:8800" : "");
+
+  const text = {
+    zh: {
+      loading: "正在载入留言...",
+      empty: "还没有通过审核的留言。你可以成为第一个。",
+      offline: "留言后端还没有启动。请先运行 server.py，再用 http://127.0.0.1:8800/index.html 打开网站。",
+      success: "留言已提交，审核通过后会显示在这里。",
+      error: "提交失败，请稍后再试。",
+      required: "请填写姓名和留言。",
+      sending: "正在提交...",
+    },
+    en: {
+      loading: "Loading notes...",
+      empty: "No approved notes yet. You can be the first.",
+      offline: "Guestbook backend is not running. Start server.py, then open http://127.0.0.1:8800/index.html.",
+      success: "Your note has been submitted and will appear after review.",
+      error: "Could not submit. Please try again later.",
+      required: "Please add your name and message.",
+      sending: "Submitting...",
+    },
+  };
+
+  function lang() {
+    return document.body.dataset.lang === "en" ? "en" : "zh";
+  }
+
+  function setStatus(message, tone = "muted") {
+    if (!status) return;
+    status.textContent = message;
+    status.dataset.tone = tone;
+  }
+
+  function apiUrl(path) {
+    return `${API_BASE}${path}`;
+  }
+
+  function trimMessage(message) {
+    return message.length > 72 ? `${message.slice(0, 72)}...` : message;
+  }
+
+  function renderMessages(messages) {
+    if (!track) return;
+    track.innerHTML = "";
+    if (!messages.length) {
+      const empty = document.createElement("div");
+      empty.className = "guestbook-empty";
+      empty.textContent = text[lang()].empty;
+      track.appendChild(empty);
+      return;
+    }
+
+    messages.slice(0, 18).forEach((item, index) => {
+      const note = document.createElement("article");
+      note.className = "guestbook-note";
+      note.style.setProperty("--row", String(index % 4));
+      note.style.setProperty("--duration", `${22 + (index % 5) * 4}s`);
+      note.style.setProperty("--delay", `${-(index * 3)}s`);
+      const name = document.createElement("b");
+      name.textContent = item.name || "Guest";
+      const body = document.createElement("span");
+      body.textContent = trimMessage(item.message || "");
+      note.append(name, body);
+      track.appendChild(note);
+    });
+  }
+
+  async function loadMessages() {
+    setStatus(text[lang()].loading);
+    try {
+      const response = await fetch(apiUrl("/api/messages"), { headers: { Accept: "application/json" } });
+      if (!response.ok) throw new Error("API unavailable");
+      const data = await response.json();
+      renderMessages(data.messages || []);
+      setStatus("");
+    } catch (error) {
+      renderMessages([]);
+      setStatus(text[lang()].offline, "warn");
+    }
+  }
+
+  function setOpen(isOpen) {
+    root.classList.toggle("is-open", isOpen);
+    fab?.setAttribute("aria-expanded", String(isOpen));
+    panel?.setAttribute("aria-hidden", String(!isOpen));
+    if (isOpen) loadMessages();
+  }
+
+  fab?.addEventListener("click", () => setOpen(!root.classList.contains("is-open")));
+  closeButton?.addEventListener("click", () => setOpen(false));
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && root.classList.contains("is-open")) setOpen(false);
+  });
+
+  form?.addEventListener("submit", async (event) => {
+    event.preventDefault();
+    const formData = new FormData(form);
+    const payload = {
+      name: String(formData.get("name") || "").trim(),
+      contact: String(formData.get("contact") || "").trim(),
+      message: String(formData.get("message") || "").trim(),
+    };
+    if (!payload.name || !payload.message) {
+      setStatus(text[lang()].required, "warn");
+      return;
+    }
+
+    try {
+      setStatus(text[lang()].sending);
+      if (submitButton) submitButton.disabled = true;
+      const response = await fetch(apiUrl("/api/messages"), {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify(payload),
+      });
+      if (!response.ok) throw new Error("Submit failed");
+      form.reset();
+      setStatus(text[lang()].success, "success");
+      await loadMessages();
+    } catch (error) {
+      setStatus(text[lang()].error, "warn");
+    } finally {
+      if (submitButton) submitButton.disabled = false;
+    }
+  });
+
+  setInterval(() => {
+    if (root.classList.contains("is-open")) loadMessages();
+  }, 45000);
 })();
