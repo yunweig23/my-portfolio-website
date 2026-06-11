@@ -1,0 +1,6 @@
+.DS_Store
+guestbook.sqlite3
+__pycache__/
+*.pyc
+*.pyo
+*.log
