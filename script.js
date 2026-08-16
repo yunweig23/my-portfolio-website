@@ -580,7 +580,7 @@
     "contact.title": "Open to potential opportunities",
     "contact.body":
       "Add your email, LinkedIn, GitHub, target role type, and preferred locations here.",
-    "contact.email": "E-mail: yunweigu@outlook.com",
+    "contact.email": "Email: yunwei.vivi.gu@gmail.com (work), yunweigu@outlook.com (personal)",
     "contact.linkedin": "LinkedIn: https://www.linkedin.com/in/yunweig/",
     "contact.github": "GitHub: https://github.com/yunweig23",
   };
@@ -2604,7 +2604,8 @@ sql_draft:
       ["这里可以放你的邮箱、LinkedIn、GitHub、简历下载链接，以及你当前正在寻找的岗位类型和城市。"],
       "这里可以放你的邮箱、LinkedIn、GitHub，以及你当前正在寻找的岗位类型和城市。",
     );
-    migratePlaceholder(zh, "contact.email", ["your.email@example.com"], "邮件：yunweigu@outlook.com");
+    migratePlaceholder(zh, "contact.email", ["your.email@example.com", "邮件：yunweigu@outlook.com"], "邮箱：yunwei.vivi.gu@gmail.com（工作）, yunweigu@outlook.com（个人）");
+    ensureContent(zh, "contact.email", "邮箱：yunwei.vivi.gu@gmail.com（工作）, yunweigu@outlook.com（个人）");
     migratePlaceholder(zh, "contact.github", ["GitHub 链接", "添加链接"], "GitHub主页：https://github.com/yunweig23");
     migratePlaceholder(
       zh,
@@ -3322,7 +3323,8 @@ sql_draft:
       ["Add your email, LinkedIn, GitHub, resume link, target role type, and preferred locations here."],
       "Add your email, LinkedIn, GitHub, target role type, and preferred locations here.",
     );
-    migratePlaceholder(en, "contact.email", ["your.email@example.com"], "E-mail: yunweigu@outlook.com");
+    migratePlaceholder(en, "contact.email", ["your.email@example.com", "E-mail: yunweigu@outlook.com"], "Email: yunwei.vivi.gu@gmail.com (work), yunweigu@outlook.com (personal)");
+    ensureContent(en, "contact.email", "Email: yunwei.vivi.gu@gmail.com (work), yunweigu@outlook.com (personal)");
     migratePlaceholder(en, "contact.github", ["GitHub profile", "Add link"], "GitHub: https://github.com/yunweig23");
     migratePlaceholder(
       en,
