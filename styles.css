@@ -3902,6 +3902,26 @@ body.modal-open {
   line-height: 1.55;
 }
 
+.contact-panel a.contact-email-link {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: start;
+  column-gap: 0.35em;
+  white-space: normal;
+  overflow: visible;
+  text-overflow: clip;
+}
+
+.contact-email-lines {
+  display: grid;
+  gap: 2px;
+  min-width: 0;
+}
+
+.contact-email-lines span {
+  overflow-wrap: anywhere;
+}
+
 .contact-panel a:hover {
   color: #fff;
 }
