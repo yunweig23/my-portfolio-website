@@ -72,24 +72,24 @@
       "Make it easy for recruiters to download your resume, contact you, and review LinkedIn/GitHub without friction.",
     "projects.title": "Representative Projects",
     "project.1.type": "Data Analytics & Business Intelligence",
-    "project.1.time": "Ongoing",
+    "project.1.time": "Sep 2026",
     "project.1.title": "Deepening the Understanding of Shipping Emissions in the North Sea through an Interactive Data Visualisation",
     "project.1.body":
-      "Ongoing project using FuelEU shipping emissions data to prototype an interactive North Sea route visualisation, focusing on CO₂ flows between the UK and major European partner countries.",
+      "Analysed 5,835,843 modelled North Sea voyages from 2018 to 2021 and developed an auditable visual-analytics workflow to identify priority shipping corridors and evaluate conditional decarbonisation scenarios.",
     "project.1.tag.one": "Python",
-    "project.1.tag.two": "3D Visualisation",
-    "project.1.tag.three": "Spatial Data Analysis",
-    "project.1.detail.one.title": "Project Context",
+    "project.1.tag.two": "Streamlit & DuckDB",
+    "project.1.tag.three": "Unity & Cesium",
+    "project.1.detail.one.title": "Metric Design",
     "project.1.detail.one.body":
-      "Develops a North Sea shipping emissions visualisation prototype connected to collaboration between the Tyrell Centre for Climate Change Research and AMBS, with potential integration into the university's Data Visualisation Observatory.",
-    "project.1.detail.two.title": "Current Workflow",
+      "Treated emissions burden and operational intensity as different questions by comparing total CO₂, distance-weighted intensity, and DWT-kilometre intensity. The two intensity definitions produced no overlap in their leading ten routes, showing that metric choice materially changes prioritisation.",
+    "project.1.detail.two.title": "Corridor Prioritisation",
     "project.1.detail.two.body":
-      "Uses FuelEU shipping emissions data to identify high-emission UK-Europe route pairs, vessel-type structure, and CO₂ scale, with Python supporting data preparation, spatial mapping, and visual prototype design.",
-    "project.1.detail.three.title": "Expected Output",
+      "Built a transparent multi-criteria score combining emissions impact (30%), intensity (25%), activity (20%), directional balance (15%), and fleet concentration (10%). Harwich–Rotterdam ranked first at 0.955/1, turning corridor selection into a traceable decision process.",
+    "project.1.detail.three.title": "Core Insight",
     "project.1.detail.three.body":
-      "A Streamlit-based interactive visualisation app is planned to show emissions patterns across major UK links with the Netherlands, Belgium, France, Germany, Norway, and other North Sea routes.",
-    "project.1.detail.four.title": "Tools & Skills",
-    "project.1.detail.four.body": "Python / Streamlit / 3D Visualisation / Spatial Data Analysis",
+      "International voyages represented 15.1% of records but generated 61.1% of modelled CO₂, averaging about 8.8 times the emissions of domestic records. Because 99.2% of Harwich–Rotterdam emissions came from Ro-Ro and passenger vessels, the same vessel-side assumptions affected 19.9% of corridor emissions but only 4.0% regionally—showing that intervention leverage depends on operational concentration.",
+    "project.1.detail.four.title": "System Architecture",
+    "project.1.detail.four.body": "A traceable analytical path connects the raw voyage records to the regional dashboard and georeferenced 3D corridor view.",
     "project.2.type": "Data Analytics & Business Intelligence",
     "project.2.time": "May 2026",
     "project.2.title": "Impact Analysis of Oxford Road Station Closure",
@@ -1128,7 +1128,15 @@
   }
 
   const projectScaffold = [
-    { id: 1, category: "analytics", year: 999999 },
+    {
+      id: 1,
+      category: "analytics",
+      year: 202609,
+      image: "assets/project-shipping-north-sea-routes.svg",
+      imageFit: "contain",
+      imageTransparent: true,
+      hideMeta: true,
+    },
     { id: 2, category: "analytics", year: 202605 },
     {
       id: 3,
@@ -1229,6 +1237,146 @@
   }
 
   function projectDetailSourceTemplate(project, content) {
+    if (project.id === 1) {
+      const architectureTitle = currentLang === "zh" ? "系统架构" : "System Architecture";
+      const architectureUi = currentLang === "zh"
+        ? {
+            flowLabel: "航运排放分析数据流程",
+            ingest: "数据接入",
+            voyages: "583.6 万条航次",
+            inventory: "Parquet 数据清单",
+            model: "建模与查询",
+            fields: "21 → 82 个字段",
+            explore: "交互探索",
+            views: "区域 + 走廊视图",
+            proofLabel: "数据匹配与分析覆盖",
+            vessel: "船舶匹配率",
+            port: "港口匹配率",
+            pages: "分析页面",
+            demoEyebrow: "UNITY × CESIUM",
+            demoTitle: "3D 原型演示",
+            demoIntro: "通过两段短演示查看走廊航次回放与条件减排情景；视频不会在页面打开时自动播放。",
+            playbackTab: "航次回放",
+            playbackTitle: "年度航次与排放回放",
+            playbackCaption: "按年份比较 Harwich–Rotterdam 走廊的航次数量、总 CO₂、排放强度、方向分布与船舶类型。",
+            scenarioTab: "减排情景",
+            scenarioTitle: "条件减排情景模拟",
+            scenarioCaption: "调节 Ro-Ro、客船减排比例与岸电覆盖率，观察情景排放及潜在减排幅度如何变化。",
+          }
+        : {
+            flowLabel: "Shipping analytics data flow",
+            ingest: "INGEST",
+            voyages: "5.84M voyages",
+            inventory: "Parquet inventory",
+            model: "MODEL + QUERY",
+            fields: "21 → 82 fields",
+            explore: "EXPLORE",
+            views: "regional + corridor views",
+            proofLabel: "Data linkage coverage",
+            vessel: "vessel linkage",
+            port: "port linkage",
+            pages: "analysis pages",
+            demoEyebrow: "UNITY × CESIUM",
+            demoTitle: "3D Prototype Demo",
+            demoIntro: "Two short demonstrations show corridor voyage playback and a conditional decarbonisation scenario. Videos never autoplay when the project opens.",
+            playbackTab: "Voyage Playback",
+            playbackTitle: "Annual voyage and emissions playback",
+            playbackCaption: "Compare voyage activity, total CO₂, intensity, directional balance, and vessel type on the Harwich–Rotterdam corridor by year.",
+            scenarioTab: "Scenario Simulation",
+            scenarioTitle: "Conditional decarbonisation simulation",
+            scenarioCaption: "Adjust Ro-Ro and passenger-vessel reductions alongside shore-power coverage to see how scenario emissions and potential reduction change.",
+          };
+      return `
+        <div class="project-detail-source" hidden>
+          <article>
+            <span>01</span>
+            <h3 data-editable data-key="project.1.detail.one.title">${projectContent(content, 1, "detail.one.title")}</h3>
+            <p data-editable data-key="project.1.detail.one.body">${projectContent(content, 1, "detail.one.body")}</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3 data-editable data-key="project.1.detail.two.title">${projectContent(content, 1, "detail.two.title")}</h3>
+            <p data-editable data-key="project.1.detail.two.body">${projectContent(content, 1, "detail.two.body")}</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3 data-editable data-key="project.1.detail.three.title">${projectContent(content, 1, "detail.three.title")}</h3>
+            <p data-editable data-key="project.1.detail.three.body">${projectContent(content, 1, "detail.three.body")}</p>
+          </article>
+          <article class="project-detail-tool-card shipping-architecture-card">
+            <span>04</span>
+            <h3 data-editable data-key="project.1.detail.four.title">${architectureTitle}</h3>
+            <div class="shipping-data-flow" aria-label="${architectureUi.flowLabel}">
+              <div class="shipping-flow-step">
+                <b>01</b>
+                <div>
+                  <small>${architectureUi.ingest}</small>
+                  <strong>${architectureUi.voyages}</strong>
+                  <em>${architectureUi.inventory}</em>
+                </div>
+              </div>
+              <div class="shipping-flow-step">
+                <b>02</b>
+                <div>
+                  <small>${architectureUi.model}</small>
+                  <strong>Python · DuckDB</strong>
+                  <em>${architectureUi.fields}</em>
+                </div>
+              </div>
+              <div class="shipping-flow-step">
+                <b>03</b>
+                <div>
+                  <small>${architectureUi.explore}</small>
+                  <strong>Streamlit · Unity</strong>
+                  <em>${architectureUi.views}</em>
+                </div>
+              </div>
+            </div>
+            <div class="shipping-proof-list" aria-label="${architectureUi.proofLabel}">
+              <div><strong>96.03%</strong><small>${architectureUi.vessel}</small></div>
+              <div><strong>100%</strong><small>${architectureUi.port}</small></div>
+              <div><strong>6</strong><small>${architectureUi.pages}</small></div>
+            </div>
+            <p class="shipping-architecture-note" data-editable data-key="project.1.detail.four.body">${projectContent(content, 1, "detail.four.body")}</p>
+          </article>
+          <section class="shipping-demo" data-shipping-demo>
+            <header class="shipping-demo-header">
+              <div>
+                <small>${architectureUi.demoEyebrow}</small>
+                <h3>${architectureUi.demoTitle}</h3>
+              </div>
+              <p>${architectureUi.demoIntro}</p>
+            </header>
+            <div class="shipping-demo-tabs" role="tablist" aria-label="${architectureUi.demoTitle}">
+              <button type="button" class="is-active" role="tab" aria-selected="true" data-shipping-video="playback">
+                <b>01</b>${architectureUi.playbackTab}
+              </button>
+              <button type="button" role="tab" aria-selected="false" data-shipping-video="scenario">
+                <b>02</b>${architectureUi.scenarioTab}
+              </button>
+            </div>
+            <div class="shipping-demo-panel is-active" role="tabpanel" data-shipping-panel="playback">
+              <video controls playsinline preload="metadata" poster="assets/media/north-sea-voyage-playback-poster.png">
+                <source src="assets/media/north-sea-voyage-playback.mp4" type="video/mp4" />
+              </video>
+              <div class="shipping-demo-caption">
+                <strong>${architectureUi.playbackTitle}</strong>
+                <p>${architectureUi.playbackCaption}</p>
+              </div>
+            </div>
+            <div class="shipping-demo-panel" role="tabpanel" data-shipping-panel="scenario" hidden>
+              <video controls playsinline preload="metadata" poster="assets/media/north-sea-scenario-simulation-poster.png">
+                <source src="assets/media/north-sea-scenario-simulation.mp4" type="video/mp4" />
+              </video>
+              <div class="shipping-demo-caption">
+                <strong>${architectureUi.scenarioTitle}</strong>
+                <p>${architectureUi.scenarioCaption}</p>
+              </div>
+            </div>
+            <a class="shipping-demo-launch" data-shipping-launch hidden></a>
+          </section>
+        </div>`;
+    }
     if (project.id === 3) {
       return `
         <div class="project-detail-source" hidden>
@@ -1693,8 +1841,13 @@
         if (project.imageTransparent) existingCard.dataset.projectImageTransparent = "true";
         if (project.hideMeta) existingCard.dataset.projectHideMeta = "true";
         const detailSource = projectDetailSourceTemplate(project, content);
-        if (detailSource && !existingCard.querySelector(".project-detail-source")) {
-          existingCard.querySelector(".tag-row")?.insertAdjacentHTML("afterend", detailSource);
+        if (detailSource) {
+          const existingDetailSource = existingCard.querySelector(".project-detail-source");
+          if (project.id === 1 && existingDetailSource) {
+            existingDetailSource.outerHTML = detailSource;
+          } else if (!existingDetailSource) {
+            existingCard.querySelector(".tag-row")?.insertAdjacentHTML("afterend", detailSource);
+          }
         }
         existingCard.classList.add("interactive-card");
         existingCard.setAttribute("data-item", "");
@@ -1861,6 +2014,29 @@
       </article>`;
   }
 
+  function initialiseShippingDemos(root = projectModal) {
+    root?.querySelectorAll("[data-shipping-demo]").forEach((demo) => {
+      const tabs = Array.from(demo.querySelectorAll("[data-shipping-video]"));
+      const panels = Array.from(demo.querySelectorAll("[data-shipping-panel]"));
+      tabs.forEach((tab) => {
+        tab.addEventListener("click", () => {
+          const target = tab.dataset.shippingVideo;
+          tabs.forEach((item) => {
+            const active = item === tab;
+            item.classList.toggle("is-active", active);
+            item.setAttribute("aria-selected", active ? "true" : "false");
+          });
+          panels.forEach((panel) => {
+            const active = panel.dataset.shippingPanel === target;
+            if (!active) panel.querySelector("video")?.pause();
+            panel.hidden = !active;
+            panel.classList.toggle("is-active", active);
+          });
+        });
+      });
+    });
+  }
+
   function openProjectModal(card) {
     if (!projectModal || !card || body.classList.contains("is-editing")) return;
     const topline = Array.from(card.querySelectorAll(".project-topline span")).map((node) => node.textContent.trim()).filter(Boolean);
@@ -1909,6 +2085,7 @@
     if (projectModalDetails) {
       projectModalDetails.innerHTML = projectDetailHtml(card, summary, tags);
       syncKpiStripLanguage(projectModalDetails);
+      initialiseShippingDemos(projectModalDetails);
     }
 
     projectModal.classList.add("is-open");
@@ -1923,6 +2100,7 @@
     projectModal.setAttribute("aria-hidden", "true");
     body.classList.remove("modal-open");
     stopProjectCarousels(projectModal);
+    projectModal.querySelectorAll("video").forEach((video) => video.pause());
     projectModal.querySelectorAll("[data-project-modal-carousel]").forEach((node) => node.remove());
   }
 
@@ -2614,7 +2792,7 @@ sql_draft:
       "领英：https://www.linkedin.com/in/yunweig/",
     );
     migratePlaceholder(zh, "project.1.type", ["Data Analysis Case Study", "数据洞察 / 可视化 / 数据库"], "数据分析与商业智能");
-    migratePlaceholder(zh, "project.1.time", ["2026", "时间待补充"], "进行中");
+    migratePlaceholder(zh, "project.1.time", ["2026", "时间待补充", "进行中", "2026年9月"], "2026.09");
     migratePlaceholder(
       zh,
       "project.1.title",
@@ -2628,21 +2806,21 @@ sql_draft:
         "用 SQL/Python 清洗订单与行为数据，拆解从访问、加购到支付的转化路径，识别关键流失环节，并提出首页推荐与优惠策略优化建议。",
         "这里可以补充项目背景、数据来源、分析目标、使用工具、关键指标和最终洞察。",
         "进行中项目：基于 FuelEU 航运排放数据，构建北海航线排放可视化原型，重点呈现英国与欧陆重点国家间的 CO₂ 排放流向。",
+        "进行中项目：基于 FuelEU 航运排放数据，构建北海航线排放可视化原型，重点呈现英国与荷兰、比利时、法国、德国、挪威等重点国家间的 CO₂ 排放流向。",
       ],
-      "进行中项目：基于 FuelEU 航运排放数据，构建北海航线排放可视化原型，重点呈现英国与荷兰、比利时、法国、德国、挪威等重点国家间的 CO₂ 排放流向。",
+      "分析 2018–2021 年 5,835,843 条北海模型航次记录，构建可审计的交互式可视分析流程，识别优先航运走廊并评估条件减排情景。",
     );
     migratePlaceholder(zh, "project.1.tag.one", ["SQL", "SQL / Python"], "Python");
-    migratePlaceholder(zh, "project.1.tag.two", ["Python", "Dashboard"], "3D可视化");
-    migratePlaceholder(zh, "project.1.tag.three", ["Cohort", "Insight"], "空间数据分析");
-    ensureContent(zh, "project.1.detail.one.title", "项目背景");
-    ensureContent(zh, "project.1.detail.one.body", "围绕 Tyrell Centre for Climate Change Research 与 AMBS 的合作研究场景，探索如何将北海航运排放数据转化为可解释的交互式可视化原型，并服务大学 Data Visualisation Observatory 的展示需求。");
-    migrateContainingText(zh, "project.1.detail.one.body", ["Tyrell Centre for Climate Change Research 与 AMBS 合作"], "围绕 Tyrell Centre for Climate Change Research 与 AMBS 的合作研究场景，探索如何将北海航运排放数据转化为可解释的交互式可视化原型，并服务大学 Data Visualisation Observatory 的展示需求。");
-    ensureContent(zh, "project.1.detail.two.title", "分析过程");
-    ensureContent(zh, "project.1.detail.two.body", "基于 FuelEU 航运排放数据，识别英国与欧陆国家之间的高排放航线与船型结构；当前重点使用 Python 进行数据整理、空间映射与可视化原型设计。");
-    ensureContent(zh, "project.1.detail.three.title", "期望产出");
-    ensureContent(zh, "project.1.detail.three.body", "计划交付可交互的 Streamlit 可视化应用，呈现英国-荷兰、比利时、法国、德国、挪威等重点航线的 CO₂ 排放规模、船型贡献与空间分布。");
-    ensureContent(zh, "project.1.detail.four.title", "工具与能力");
-    ensureContent(zh, "project.1.detail.four.body", "Python / Streamlit / 3D可视化 / 空间数据分析");
+    migratePlaceholder(zh, "project.1.tag.two", ["Python", "Dashboard", "3D可视化"], "Streamlit & DuckDB");
+    migratePlaceholder(zh, "project.1.tag.three", ["Cohort", "Insight", "空间数据分析"], "Unity & Cesium");
+    migratePlaceholder(zh, "project.1.detail.one.title", ["项目背景", "研究规模", "背景"], "指标设计");
+    migrateContainingText(zh, "project.1.detail.one.body", ["Tyrell Centre for Climate Change Research", "Data Visualisation Observatory", "5,835,843 条 MariTEAM", "这里可以补充业务问题"], "不将航次数量等同于减排优先级：并列比较总 CO₂、距离加权排放强度与 DWT-公里强度。敏感性检验中，两种强度指标的前十航线完全不重合，证明指标选择会实质性改变优先级。");
+    migratePlaceholder(zh, "project.1.detail.two.title", ["分析过程", "分析与产品", "过程"], "走廊筛选方法");
+    migrateContainingText(zh, "project.1.detail.two.body", ["FuelEU", "当前重点使用 Python", "完成六页 Streamlit", "这里可以补充你的方法"], "建立可解释的多指标评分：排放规模 30%、排放强度 25%、活动量 20%、双向稳定性 15%、船队集中度 10%。Harwich–Rotterdam 以 0.955/1 排名第一，使走廊选择从主观判断变成可追溯的决策过程。");
+    migratePlaceholder(zh, "project.1.detail.three.title", ["期望产出", "关键结果", "产出", "最终产出"], "核心发现");
+    migrateContainingText(zh, "project.1.detail.three.body", ["计划交付", "Streamlit 可视化应用", "Harwich–Rotterdam 以 0.955", "这里可以放 dashboard"], "国际航次仅占 15.1%，却产生 61.1% 的模型 CO₂，单条平均约为国内航次的 8.8 倍。Harwich–Rotterdam 的 99.2% 排放集中在 Ro-Ro 与客船；相同船型假设在走廊层面影响 19.9%，在区域层面仅 4.0%，显示减排杠杆取决于运营结构的集中程度。");
+    migrateContainingText(zh, "project.1.detail.four.title", ["工具与能力", "工具与交付"], "系统架构");
+    migratePlaceholder(zh, "project.1.detail.four.body", ["Python / Streamlit / 3D可视化 / 空间数据分析", "Python / Pandas / Parquet / DuckDB / SQL / Streamlit / Unity / Cesium / 空间可视分析", "Python / Streamlit & DuckDB / Unity & Cesium", "整合 5,835,843 条航次记录并将 21 个原始字段扩展为 82 个分析字段；交付 Streamlit 交互式应用、DuckDB 本地问数助手和 Unity/Cesium 3D 走廊原型。"], "从原始航次记录到区域看板与 3D 走廊视图，保留一条可追溯的分析链路。");
     migratePlaceholder(zh, "project.2.type", ["Business Analysis Project", "数据洞察 / 可视化 / 数据库"], "数据分析与商业智能");
     migratePlaceholder(zh, "project.2.time", ["2025", "时间待补充"], "2026.05");
     migratePlaceholder(zh, "project.2.title", ["SaaS 产品 KPI Dashboard 设计", "数据分析项目 02"], "牛津路车站关闭影响分析");
@@ -3333,7 +3511,7 @@ sql_draft:
       "LinkedIn: https://www.linkedin.com/in/yunweig/",
     );
     migratePlaceholder(en, "project.1.type", ["Data Analysis Case Study", "Data Insights / Visualization / Databases", "Data Insights / Visualisation / Databases"], "Data Analytics & Business Intelligence");
-    migratePlaceholder(en, "project.1.time", ["2026", "Date to add"], "Ongoing");
+    migratePlaceholder(en, "project.1.time", ["2026", "Date to add", "Ongoing"], "Sep 2026");
     migratePlaceholder(
       en,
       "project.1.title",
@@ -3347,21 +3525,21 @@ sql_draft:
         "Cleaned order and behavior data with SQL/Python, decomposed the conversion path from visit to purchase, identified drop-off points, and proposed recommendation and promotion improvements.",
         "Cleaned order and behaviour data with SQL/Python, decomposed the conversion path from visit to purchase, identified drop-off points, and proposed recommendation and promotion improvements.",
         "Add the project context, data source, analytical objective, tools used, key metrics, and final insights.",
+        "Ongoing project using FuelEU shipping emissions data to prototype an interactive North Sea route visualisation, focusing on CO₂ flows between the UK and major European partner countries.",
       ],
-      "Ongoing project using FuelEU shipping emissions data to prototype an interactive North Sea route visualisation, focusing on CO₂ flows between the UK and major European partner countries.",
+      "Analysed 5,835,843 modelled North Sea voyages from 2018 to 2021 and developed an auditable visual-analytics workflow to identify priority shipping corridors and evaluate conditional decarbonisation scenarios.",
     );
     migratePlaceholder(en, "project.1.tag.one", ["SQL", "SQL / Python"], "Python");
-    migratePlaceholder(en, "project.1.tag.two", ["Python", "Dashboard"], "3D Visualisation");
-    migratePlaceholder(en, "project.1.tag.three", ["Cohort", "Insight"], "Spatial Data Analysis");
-    ensureContent(en, "project.1.detail.one.title", "Project Context");
-    ensureContent(en, "project.1.detail.one.body", "Develops a North Sea shipping emissions visualisation prototype connected to collaboration between the Tyrell Centre for Climate Change Research and AMBS, with potential integration into the university's Data Visualisation Observatory.");
-    migrateContainingText(en, "project.1.detail.one.body", ["Tyrell Centre for Climate Change Research and AMBS"], "Develops a North Sea shipping emissions visualisation prototype connected to collaboration between the Tyrell Centre for Climate Change Research and AMBS, with potential integration into the university\'s Data Visualisation Observatory.");
-    ensureContent(en, "project.1.detail.two.title", "Current Workflow");
-    ensureContent(en, "project.1.detail.two.body", "Uses FuelEU shipping emissions data to identify high-emission UK-Europe route pairs, vessel-type structure, and CO₂ scale, with Python supporting data preparation, spatial mapping, and visual prototype design.");
-    ensureContent(en, "project.1.detail.three.title", "Expected Output");
-    ensureContent(en, "project.1.detail.three.body", "A Streamlit-based interactive visualisation app is planned to show emissions patterns across major UK links with the Netherlands, Belgium, France, Germany, Norway, and other North Sea routes.");
-    ensureContent(en, "project.1.detail.four.title", "Tools & Skills");
-    ensureContent(en, "project.1.detail.four.body", "Python / Streamlit / 3D Visualisation / Spatial Data Analysis");
+    migratePlaceholder(en, "project.1.tag.two", ["Python", "Dashboard", "3D Visualisation"], "Streamlit & DuckDB");
+    migratePlaceholder(en, "project.1.tag.three", ["Cohort", "Insight", "Spatial Data Analysis"], "Unity & Cesium");
+    migratePlaceholder(en, "project.1.detail.one.title", ["Project Context", "Research Scale", "Context"], "Metric Design");
+    migrateContainingText(en, "project.1.detail.one.body", ["Tyrell Centre for Climate Change Research", "Data Visualisation Observatory", "5,835,843 MariTEAM-modelled", "Add the business problem"], "Treated emissions burden and operational intensity as different questions by comparing total CO₂, distance-weighted intensity, and DWT-kilometre intensity. The two intensity definitions produced no overlap in their leading ten routes, showing that metric choice materially changes prioritisation.");
+    migratePlaceholder(en, "project.1.detail.two.title", ["Current Workflow", "Analysis & Product", "Process"], "Corridor Prioritisation");
+    migrateContainingText(en, "project.1.detail.two.body", ["FuelEU shipping emissions data", "visual prototype design", "Delivered a six-page Streamlit", "Add your method:"], "Built a transparent multi-criteria score combining emissions impact (30%), intensity (25%), activity (20%), directional balance (15%), and fleet concentration (10%). Harwich–Rotterdam ranked first at 0.955/1, turning corridor selection into a traceable decision process.");
+    migratePlaceholder(en, "project.1.detail.three.title", ["Expected Output", "Key Results", "Outputs"], "Core Insight");
+    migrateContainingText(en, "project.1.detail.three.body", ["is planned", "major UK links", "Harwich–Rotterdam ranked first", "Add dashboards, PRDs"], "International voyages represented 15.1% of records but generated 61.1% of modelled CO₂, averaging about 8.8 times the emissions of domestic records. Because 99.2% of Harwich–Rotterdam emissions came from Ro-Ro and passenger vessels, the same vessel-side assumptions affected 19.9% of corridor emissions but only 4.0% regionally—showing that intervention leverage depends on operational concentration.");
+    migrateContainingText(en, "project.1.detail.four.title", ["Tools & Skills", "Tools & Delivery"], "System Architecture");
+    migratePlaceholder(en, "project.1.detail.four.body", ["Python / Streamlit / 3D Visualisation / Spatial Data Analysis", "Python / Pandas / Parquet / DuckDB / SQL / Streamlit / Unity / Cesium / Spatial Visual Analytics", "Python / Streamlit & DuckDB / Unity & Cesium", "Integrated 5,835,843 voyage records and expanded 21 source fields into 82 analytical fields; delivered a Streamlit application, DuckDB-powered local question interface, and Unity/Cesium 3D corridor prototype."], "A traceable analytical path connects the raw voyage records to the regional dashboard and georeferenced 3D corridor view.");
     migratePlaceholder(en, "project.2.type", ["Business Analysis Project", "Data Insights / Visualization / Databases", "Data Insights / Visualisation / Databases"], "Data Analytics & Business Intelligence");
     migratePlaceholder(en, "project.2.time", ["2025", "Date to add"], "May 2026");
     migratePlaceholder(en, "project.2.title", ["SaaS KPI Dashboard Design", "Data Analytics Project 02"], "Impact Analysis of Oxford Road Station Closure");

@@ -158,7 +158,7 @@
               class="project-card interactive-card"
               data-item
               data-project-category="analytics"
-              data-project-year="999999"
+              data-project-year="202609"
               data-project-image="assets/project-shipping-north-sea-routes.svg"
               data-project-image-fit="contain"
               data-project-image-transparent="true"
@@ -166,51 +166,68 @@
             >
               <div class="project-topline">
                 <span data-editable data-key="project.1.type">数据分析与商业智能</span>
-                <span data-editable data-key="project.1.time">进行中</span>
+                <span data-editable data-key="project.1.time">2026.09</span>
               </div>
               <h3 data-editable data-key="project.1.title">基于交互式数据可视化的北海航运排放理解深化研究</h3>
               <p data-editable data-key="project.1.body">
-                进行中项目：基于 FuelEU 航运排放数据，构建北海航线排放可视化原型，重点呈现英国与荷兰、比利时、法国、德国、挪威等重点国家间的 CO₂ 排放流向。
+                分析 2018–2021 年 5,835,843 条北海模型航次记录，构建可审计的交互式可视分析流程，识别优先航运走廊并评估条件减排情景。
               </p>
               <div class="tag-row">
                 <span data-editable data-key="project.1.tag.one">Python</span>
-                <span data-editable data-key="project.1.tag.two">3D可视化</span>
-                <span data-editable data-key="project.1.tag.three">空间数据分析</span>
+                <span data-editable data-key="project.1.tag.two">Streamlit &amp; DuckDB</span>
+                <span data-editable data-key="project.1.tag.three">Unity &amp; Cesium</span>
               </div>
               <div class="project-detail-source" hidden>
                 <article>
                   <span>01</span>
-                  <h3 data-editable data-key="project.1.detail.one.title">项目背景</h3>
-                  <p data-editable data-key="project.1.detail.one.body">围绕 Tyrell Centre for Climate Change Research 与 AMBS 的合作研究场景，探索如何将北海航运排放数据转化为可解释的交互式可视化原型，并服务大学 Data Visualisation Observatory 的展示需求。</p>
+                  <h3 data-editable data-key="project.1.detail.one.title">指标设计</h3>
+                  <p data-editable data-key="project.1.detail.one.body">不将航次数量等同于减排优先级：并列比较总 CO₂、距离加权排放强度与 DWT-公里强度。敏感性检验中，两种强度指标的前十航线完全不重合，证明指标选择会实质性改变优先级。</p>
                 </article>
                 <article>
                   <span>02</span>
-                  <h3 data-editable data-key="project.1.detail.two.title">分析过程</h3>
-                  <p data-editable data-key="project.1.detail.two.body">基于 FuelEU 航运排放数据，识别英国与欧陆国家之间的高排放航线与船型结构；当前重点使用 Python 进行数据整理、空间映射与可视化原型设计。</p>
+                  <h3 data-editable data-key="project.1.detail.two.title">走廊筛选方法</h3>
+                  <p data-editable data-key="project.1.detail.two.body">建立可解释的多指标评分：排放规模 30%、排放强度 25%、活动量 20%、双向稳定性 15%、船队集中度 10%。Harwich–Rotterdam 以 0.955/1 排名第一，使走廊选择从主观判断变成可追溯的决策过程。</p>
                 </article>
                 <article>
                   <span>03</span>
-                  <h3 data-editable data-key="project.1.detail.three.title">期望产出</h3>
-                  <p data-editable data-key="project.1.detail.three.body">计划交付可交互的 Streamlit 可视化应用，呈现英国-荷兰、比利时、法国、德国、挪威等重点航线的 CO₂ 排放规模、船型贡献与空间分布。</p>
+                  <h3 data-editable data-key="project.1.detail.three.title">核心发现</h3>
+                  <p data-editable data-key="project.1.detail.three.body">国际航次仅占 15.1%，却产生 61.1% 的模型 CO₂，单条平均约为国内航次的 8.8 倍。Harwich–Rotterdam 的 99.2% 排放集中在 Ro-Ro 与客船；相同船型假设在走廊层面影响 19.9%，在区域层面仅 4.0%，显示减排杠杆取决于运营结构的集中程度。</p>
                 </article>
-                <article class="project-detail-tool-card">
+                <article class="project-detail-tool-card shipping-architecture-card">
                   <span>04</span>
-                  <h3 data-editable data-key="project.1.detail.four.title">工具与能力</h3>
-                  <div class="tool-code-panel" aria-hidden="true">
-                    <div>
-                      <b>python</b>
-                      <em>clean emissions</em>
+                  <h3 data-editable data-key="project.1.detail.four.title">系统架构</h3>
+                  <div class="shipping-data-flow" aria-label="Shipping analytics data flow">
+                    <div class="shipping-flow-step">
+                      <b>01</b>
+                      <div>
+                        <small>INGEST</small>
+                        <strong>5.84M voyages</strong>
+                        <em>Parquet inventory</em>
+                      </div>
                     </div>
-                    <div>
-                      <b>streamlit</b>
-                      <em>prototype app</em>
+                    <div class="shipping-flow-step">
+                      <b>02</b>
+                      <div>
+                        <small>MODEL + QUERY</small>
+                        <strong>Python · DuckDB</strong>
+                        <em>21 → 82 fields</em>
+                      </div>
                     </div>
-                    <div>
-                      <b>spatial</b>
-                      <em>route visualisation</em>
+                    <div class="shipping-flow-step">
+                      <b>03</b>
+                      <div>
+                        <small>EXPLORE</small>
+                        <strong>Streamlit · Unity</strong>
+                        <em>regional + corridor views</em>
+                      </div>
                     </div>
                   </div>
-                  <p data-editable data-key="project.1.detail.four.body">Python / Streamlit / 3D可视化 / 空间数据分析</p>
+                  <div class="shipping-proof-list" aria-label="Data linkage coverage">
+                    <div><strong>96.03%</strong><small>vessel linkage</small></div>
+                    <div><strong>100%</strong><small>port linkage</small></div>
+                    <div><strong>6</strong><small>analysis pages</small></div>
+                  </div>
+                  <p class="shipping-architecture-note" data-editable data-key="project.1.detail.four.body">从原始航次记录到区域看板与 3D 走廊视图，保留一条可追溯的分析链路。</p>
                 </article>
               </div>
             </article>
