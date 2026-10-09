@@ -1313,6 +1313,187 @@ h3 {
   white-space: normal;
 }
 
+.project-modal-visual.is-hr-recruitment {
+  min-height: 390px;
+  padding: 18px;
+  background:
+    radial-gradient(circle at 14% 12%, rgba(183, 120, 69, 0.15), transparent 28%),
+    linear-gradient(145deg, rgba(244, 249, 248, 0.98), rgba(228, 239, 242, 0.94));
+}
+
+.project-modal-visual.is-hr-recruitment::before {
+  display: none;
+}
+
+.hr-recruitment-visual {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  width: 100%;
+  max-width: 520px;
+  gap: 11px;
+  padding: 18px;
+  border: 1px solid rgba(31, 95, 143, 0.16);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.86);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.92),
+    0 24px 54px rgba(20, 59, 83, 0.12);
+}
+
+.hr-recruitment-visual > header {
+  display: grid;
+  gap: 3px;
+}
+
+.hr-recruitment-visual > header small {
+  color: var(--copper);
+  font-size: 0.62rem;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.hr-recruitment-visual > header strong {
+  color: var(--data-blue-deep);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.1rem, 2vw, 1.45rem);
+  line-height: 1.15;
+}
+
+.hr-recruitment-inputs {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  align-items: stretch;
+  gap: 8px;
+}
+
+.hr-recruitment-inputs > div {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 2px 8px;
+  padding: 10px;
+  border: 1px solid rgba(34, 95, 143, 0.12);
+  border-radius: 13px;
+  background: linear-gradient(135deg, rgba(31, 95, 143, 0.07), rgba(30, 109, 101, 0.06));
+}
+
+.hr-recruitment-inputs > div span {
+  grid-row: 1 / 3;
+  display: grid;
+  width: 30px;
+  height: 30px;
+  place-items: center;
+  border-radius: 9px;
+  background: var(--data-blue-deep);
+  color: #fff;
+  font-size: 0.62rem;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+}
+
+.hr-recruitment-inputs > div b {
+  align-self: end;
+  color: var(--data-blue-deep);
+  font-size: 0.75rem;
+}
+
+.hr-recruitment-inputs > div p {
+  color: var(--muted);
+  font-size: 0.6rem;
+  line-height: 1.25;
+}
+
+.hr-recruitment-inputs > i {
+  align-self: center;
+  color: var(--copper);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 900;
+}
+
+.hr-recruitment-mapping {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 8px;
+}
+
+.hr-recruitment-mapping i {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(31, 95, 143, 0.42));
+}
+
+.hr-recruitment-mapping i:last-child {
+  background: linear-gradient(90deg, rgba(31, 95, 143, 0.42), transparent);
+}
+
+.hr-recruitment-mapping b {
+  color: var(--teal);
+  font-size: 0.58rem;
+  letter-spacing: 0.08em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.hr-recruitment-visual > section {
+  display: grid;
+  gap: 6px;
+  padding: 12px;
+  border-radius: 15px;
+  background: var(--data-blue-deep);
+  color: #fff;
+  box-shadow: 0 14px 28px rgba(25, 64, 90, 0.16);
+}
+
+.hr-recruitment-visual > section header,
+.hr-recruitment-visual > section > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.hr-recruitment-visual > section header {
+  padding-bottom: 7px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.hr-recruitment-visual > section header b {
+  font-size: 0.76rem;
+}
+
+.hr-recruitment-visual > section header em {
+  padding: 4px 7px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.13);
+  font-size: 0.56rem;
+  font-style: normal;
+  font-weight: 800;
+}
+
+.hr-recruitment-visual > section > div {
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 0.62rem;
+}
+
+.hr-recruitment-visual > section > div strong {
+  color: #bde5d8;
+  font-size: 0.6rem;
+}
+
+.hr-recruitment-visual > section > div.is-review strong {
+  color: #f1c69e;
+}
+
+.hr-recruitment-visual > footer {
+  color: var(--muted);
+  font-size: 0.61rem;
+  font-weight: 760;
+  line-height: 1.35;
+  text-align: center;
+}
+
 .project-detail-grid article.shipping-architecture-card {
   border-color: rgba(27, 66, 94, 0.2);
   background:
@@ -1593,6 +1774,616 @@ h3 {
 
 .shipping-demo-launch[hidden] {
   display: none;
+}
+
+/* Workday responsible-AI case study */
+.project-detail-grid .workday-panel,
+.project-detail-grid .workday-case-note {
+  grid-column: 1 / -1;
+}
+
+.workday-panel {
+  overflow: hidden;
+  border: 1px solid rgba(27, 66, 94, 0.16);
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.76);
+  box-shadow: 0 20px 44px rgba(23, 68, 101, 0.07);
+}
+
+.workday-section-head {
+  display: grid;
+  grid-template-columns: minmax(180px, 0.55fr) minmax(0, 1.45fr);
+  gap: 28px;
+  align-items: end;
+  padding: 24px 26px 22px;
+  border-top: 3px solid transparent;
+  border-image: linear-gradient(90deg, var(--data-blue), var(--teal), var(--copper)) 1;
+}
+
+.project-detail-grid .workday-section-head small {
+  color: var(--copper);
+  font-size: 0.62rem;
+  font-weight: 850;
+  letter-spacing: 0.16em;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.project-detail-grid .workday-section-head h3 {
+  margin: 0;
+  color: var(--data-blue-deep);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.22rem, 2.2vw, 1.7rem);
+  line-height: 1.16;
+}
+
+.workday-chain {
+  background:
+    radial-gradient(circle at 90% 10%, rgba(183, 120, 69, 0.12), transparent 30%),
+    rgba(255, 255, 255, 0.78);
+}
+
+.workday-chain-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  border-top: 1px solid rgba(27, 66, 94, 0.12);
+  background: var(--data-blue-deep);
+}
+
+.workday-chain-grid > div {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 3px 13px;
+  align-items: center;
+  min-width: 0;
+  padding: 23px 22px;
+}
+
+.workday-chain-grid > div + div {
+  border-left: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.workday-chain-grid > div:not(:last-child)::after {
+  content: "→";
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  right: -10px;
+  display: grid;
+  width: 20px;
+  height: 20px;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--data-blue-deep);
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 0.72rem;
+  transform: translateY(-50%);
+}
+
+.workday-chain-grid strong {
+  grid-row: 1 / 3;
+  color: #fff;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.9rem, 3.5vw, 2.7rem);
+  line-height: 1;
+}
+
+.workday-chain-grid b {
+  min-width: 0;
+  color: #fff;
+  font-size: 0.72rem;
+  line-height: 1.25;
+}
+
+.workday-chain-grid em {
+  min-width: 0;
+  color: rgba(226, 237, 243, 0.7);
+  font-size: 0.6rem;
+  font-style: normal;
+  line-height: 1.35;
+}
+
+.workday-lens-tabs {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  border-top: 1px solid rgba(27, 66, 94, 0.12);
+  border-bottom: 1px solid rgba(27, 66, 94, 0.12);
+}
+
+.workday-lens-tabs button {
+  position: relative;
+  display: flex;
+  gap: 11px;
+  align-items: center;
+  justify-content: center;
+  min-height: 58px;
+  padding: 12px 18px;
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+  font: inherit;
+  cursor: pointer;
+  transition: background-color 180ms ease, color 180ms ease;
+}
+
+.workday-lens-tabs button + button {
+  border-left: 1px solid rgba(27, 66, 94, 0.12);
+}
+
+.workday-lens-tabs button::after {
+  content: "";
+  position: absolute;
+  right: 22px;
+  bottom: -1px;
+  left: 22px;
+  height: 2px;
+  background: var(--copper);
+  opacity: 0;
+  transform: scaleX(0.35);
+  transition: opacity 180ms ease, transform 220ms ease;
+}
+
+.workday-lens-tabs button:hover,
+.workday-lens-tabs button.is-active {
+  background: rgba(30, 109, 101, 0.055);
+  color: var(--data-blue-deep);
+}
+
+.workday-lens-tabs button.is-active::after {
+  opacity: 1;
+  transform: scaleX(1);
+}
+
+.project-detail-grid .workday-lens-tabs span {
+  display: inline;
+  margin: 0;
+  color: var(--copper);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.65rem;
+}
+
+.workday-lens-tabs b {
+  font-size: 0.78rem;
+}
+
+.workday-lens-panel {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(260px, 0.75fr);
+  gap: 26px;
+  padding: 26px;
+  background:
+    radial-gradient(circle at 92% 8%, rgba(183, 120, 69, 0.09), transparent 34%),
+    linear-gradient(135deg, rgba(244, 249, 248, 0.82), rgba(255, 253, 248, 0.8));
+}
+
+.workday-lens-panel[hidden] {
+  display: none;
+}
+
+.project-detail-grid .workday-lens-copy > span {
+  display: inline-block;
+  margin: 0 0 12px;
+  padding: 5px 8px;
+  border-radius: 999px;
+  background: rgba(36, 95, 143, 0.09);
+  color: var(--data-blue);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.57rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+.project-detail-grid .workday-lens-copy h3 {
+  margin: 0 0 10px;
+  font-size: 1.1rem;
+}
+
+.project-detail-grid .workday-lens-copy p {
+  margin: 0;
+  font-size: 0.82rem;
+}
+
+.workday-lens-panel ul {
+  display: grid;
+  gap: 9px;
+  align-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.workday-lens-panel li {
+  position: relative;
+  padding: 11px 12px 11px 36px;
+  border: 1px solid rgba(30, 109, 101, 0.14);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.72);
+  color: var(--data-blue-deep);
+  font-size: 0.7rem;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.workday-lens-panel li::before {
+  content: "✓";
+  position: absolute;
+  top: 10px;
+  left: 13px;
+  color: var(--teal);
+  font-weight: 900;
+}
+
+.workday-matrix-table {
+  border-top: 1px solid rgba(27, 66, 94, 0.12);
+}
+
+.workday-matrix-row {
+  display: grid;
+  grid-template-columns: minmax(150px, 0.8fr) minmax(260px, 1.55fr) minmax(150px, 0.65fr);
+  gap: 20px;
+  align-items: center;
+  padding: 15px 24px;
+}
+
+.workday-matrix-row + .workday-matrix-row {
+  border-top: 1px solid rgba(27, 66, 94, 0.09);
+}
+
+.workday-matrix-header {
+  background: rgba(36, 95, 143, 0.055);
+  color: var(--muted);
+}
+
+.workday-matrix-header > b {
+  font-size: 0.59rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.workday-matrix-row > b {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  color: var(--data-blue-deep);
+  font-size: 0.72rem;
+  line-height: 1.35;
+}
+
+.workday-matrix-row i {
+  flex: 0 0 auto;
+  color: var(--copper);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.59rem;
+  font-style: normal;
+}
+
+.project-detail-grid .workday-matrix-row p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.7rem;
+}
+
+.workday-matrix-row > em {
+  padding: 7px 9px;
+  border-radius: 9px;
+  background: rgba(30, 109, 101, 0.08);
+  color: var(--teal);
+  font-size: 0.62rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 1.35;
+  text-align: center;
+}
+
+.workday-lifecycle {
+  position: relative;
+  color: #fff;
+  background:
+    radial-gradient(circle at 88% 5%, rgba(183, 120, 69, 0.3), transparent 28%),
+    linear-gradient(145deg, #173d59 0%, #153447 54%, #153936 100%);
+}
+
+.workday-lifecycle::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+  background-size: 42px 42px;
+}
+
+.workday-section-head-light {
+  position: relative;
+  z-index: 1;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.project-detail-grid .workday-section-head-light small {
+  color: #e0a674;
+}
+
+.project-detail-grid .workday-section-head-light h3 {
+  color: #fff;
+}
+
+.workday-lifecycle-flow {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  padding: 30px 26px 24px;
+}
+
+.workday-lifecycle-flow::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 54px;
+  right: 9%;
+  left: 9%;
+  height: 3px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #73a9cf, #6ab4a9, #df9b63);
+}
+
+.workday-life-step {
+  display: grid;
+  justify-items: center;
+  min-width: 0;
+  padding: 0 9px;
+  text-align: center;
+}
+
+.project-detail-grid .workday-life-step > span {
+  display: grid;
+  width: 50px;
+  height: 50px;
+  margin: 0 0 14px;
+  place-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.34);
+  border-radius: 50%;
+  background: #173d59;
+  box-shadow: 0 0 0 7px rgba(23, 61, 89, 0.9);
+  color: #fff;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.68rem;
+}
+
+.workday-life-step b {
+  color: #fff;
+  font-size: 0.73rem;
+  line-height: 1.2;
+}
+
+.workday-life-step em {
+  max-width: 126px;
+  margin-top: 6px;
+  color: rgba(218, 232, 238, 0.68);
+  font-size: 0.59rem;
+  font-style: normal;
+  line-height: 1.4;
+}
+
+.workday-control-layer {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(260px, 0.75fr);
+  gap: 18px;
+  margin: 0 26px;
+  padding: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.055);
+}
+
+.workday-control-layer small {
+  color: #e0a674;
+  font-size: 0.57rem;
+  font-weight: 850;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.workday-owner-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-top: 11px;
+}
+
+.workday-owner-chips b {
+  padding: 7px 9px;
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.07);
+  color: #fff;
+  font-size: 0.56rem;
+  letter-spacing: 0.05em;
+}
+
+.workday-telemetry {
+  position: relative;
+  padding-left: 17px;
+  border-left: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.project-detail-grid .workday-telemetry p {
+  margin: 9px 54px 0 0;
+  color: rgba(223, 235, 240, 0.72);
+  font-size: 0.63rem;
+  line-height: 1.5;
+}
+
+.project-detail-grid .workday-pulse {
+  position: absolute;
+  right: 4px;
+  bottom: 5px;
+  display: grid;
+  width: 38px;
+  height: 38px;
+  margin: 0;
+  place-items: center;
+  border: 1px solid rgba(106, 180, 169, 0.45);
+  border-radius: 50%;
+}
+
+.workday-pulse::before,
+.workday-pulse i {
+  content: "";
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #6ab4a9;
+  box-shadow: 0 0 18px rgba(106, 180, 169, 0.9);
+}
+
+.workday-pulse i {
+  position: absolute;
+  animation: workday-pulse 2.2s ease-out infinite;
+}
+
+@keyframes workday-pulse {
+  0% { opacity: 0.8; transform: scale(1); }
+  100% { opacity: 0; transform: scale(3.4); }
+}
+
+.workday-rollback {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  gap: 9px;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 17px 27px 22px;
+  color: #e0a674;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.54rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+
+.project-detail-grid .workday-rollback span {
+  display: inline;
+  margin: 0;
+  color: inherit;
+  font: inherit;
+}
+
+.workday-rollback i {
+  width: 19px;
+  height: 1px;
+  background: rgba(224, 166, 116, 0.52);
+}
+
+.workday-monitor-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  padding: 0 24px 24px;
+}
+
+.workday-monitor-card {
+  padding: 15px;
+  border: 1px solid rgba(27, 66, 94, 0.12);
+  border-radius: 14px;
+  background: rgba(248, 251, 250, 0.84);
+}
+
+.workday-monitor-card header {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.workday-monitor-card header b {
+  color: var(--data-blue-deep);
+  font-size: 0.72rem;
+}
+
+.project-detail-grid .workday-monitor-card header span {
+  display: inline;
+  flex: 0 0 auto;
+  margin: 0;
+  padding: 4px 7px;
+  border-radius: 999px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.5rem;
+  font-weight: 850;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.workday-monitor-card header span.is-monitor {
+  background: rgba(30, 109, 101, 0.1);
+  color: var(--teal);
+}
+
+.workday-monitor-card header span.is-review {
+  background: rgba(183, 120, 69, 0.13);
+  color: #9c6031;
+}
+
+.project-detail-grid .workday-monitor-card p {
+  min-height: 2.8em;
+  margin: 9px 0 12px;
+  font-size: 0.65rem;
+}
+
+.workday-monitor-card > i {
+  position: relative;
+  display: block;
+  height: 5px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: rgba(27, 66, 94, 0.08);
+}
+
+.workday-monitor-card > i::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(90deg, transparent 0 24%, rgba(255,255,255,.8) 24% 25%);
+  z-index: 1;
+}
+
+.workday-monitor-card > i u {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  background: repeating-linear-gradient(90deg, var(--data-blue) 0 18%, var(--teal) 18% 38%, var(--copper) 38% 46%, transparent 46% 50%);
+  opacity: 0.72;
+  text-decoration: none;
+}
+
+.workday-case-note {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 15px;
+  align-items: start;
+  padding: 16px 18px;
+  border-left: 3px solid var(--copper);
+  border-radius: 0 13px 13px 0;
+  background: rgba(183, 120, 69, 0.07);
+}
+
+.workday-case-note b {
+  color: #8c552e;
+  font-size: 0.64rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.project-detail-grid .workday-case-note p {
+  margin: 0;
+  color: rgba(52, 66, 76, 0.72);
+  font-size: 0.68rem;
+  line-height: 1.55;
 }
 
 .project-detail-kpi-strip {
@@ -4797,6 +5588,122 @@ body.js-enhanced .interactive-card.is-visible {
 
   .shipping-demo-caption {
     padding: 12px 4px 4px 14px;
+  }
+
+  .workday-section-head,
+  .workday-lens-panel,
+  .workday-control-layer {
+    grid-template-columns: 1fr;
+  }
+
+  .workday-section-head {
+    gap: 9px;
+    padding: 19px 18px 17px;
+  }
+
+  .workday-chain-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .workday-chain-grid > div {
+    padding: 18px 15px;
+  }
+
+  .workday-chain-grid > div:nth-child(3) {
+    border-top: 1px solid rgba(255, 255, 255, 0.14);
+    border-left: 0;
+  }
+
+  .workday-chain-grid > div:nth-child(4) {
+    border-top: 1px solid rgba(255, 255, 255, 0.14);
+  }
+
+  .workday-chain-grid > div:nth-child(2)::after {
+    display: none;
+  }
+
+  .workday-lens-panel {
+    gap: 18px;
+    padding: 18px;
+  }
+
+  .workday-matrix-row,
+  .workday-matrix-header {
+    grid-template-columns: 1fr;
+    gap: 8px;
+    padding: 15px 18px;
+  }
+
+  .workday-matrix-header {
+    display: none;
+  }
+
+  .workday-matrix-row > em {
+    justify-self: start;
+    text-align: left;
+  }
+
+  .workday-lifecycle-flow {
+    grid-template-columns: 1fr;
+    gap: 0;
+    padding: 20px 20px 14px;
+  }
+
+  .workday-lifecycle-flow::before {
+    top: 34px;
+    bottom: 32px;
+    left: 44px;
+    width: 3px;
+    height: auto;
+    background: linear-gradient(#73a9cf, #6ab4a9, #df9b63);
+  }
+
+  .workday-life-step {
+    grid-template-columns: 50px minmax(0, 1fr);
+    gap: 3px 14px;
+    justify-items: start;
+    padding: 8px 0;
+    text-align: left;
+  }
+
+  .project-detail-grid .workday-life-step > span {
+    grid-row: 1 / 3;
+    margin: 0;
+  }
+
+  .workday-life-step b {
+    align-self: end;
+  }
+
+  .workday-life-step em {
+    max-width: none;
+    margin: 0;
+  }
+
+  .workday-control-layer {
+    margin: 0 18px;
+  }
+
+  .workday-telemetry {
+    padding: 14px 0 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.14);
+    border-left: 0;
+  }
+
+  .workday-rollback {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-inline: 18px;
+  }
+
+  .workday-monitor-grid {
+    grid-template-columns: 1fr;
+    padding: 0 18px 18px;
+  }
+
+  .workday-case-note {
+    grid-template-columns: 1fr;
+    gap: 7px;
   }
 
   .section-heading.split {

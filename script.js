@@ -225,26 +225,26 @@
       "Compared the major differences between Chinese, US, and EU AI governance systems across regulatory approach, algorithm transparency, data-security accountability, privacy requirements, and enterprise compliance pressure.",
     "project.8.detail.four.title": "Tools & Skills",
     "project.8.detail.four.body": "AI Governance / Algorithm Ethics / Privacy Compliance / Presentation",
-    "project.9.type": "Cybersecurity & AI Solutions",
+    "project.9.type": "HR Technology & AI Recruitment",
     "project.9.time": "Nov 2023",
-    "project.9.title": "Deloitte CyberAce Cybersecurity Training Camp",
+    "project.9.title": "Deloitte × AWS CyberAce Training Camp",
     "project.9.body":
-      "Led a team to the Deloitte x AWS CyberAce finals, translating a simulated client RFP into security scenarios and business requirements, designing the COSEC generative-AI operations solution, and delivering competitor research, solution rationale, and the final pitch.",
-    "project.9.tag.one": "Cybersecurity",
-    "project.9.tag.two": "Artificial Intelligence",
-    "project.9.tag.three": "User Requirements Analysis",
-    "project.9.tag.four": "RFP Response",
-    "project.9.detail.one.title": "Project Context",
+      "Led a five-person finalist team to design an AI-assisted recruitment workflow for HR teams: structuring role requirements, extracting résumé evidence, assessing candidate-to-role fit, and generating an explainable match recommendation for recruiter review.",
+    "project.9.tag.one": "HR Technology",
+    "project.9.tag.two": "AI-assisted Recruitment",
+    "project.9.tag.three": "Candidate–Role Matching",
+    "project.9.tag.four": "Human Review",
+    "project.9.detail.one.title": "HR Business Challenge",
     "project.9.detail.one.body":
-      "Joined the 2023 CyberAce cybersecurity training camp co-hosted by Deloitte and AWS and reached the finals, working across enterprise cybersecurity, generative AI application, and client-response scenarios.",
-    "project.9.detail.two.title": "Solution Design",
+      "HR teams may need to review large volumes of résumés against different role requirements. Manual screening can be time-consuming, inconsistent, and difficult to explain when relevant candidate evidence is distributed across multiple sections of a résumé.",
+    "project.9.detail.two.title": "Recruitment Workflow",
     "project.9.detail.two.body":
-      "In the AI track, led the team in designing COSEC, a generative-AI maintenance solution based on a simulated client RFP, clarifying use cases, target users, core features, and delivery logic.",
-    "project.9.detail.three.title": "Analysis Process",
+      "COSEC converted job descriptions into structured assessment criteria, extracted supporting skills, experience, and qualification evidence from each résumé, compared that evidence with role requirements, and produced a match recommendation for recruiter review.",
+    "project.9.detail.three.title": "Matching Logic & Human Review",
     "project.9.detail.three.body":
-      "Coordinated data collection and processing, competitor analysis, and market research, translating client requirements into solution rationale and final presentation materials.",
-    "project.9.detail.four.title": "Tools & Skills",
-    "project.9.detail.four.body": "Cybersecurity / Artificial Intelligence / User Requirements Analysis / RFP Response",
+      "Rather than automatically accepting or rejecting candidates, the workflow surfaced the résumé evidence behind each match, highlighted missing or uncertain information, and retained the recruiter as the final decision-maker.",
+    "project.9.detail.four.title": "My Contribution & Outcome",
+    "project.9.detail.four.body": "Led a five-person team in analysing the simulated HR services RFP, converting recruitment pain points into business and system requirements, completing competitor research and workflow design, and presenting the implementation rationale to Deloitte and AWS judges.",
     "project.10.type": "LegalTech & Data Compliance",
     "project.10.time": "May 2023",
     "project.10.title": "Field Research",
@@ -299,6 +299,84 @@
       "Evaluated long-term management threats including invasive species, bushfire, tourism pressure, and climate change, then linked regulatory, economic, and voluntary instruments to policy, community, and scientific monitoring responses.",
     "project.12.detail.four.title": "Tools & Skills",
     "project.12.detail.four.body": "QGIS mapping / spatial data analysis / protected area management / climate adaptation strategy",
+    "project.13.type": "Responsible AI & HR Technology Governance",
+    "project.13.time": "January 2026",
+    "project.13.title": "Responsible AI in Recruitment: Workday Bias and Governance",
+    "project.13.body":
+      "Analysed the Mobley v. Workday case using 23 academic, policy, and industry sources, evaluating AI-enabled recruitment across legal, ethical, and business dimensions and proposing governance controls based on RACI and the NIST AI Risk Management Framework.",
+    "project.13.tag.one": "Responsible AI",
+    "project.13.tag.two": "HR Technology",
+    "project.13.tag.three": "NIST AI RMF",
+    "project.13.chain.eyebrow": "Evidence-to-control reasoning",
+    "project.13.chain.title": "From a contested hiring decision to an operating governance system",
+    "project.13.chain.one.label": "Evidence sources",
+    "project.13.chain.one.note": "academic, policy, and industry",
+    "project.13.chain.two.label": "Legitimacy lenses",
+    "project.13.chain.two.note": "legal · moral · pragmatic",
+    "project.13.chain.three.label": "Priority risks",
+    "project.13.chain.three.note": "accountability · invisibility",
+    "project.13.chain.four.label": "Governance system",
+    "project.13.chain.four.note": "controls with feedback",
+    "project.13.lens.eyebrow": "Stakeholder lens",
+    "project.13.lens.title": "The same system creates different risks on each side of the decision",
+    "project.13.lens.employer.tab": "Employer view",
+    "project.13.lens.candidate.tab": "Candidate view",
+    "project.13.lens.employer.title": "Efficiency without clear accountability is fragile",
+    "project.13.lens.employer.body": "Automated screening may increase speed and consistency, but outsourcing the tool does not transfer the employer's duty to understand, validate, and challenge hiring outcomes.",
+    "project.13.lens.employer.signal.one": "Procurement and vendor accountability",
+    "project.13.lens.employer.signal.two": "Documented validation and audit rights",
+    "project.13.lens.employer.signal.three": "Escalation ownership across HR, Legal, and Technology",
+    "project.13.lens.candidate.title": "A fast rejection can become an invisible decision",
+    "project.13.lens.candidate.body": "Candidates may not know that automation influenced the outcome, which data or proxy signals mattered, or how to request an adjustment and meaningful human review.",
+    "project.13.lens.candidate.signal.one": "Clear notice and accessible explanation",
+    "project.13.lens.candidate.signal.two": "Reasonable adjustments and human review",
+    "project.13.lens.candidate.signal.three": "A route to contest and correct the decision",
+    "project.13.matrix.eyebrow": "Risk-to-control matrix",
+    "project.13.matrix.title": "Translate abstract fairness principles into owned controls",
+    "project.13.matrix.risk": "Risk",
+    "project.13.matrix.control": "Control",
+    "project.13.matrix.owner": "Primary owner",
+    "project.13.matrix.one.risk": "Blurred accountability",
+    "project.13.matrix.one.control": "RACI plus contractual audit, evidence, and rollback rights",
+    "project.13.matrix.one.owner": "HR · Legal · Procurement",
+    "project.13.matrix.two.risk": "Historical or proxy bias",
+    "project.13.matrix.two.control": "Pre-deployment group-impact validation against job criteria",
+    "project.13.matrix.two.owner": "HR · Data / Vendor",
+    "project.13.matrix.three.risk": "Candidate invisibility",
+    "project.13.matrix.three.control": "Notice, accessible explanation, adjustment, and human review",
+    "project.13.matrix.three.owner": "HR Operations",
+    "project.13.matrix.four.risk": "Checkbox compliance",
+    "project.13.matrix.four.control": "Continuous monitoring with thresholds, escalation, pause, and rollback",
+    "project.13.matrix.four.owner": "Governance committee",
+    "project.13.lifecycle.eyebrow": "Governance control room",
+    "project.13.lifecycle.title": "A lifecycle with owners, evidence gates, live signals, and a rollback path",
+    "project.13.lifecycle.validate": "Validate",
+    "project.13.lifecycle.validate.note": "test role relevance and group impact",
+    "project.13.lifecycle.assign": "Assign",
+    "project.13.lifecycle.assign.note": "set RACI and vendor duties",
+    "project.13.lifecycle.monitor": "Monitor",
+    "project.13.lifecycle.monitor.note": "track outcomes and candidate signals",
+    "project.13.lifecycle.review": "Review",
+    "project.13.lifecycle.review.note": "human challenge and adjustment",
+    "project.13.lifecycle.escalate": "Escalate",
+    "project.13.lifecycle.escalate.note": "pause, investigate, and roll back",
+    "project.13.lifecycle.owners": "Control owners",
+    "project.13.lifecycle.telemetry": "Live telemetry",
+    "project.13.lifecycle.telemetry.note": "Threshold breach triggers named owner, documented review, and a reversible response.",
+    "project.13.monitor.eyebrow": "Monitoring board",
+    "project.13.monitor.title": "Measure the decision system, not only the hiring speed",
+    "project.13.monitor.one": "Shortlisting parity",
+    "project.13.monitor.one.note": "compare progression across relevant groups",
+    "project.13.monitor.two": "Interview progression",
+    "project.13.monitor.two.note": "check where disparities emerge",
+    "project.13.monitor.three": "False-rejection risk",
+    "project.13.monitor.three.note": "sample and review rejected applications",
+    "project.13.monitor.four": "Candidate trust",
+    "project.13.monitor.four.note": "track clarity, access, and confidence",
+    "project.13.monitor.status.monitor": "Monitor",
+    "project.13.monitor.status.review": "Review",
+    "project.13.note.label": "Case note",
+    "project.13.note.body": "This is a literature-based case analysis. Mobley v. Workday is used as a governance trigger; the allegations discussed were not treated as a final judicial finding that the system discriminated.",
     "ai.title": "AI Workflow",
     "ai.workflow.title": "My AI-assisted analysis workflow",
     "ai.step.one.title": "Problem Definition",
@@ -816,8 +894,88 @@
   const campusCarouselTimers = new WeakMap();
   const projectCarouselTimers = new WeakMap();
 
+  const zhProject13Content = {
+    "project.13.type": "负责任AI与HR科技治理",
+    "project.13.time": "2026.01",
+    "project.13.title": "Workday AI招聘公平性与治理分析",
+    "project.13.body": "以 Mobley v. Workday 诉讼为案例，综合23项学术、政策与行业资料，从法律、道德和商业价值三个维度评估AI招聘筛选风险，并基于RACI与NIST AI RMF提出责任分配、持续监测、人工复核和系统回滚机制。",
+    "project.13.tag.one": "负责任AI",
+    "project.13.tag.two": "HR科技",
+    "project.13.tag.three": "NIST AI RMF",
+    "project.13.chain.eyebrow": "从证据到控制",
+    "project.13.chain.title": "从一项受争议的招聘决定，推导出可运行的治理系统",
+    "project.13.chain.one.label": "证据来源",
+    "project.13.chain.one.note": "学术、政策与行业资料",
+    "project.13.chain.two.label": "合法性视角",
+    "project.13.chain.two.note": "法律 · 道德 · 实用",
+    "project.13.chain.three.label": "优先风险",
+    "project.13.chain.three.note": "责任模糊 · 候选人不可见",
+    "project.13.chain.four.label": "治理系统",
+    "project.13.chain.four.note": "带反馈闭环的控制机制",
+    "project.13.lens.eyebrow": "利益相关者视角",
+    "project.13.lens.title": "同一套系统，会在决策两端产生不同风险",
+    "project.13.lens.employer.tab": "雇主视角",
+    "project.13.lens.candidate.tab": "候选人视角",
+    "project.13.lens.employer.title": "缺少明确责任的效率提升并不稳固",
+    "project.13.lens.employer.body": "自动筛选可以提升速度和一致性，但采购外部工具并不会转移雇主理解、验证并质疑招聘结果的责任。",
+    "project.13.lens.employer.signal.one": "采购流程与供应商责任",
+    "project.13.lens.employer.signal.two": "记录完备的验证机制与审计权",
+    "project.13.lens.employer.signal.three": "HR、法务与技术团队之间的升级责任",
+    "project.13.lens.candidate.title": "一次快速拒绝，可能成为不可见的决定",
+    "project.13.lens.candidate.body": "候选人可能不知道自动化是否影响了结果、哪些数据或代理变量发挥了作用，以及如何申请合理调整和有意义的人工复核。",
+    "project.13.lens.candidate.signal.one": "清晰告知与可理解的解释",
+    "project.13.lens.candidate.signal.two": "合理调整与人工复核",
+    "project.13.lens.candidate.signal.three": "质疑并纠正决定的明确路径",
+    "project.13.matrix.eyebrow": "风险—控制矩阵",
+    "project.13.matrix.title": "把抽象的公平原则转化为有责任人的控制措施",
+    "project.13.matrix.risk": "风险",
+    "project.13.matrix.control": "控制措施",
+    "project.13.matrix.owner": "主要责任方",
+    "project.13.matrix.one.risk": "责任边界模糊",
+    "project.13.matrix.one.control": "RACI责任矩阵，以及合同中的审计、证据获取与回滚权",
+    "project.13.matrix.one.owner": "HR · 法务 · 采购",
+    "project.13.matrix.two.risk": "历史偏差或代理变量偏差",
+    "project.13.matrix.two.control": "上线前依据岗位标准开展群体影响验证",
+    "project.13.matrix.two.owner": "HR · 数据/供应商",
+    "project.13.matrix.three.risk": "候选人不可见",
+    "project.13.matrix.three.control": "告知、可理解解释、合理调整与人工复核",
+    "project.13.matrix.three.owner": "HR运营",
+    "project.13.matrix.four.risk": "勾选式合规",
+    "project.13.matrix.four.control": "持续监测，并设置阈值、升级、暂停和回滚机制",
+    "project.13.matrix.four.owner": "治理委员会",
+    "project.13.lifecycle.eyebrow": "治理控制台",
+    "project.13.lifecycle.title": "由责任人、证据闸门、实时信号与回滚路径组成的治理生命周期",
+    "project.13.lifecycle.validate": "验证",
+    "project.13.lifecycle.validate.note": "检验岗位相关性与群体影响",
+    "project.13.lifecycle.assign": "分配",
+    "project.13.lifecycle.assign.note": "明确RACI与供应商义务",
+    "project.13.lifecycle.monitor": "监测",
+    "project.13.lifecycle.monitor.note": "跟踪结果与候选人信号",
+    "project.13.lifecycle.review": "复核",
+    "project.13.lifecycle.review.note": "人工质疑与合理调整",
+    "project.13.lifecycle.escalate": "升级",
+    "project.13.lifecycle.escalate.note": "暂停、调查并回滚",
+    "project.13.lifecycle.owners": "控制责任人",
+    "project.13.lifecycle.telemetry": "实时监测信号",
+    "project.13.lifecycle.telemetry.note": "一旦超过阈值，即触发指定责任人、书面复核与可逆的处置措施。",
+    "project.13.monitor.eyebrow": "监测面板",
+    "project.13.monitor.title": "衡量整个决策系统，而不只衡量招聘速度",
+    "project.13.monitor.one": "入围公平性",
+    "project.13.monitor.one.note": "比较相关群体之间的晋级情况",
+    "project.13.monitor.two": "面试晋级率",
+    "project.13.monitor.two.note": "识别差异在哪个环节出现",
+    "project.13.monitor.three": "误拒风险",
+    "project.13.monitor.three.note": "抽样复核被拒绝的申请",
+    "project.13.monitor.four": "候选人信任",
+    "project.13.monitor.four.note": "跟踪信息清晰度、可及性与信任感",
+    "project.13.monitor.status.monitor": "监测",
+    "project.13.monitor.status.review": "复核",
+    "project.13.note.label": "案例说明",
+    "project.13.note.body": "本项目属于基于文献的案例分析。报告将 Mobley v. Workday 作为治理问题的触发案例，并未把诉讼主张视为法院已最终认定该系统构成歧视。",
+  };
+
   const editableNodes = () => Array.from(document.querySelectorAll("[data-editable][data-key]"));
-  const defaultContent = { zh: collectContent(), en: enContent };
+  const defaultContent = { zh: { ...collectContent(), ...zhProject13Content }, en: enContent };
 
   function readJson(key, fallback) {
     try {
@@ -1230,6 +1388,14 @@
       imageRatio: "4-3",
       hideMeta: true,
     },
+    {
+      id: 13,
+      category: "security",
+      year: 202601,
+      image: "assets/project-mobley-workday-case-hero.webp",
+      imageFit: "contain",
+      hideMeta: true,
+    },
   ];
 
   function projectContent(content, id, key) {
@@ -1524,27 +1690,9 @@
             <h3 data-editable data-key="project.9.detail.three.title">${projectContent(content, 9, "detail.three.title")}</h3>
             <p data-editable data-key="project.9.detail.three.body">${projectContent(content, 9, "detail.three.body")}</p>
           </article>
-          <article class="project-detail-tool-card">
+          <article>
             <span>04</span>
             <h3 data-editable data-key="project.9.detail.four.title">${projectContent(content, 9, "detail.four.title")}</h3>
-            <div class="tool-code-panel" aria-hidden="true">
-              <div>
-                <b>security</b>
-                <em>risk context</em>
-              </div>
-              <div>
-                <b>AI</b>
-                <em>COSEC solution</em>
-              </div>
-              <div>
-                <b>requirements</b>
-                <em>client RFP</em>
-              </div>
-              <div>
-                <b>strategy</b>
-                <em>final pitch</em>
-              </div>
-            </div>
             <p data-editable data-key="project.9.detail.four.body">${projectContent(content, 9, "detail.four.body")}</p>
           </article>
         </div>`;
@@ -1787,6 +1935,99 @@
           </article>
         </div>`;
     }
+    if (project.id === 13) {
+      return `
+        <div class="project-detail-source" hidden>
+          <section class="workday-chain workday-panel">
+            <header class="workday-section-head">
+              <small data-editable data-key="project.13.chain.eyebrow">${projectContent(content, 13, "chain.eyebrow")}</small>
+              <h3 data-editable data-key="project.13.chain.title">${projectContent(content, 13, "chain.title")}</h3>
+            </header>
+            <div class="workday-chain-grid">
+              <div><strong>23</strong><b data-editable data-key="project.13.chain.one.label">${projectContent(content, 13, "chain.one.label")}</b><em data-editable data-key="project.13.chain.one.note">${projectContent(content, 13, "chain.one.note")}</em></div>
+              <div><strong>3</strong><b data-editable data-key="project.13.chain.two.label">${projectContent(content, 13, "chain.two.label")}</b><em data-editable data-key="project.13.chain.two.note">${projectContent(content, 13, "chain.two.note")}</em></div>
+              <div><strong>2</strong><b data-editable data-key="project.13.chain.three.label">${projectContent(content, 13, "chain.three.label")}</b><em data-editable data-key="project.13.chain.three.note">${projectContent(content, 13, "chain.three.note")}</em></div>
+              <div><strong>1</strong><b data-editable data-key="project.13.chain.four.label">${projectContent(content, 13, "chain.four.label")}</b><em data-editable data-key="project.13.chain.four.note">${projectContent(content, 13, "chain.four.note")}</em></div>
+            </div>
+          </section>
+
+          <section class="workday-lens workday-panel" data-workday-lens>
+            <header class="workday-section-head">
+              <small data-editable data-key="project.13.lens.eyebrow">${projectContent(content, 13, "lens.eyebrow")}</small>
+              <h3 data-editable data-key="project.13.lens.title">${projectContent(content, 13, "lens.title")}</h3>
+            </header>
+            <div class="workday-lens-tabs" role="tablist">
+              <button type="button" class="is-active" role="tab" aria-selected="true" data-workday-lens-tab="employer"><span>01</span><b data-editable data-key="project.13.lens.employer.tab">${projectContent(content, 13, "lens.employer.tab")}</b></button>
+              <button type="button" role="tab" aria-selected="false" data-workday-lens-tab="candidate"><span>02</span><b data-editable data-key="project.13.lens.candidate.tab">${projectContent(content, 13, "lens.candidate.tab")}</b></button>
+            </div>
+            <div class="workday-lens-panel is-active" role="tabpanel" data-workday-lens-panel="employer">
+              <div class="workday-lens-copy"><span>EMPLOYER</span><h3 data-editable data-key="project.13.lens.employer.title">${projectContent(content, 13, "lens.employer.title")}</h3><p data-editable data-key="project.13.lens.employer.body">${projectContent(content, 13, "lens.employer.body")}</p></div>
+              <ul>
+                <li data-editable data-key="project.13.lens.employer.signal.one">${projectContent(content, 13, "lens.employer.signal.one")}</li>
+                <li data-editable data-key="project.13.lens.employer.signal.two">${projectContent(content, 13, "lens.employer.signal.two")}</li>
+                <li data-editable data-key="project.13.lens.employer.signal.three">${projectContent(content, 13, "lens.employer.signal.three")}</li>
+              </ul>
+            </div>
+            <div class="workday-lens-panel" role="tabpanel" data-workday-lens-panel="candidate" hidden>
+              <div class="workday-lens-copy"><span>CANDIDATE</span><h3 data-editable data-key="project.13.lens.candidate.title">${projectContent(content, 13, "lens.candidate.title")}</h3><p data-editable data-key="project.13.lens.candidate.body">${projectContent(content, 13, "lens.candidate.body")}</p></div>
+              <ul>
+                <li data-editable data-key="project.13.lens.candidate.signal.one">${projectContent(content, 13, "lens.candidate.signal.one")}</li>
+                <li data-editable data-key="project.13.lens.candidate.signal.two">${projectContent(content, 13, "lens.candidate.signal.two")}</li>
+                <li data-editable data-key="project.13.lens.candidate.signal.three">${projectContent(content, 13, "lens.candidate.signal.three")}</li>
+              </ul>
+            </div>
+          </section>
+
+          <section class="workday-matrix workday-panel">
+            <header class="workday-section-head">
+              <small data-editable data-key="project.13.matrix.eyebrow">${projectContent(content, 13, "matrix.eyebrow")}</small>
+              <h3 data-editable data-key="project.13.matrix.title">${projectContent(content, 13, "matrix.title")}</h3>
+            </header>
+            <div class="workday-matrix-table">
+              <div class="workday-matrix-row workday-matrix-header"><b data-editable data-key="project.13.matrix.risk">${projectContent(content, 13, "matrix.risk")}</b><b data-editable data-key="project.13.matrix.control">${projectContent(content, 13, "matrix.control")}</b><b data-editable data-key="project.13.matrix.owner">${projectContent(content, 13, "matrix.owner")}</b></div>
+              ${["one", "two", "three", "four"].map((row, index) => `<div class="workday-matrix-row"><b><i>0${index + 1}</i><span data-editable data-key="project.13.matrix.${row}.risk">${projectContent(content, 13, `matrix.${row}.risk`)}</span></b><p data-editable data-key="project.13.matrix.${row}.control">${projectContent(content, 13, `matrix.${row}.control`)}</p><em data-editable data-key="project.13.matrix.${row}.owner">${projectContent(content, 13, `matrix.${row}.owner`)}</em></div>`).join("")}
+            </div>
+          </section>
+
+          <section class="workday-lifecycle workday-panel">
+            <header class="workday-section-head workday-section-head-light">
+              <small data-editable data-key="project.13.lifecycle.eyebrow">${projectContent(content, 13, "lifecycle.eyebrow")}</small>
+              <h3 data-editable data-key="project.13.lifecycle.title">${projectContent(content, 13, "lifecycle.title")}</h3>
+            </header>
+            <div class="workday-lifecycle-flow">
+              ${[
+                ["01", "validate"],
+                ["02", "assign"],
+                ["03", "monitor"],
+                ["04", "review"],
+                ["05", "escalate"],
+              ].map(([number, key]) => `<div class="workday-life-step"><span>${number}</span><b data-editable data-key="project.13.lifecycle.${key}">${projectContent(content, 13, `lifecycle.${key}`)}</b><em data-editable data-key="project.13.lifecycle.${key}.note">${projectContent(content, 13, `lifecycle.${key}.note`)}</em></div>`).join("")}
+            </div>
+            <div class="workday-control-layer">
+              <div><small data-editable data-key="project.13.lifecycle.owners">${projectContent(content, 13, "lifecycle.owners")}</small><div class="workday-owner-chips"><b>HR</b><b>LEGAL</b><b>PROCUREMENT</b><b>VENDOR / TECH</b></div></div>
+              <div class="workday-telemetry"><small data-editable data-key="project.13.lifecycle.telemetry">${projectContent(content, 13, "lifecycle.telemetry")}</small><p data-editable data-key="project.13.lifecycle.telemetry.note">${projectContent(content, 13, "lifecycle.telemetry.note")}</p><span class="workday-pulse" aria-hidden="true"><i></i></span></div>
+            </div>
+            <div class="workday-rollback" aria-hidden="true"><span>ESCALATE</span><i></i><span>PAUSE</span><i></i><span>INVESTIGATE</span><i></i><span>ROLLBACK ↺</span></div>
+          </section>
+
+          <section class="workday-monitor workday-panel">
+            <header class="workday-section-head">
+              <small data-editable data-key="project.13.monitor.eyebrow">${projectContent(content, 13, "monitor.eyebrow")}</small>
+              <h3 data-editable data-key="project.13.monitor.title">${projectContent(content, 13, "monitor.title")}</h3>
+            </header>
+            <div class="workday-monitor-grid">
+              ${[
+                ["one", "monitor"],
+                ["two", "monitor"],
+                ["three", "review"],
+                ["four", "monitor"],
+              ].map(([key, status]) => `<div class="workday-monitor-card"><header><b data-editable data-key="project.13.monitor.${key}">${projectContent(content, 13, `monitor.${key}`)}</b><span class="is-${status}" data-editable data-key="project.13.monitor.status.${status}">${projectContent(content, 13, `monitor.status.${status}`)}</span></header><p data-editable data-key="project.13.monitor.${key}.note">${projectContent(content, 13, `monitor.${key}.note`)}</p><i aria-hidden="true"><u></u></i></div>`).join("")}
+            </div>
+          </section>
+
+          <aside class="workday-case-note"><b data-editable data-key="project.13.note.label">${projectContent(content, 13, "note.label")}</b><p data-editable data-key="project.13.note.body">${projectContent(content, 13, "note.body")}</p></aside>
+        </div>`;
+    }
     return "";
   }
 
@@ -1837,13 +2078,16 @@
         if (project.carousel) existingCard.dataset.projectCarousel = project.carousel.join("|");
         if (project.carouselDelay) existingCard.dataset.projectCarouselDelay = String(project.carouselDelay);
         if (project.imageFit) existingCard.dataset.projectImageFit = project.imageFit;
+        else delete existingCard.dataset.projectImageFit;
         if (project.imageRatio) existingCard.dataset.projectImageRatio = project.imageRatio;
+        else delete existingCard.dataset.projectImageRatio;
         if (project.imageTransparent) existingCard.dataset.projectImageTransparent = "true";
+        else delete existingCard.dataset.projectImageTransparent;
         if (project.hideMeta) existingCard.dataset.projectHideMeta = "true";
         const detailSource = projectDetailSourceTemplate(project, content);
         if (detailSource) {
           const existingDetailSource = existingCard.querySelector(".project-detail-source");
-          if (project.id === 1 && existingDetailSource) {
+          if ([1, 9].includes(project.id) && existingDetailSource) {
             existingDetailSource.outerHTML = detailSource;
           } else if (!existingDetailSource) {
             existingCard.querySelector(".tag-row")?.insertAdjacentHTML("afterend", detailSource);
@@ -1876,8 +2120,10 @@
   function inferProjectYear(card) {
     const raw = card.querySelector(".project-topline span:last-child")?.textContent || card.textContent;
     if (/ongoing|进行中/i.test(raw)) return 999999;
-    const numericMonth = raw.match(/(20\d{2})[./-](1[0-2]|0?[1-9])/);
-    if (numericMonth) return Number(numericMonth[1]) * 100 + Number(numericMonth[2]);
+    const numericMonths = Array.from(raw.matchAll(/(20\d{2})[./-](1[0-2]|0?[1-9])/g));
+    if (numericMonths.length) {
+      return Math.max(...numericMonths.map((match) => Number(match[1]) * 100 + Number(match[2])));
+    }
     const monthMap = {
       jan: 1,
       january: 1,
@@ -1904,10 +2150,15 @@
       dec: 12,
       december: 12,
     };
-    const namedMonth = raw.match(/\b([A-Za-z]+)\s+(20\d{2})\b/);
-    if (namedMonth) {
-      const month = monthMap[namedMonth[1].toLowerCase()];
-      if (month) return Number(namedMonth[2]) * 100 + month;
+    const namedMonths = Array.from(raw.matchAll(/\b([A-Za-z]+)\s+(20\d{2})\b/g));
+    if (namedMonths.length) {
+      const values = namedMonths
+        .map((match) => {
+          const month = monthMap[match[1].toLowerCase()];
+          return month ? Number(match[2]) * 100 + month : 0;
+        })
+        .filter(Boolean);
+      if (values.length) return Math.max(...values);
     }
     const years = raw.match(/20\d{2}/g);
     return years ? Math.max(...years.map((year) => Number(year) * 100)) : 0;
@@ -2037,6 +2288,28 @@
     });
   }
 
+  function initialiseWorkdayGovernance(root = projectModal) {
+    root?.querySelectorAll("[data-workday-lens]").forEach((lens) => {
+      const tabs = Array.from(lens.querySelectorAll("[data-workday-lens-tab]"));
+      const panels = Array.from(lens.querySelectorAll("[data-workday-lens-panel]"));
+      tabs.forEach((tab) => {
+        tab.addEventListener("click", () => {
+          const target = tab.dataset.workdayLensTab;
+          tabs.forEach((item) => {
+            const active = item === tab;
+            item.classList.toggle("is-active", active);
+            item.setAttribute("aria-selected", active ? "true" : "false");
+          });
+          panels.forEach((panel) => {
+            const active = panel.dataset.workdayLensPanel === target;
+            panel.hidden = !active;
+            panel.classList.toggle("is-active", active);
+          });
+        });
+      });
+    });
+  }
+
   function openProjectModal(card) {
     if (!projectModal || !card || body.classList.contains("is-editing")) return;
     const topline = Array.from(card.querySelectorAll(".project-topline span")).map((node) => node.textContent.trim()).filter(Boolean);
@@ -2055,6 +2328,7 @@
       projectModalTags.innerHTML = tags.map((tag) => `<span>${tag}</span>`).join("");
     }
     projectModalVisual?.classList.toggle("is-ratio-4-3", card.dataset.projectImageRatio === "4-3");
+    projectModalVisual?.classList.remove("is-hr-recruitment");
     if (projectModalImage && projectModalVisualText) {
       stopProjectCarousels(projectModal);
       projectModal.querySelectorAll("[data-project-modal-carousel]").forEach((node) => node.remove());
@@ -2086,6 +2360,7 @@
       projectModalDetails.innerHTML = projectDetailHtml(card, summary, tags);
       syncKpiStripLanguage(projectModalDetails);
       initialiseShippingDemos(projectModalDetails);
+      initialiseWorkdayGovernance(projectModalDetails);
     }
 
     projectModal.classList.add("is-open");
@@ -3004,9 +3279,9 @@ sql_draft:
     ensureContent(zh, "project.8.detail.three.body", "比较中国、美国与欧盟在 AI 治理路径、算法透明度、数据安全责任、隐私保护要求和企业合规压力方面的主要差异，并结合企业全球合规需求形成分析报告与展示材料。");
     ensureContent(zh, "project.8.detail.four.title", "工具与能力");
     ensureContent(zh, "project.8.detail.four.body", "人工智能治理 / 算法伦理 / 隐私合规 / 英文汇报");
-    migratePlaceholder(zh, "project.9.type", ["网络安全 / 隐私保护", "网络安全与隐私计算"], "网络安全与AI解决方案");
+    migratePlaceholder(zh, "project.9.type", ["网络安全 / 隐私保护", "网络安全与隐私计算", "网络安全与AI解决方案"], "HR科技与AI招聘解决方案");
     migratePlaceholder(zh, "project.9.time", ["时间待补充"], "2023.11");
-    migratePlaceholder(zh, "project.9.title", ["隐私保护项目 02"], "Deloitte CyberAce 网络安全训练营");
+    migratePlaceholder(zh, "project.9.title", ["隐私保护项目 02", "Deloitte CyberAce 网络安全训练营", "COSEC：AI辅助简历筛选与岗位匹配", "Deloitte × AWS CyberAce 案例竞赛"], "德勤 × AWS 网络安全训练营");
     migratePlaceholder(
       zh,
       "project.9.body",
@@ -3015,26 +3290,27 @@ sql_draft:
         "作为组长与演讲者参与 Deloitte 与 AWS 合办的 CyberAce 网络安全训练营，进入总决赛；在人工智能赛道中基于模拟客户 RFP，设计名为 COSEC 的生成式 AI 维护解决方案，覆盖需求理解、数据处理、竞品分析与市场研究。",
         "带领团队参与 Deloitte 与 AWS 合办的 CyberAce 网络安全训练营并进入总决赛，围绕模拟客户 RFP 拆解业务痛点、数据需求与安全场景，在人工智能赛道中设计 COSEC 生成式 AI 运维解决方案；项目整合数据处理、竞品分析、市场研究与方案汇报，体现从客户需求识别到技术方案表达的端到端分析与交付能力。",
       ],
-      "带领团队进入 Deloitte x AWS CyberAce 总决赛，基于模拟客户 RFP 梳理安全场景与业务需求，设计 COSEC 生成式 AI 运维方案，并完成竞品研究、方案论证与最终汇报。",
+      "带领五人团队进入 Deloitte × AWS CyberAce 总决赛，为HR团队设计AI辅助招聘流程：将岗位要求结构化，从简历中提取相关证据，评估候选人与岗位的匹配程度，并生成可供招聘人员复核的匹配建议。",
     );
     migrateContainingText(
       zh,
       "project.9.body",
-      ["这里可以补充", "隐私保护机制", "作为组长与演讲者参与 Deloitte", "带领团队参与 Deloitte"],
-      "带领团队进入 Deloitte x AWS CyberAce 总决赛，基于模拟客户 RFP 梳理安全场景与业务需求，设计 COSEC 生成式 AI 运维方案，并完成竞品研究、方案论证与最终汇报。",
+      ["这里可以补充", "隐私保护机制", "作为组长与演讲者参与 Deloitte", "带领团队参与 Deloitte", "带领团队进入 Deloitte"],
+      "带领五人团队进入 Deloitte × AWS CyberAce 总决赛，为HR团队设计AI辅助招聘流程：将岗位要求结构化，从简历中提取相关证据，评估候选人与岗位的匹配程度，并生成可供招聘人员复核的匹配建议。",
     );
-    migratePlaceholder(zh, "project.9.tag.one", ["Privacy"], "网络安全");
-    migratePlaceholder(zh, "project.9.tag.two", ["Disclosure Control"], "人工智能");
-    migratePlaceholder(zh, "project.9.tag.three", ["Compliance"], "用户需求分析");
-    ensureContent(zh, "project.9.tag.four", "RFP反馈");
-    ensureContent(zh, "project.9.detail.one.title", "项目背景");
-    ensureContent(zh, "project.9.detail.one.body", "参与 Deloitte 与 AWS 亚马逊云科技合办的 2023 CyberAce 网络安全训练营，并进入总决赛；项目围绕企业网络安全、生成式 AI 应用与客户需求响应展开。");
-    ensureContent(zh, "project.9.detail.two.title", "方案设计");
-    ensureContent(zh, "project.9.detail.two.body", "在人工智能赛道中，基于模拟客户的特定需求与 RFP，带领团队设计名为 COSEC 的生成式 AI 维护解决方案，梳理应用场景、目标用户、核心功能与交付逻辑。");
-    ensureContent(zh, "project.9.detail.three.title", "分析过程");
-    ensureContent(zh, "project.9.detail.three.body", "负责组织数据收集与处理、竞品分析及市场研究，将客户需求转化为方案判断依据，并支持最终展示材料与答辩内容。");
-    ensureContent(zh, "project.9.detail.four.title", "工具与能力");
-    ensureContent(zh, "project.9.detail.four.body", "网络安全 / 人工智能 / 用户需求分析 / RFP反馈");
+    migratePlaceholder(zh, "project.9.tag.one", ["Privacy", "网络安全"], "HR科技");
+    migratePlaceholder(zh, "project.9.tag.two", ["Disclosure Control", "人工智能"], "AI辅助招聘");
+    migratePlaceholder(zh, "project.9.tag.three", ["Compliance", "用户需求分析"], "候选人–岗位匹配");
+    migratePlaceholder(zh, "project.9.tag.four", ["RFP反馈"], "人工复核");
+    ensureContent(zh, "project.9.tag.four", "人工复核");
+    migratePlaceholder(zh, "project.9.detail.one.title", ["项目背景"], "HR业务问题");
+    migratePlaceholder(zh, "project.9.detail.one.body", ["参与 Deloitte 与 AWS 亚马逊云科技合办的 2023 CyberAce 网络安全训练营，并进入总决赛；项目围绕企业网络安全、生成式 AI 应用与客户需求响应展开。"], "HR团队需要针对不同岗位审核大量简历；人工筛选耗时，判断标准可能不一致，而且当候选人的相关证据分散在简历不同位置时，匹配结论往往难以解释。");
+    migratePlaceholder(zh, "project.9.detail.two.title", ["方案设计"], "招聘流程设计");
+    migratePlaceholder(zh, "project.9.detail.two.body", ["在人工智能赛道中，基于模拟客户的特定需求与 RFP，带领团队设计名为 COSEC 的生成式 AI 维护解决方案，梳理应用场景、目标用户、核心功能与交付逻辑。"], "COSEC先将岗位描述转化为结构化评估标准，再从每份简历中提取对应的技能、经历与资格证据，逐项比较后生成候选人–岗位匹配建议，交由招聘人员复核。");
+    migratePlaceholder(zh, "project.9.detail.three.title", ["分析过程"], "匹配逻辑与人工复核");
+    migratePlaceholder(zh, "project.9.detail.three.body", ["负责组织数据收集与处理、竞品分析及市场研究，将客户需求转化为方案判断依据，并支持最终展示材料与答辩内容。"], "系统不直接录取或淘汰候选人，而是展示每项匹配所依据的简历证据，标记缺失或不确定信息，并把最终判断保留给招聘人员。");
+    migratePlaceholder(zh, "project.9.detail.four.title", ["工具与能力"], "个人贡献与成果");
+    migratePlaceholder(zh, "project.9.detail.four.body", ["网络安全 / 人工智能 / 用户需求分析 / RFP反馈"], "带领五人团队分析模拟HR服务RFP，将招聘痛点转化为业务与系统需求，完成竞品研究、流程设计、方案论证及面向Deloitte与AWS评委的最终汇报。");
     migratePlaceholder(zh, "project.10.type", ["网络安全 / 隐私保护", "网络安全与隐私计算"], "法律科技与数据合规");
     migratePlaceholder(zh, "project.10.time", ["时间待补充"], "2023.05");
     migratePlaceholder(zh, "project.10.title", ["安全分析项目 03"], "实地调研");
@@ -3131,6 +3407,7 @@ sql_draft:
     ensureContent(zh, "project.12.detail.three.body", "从入侵物种、林火、旅游活动与气候变化等维度评估长期管理威胁，并结合监管、经济与自愿型管理工具，提出面向气候变化的政策、社区参与和科学监测建议。");
     ensureContent(zh, "project.12.detail.four.title", "工具与能力");
     ensureContent(zh, "project.12.detail.four.body", "QGIS 制图 / 空间数据分析 / 保护地管理 / 气候适应策略");
+    migratePlaceholder(zh, "project.13.time", ["2025.10–2026.01"], "2026.01");
     migratePlaceholder(zh, "about.skill.one", ["需求拆解"], "需求分析");
     migratePlaceholder(zh, "about.skill.two", ["SQL / 数据清洗"], "SQL / NoSQL");
     migratePlaceholder(zh, "about.skill.three", ["Python 分析", "Python 数据分析"], "Python");
@@ -3704,9 +3981,9 @@ sql_draft:
     ensureContent(en, "project.8.detail.three.body", "Compared the major differences between Chinese, US, and EU AI governance systems across regulatory approach, algorithm transparency, data-security accountability, privacy requirements, and enterprise compliance pressure.");
     ensureContent(en, "project.8.detail.four.title", "Tools & Skills");
     ensureContent(en, "project.8.detail.four.body", "AI Governance / Algorithm Ethics / Privacy Compliance / Presentation");
-    migratePlaceholder(en, "project.9.type", ["Cybersecurity / Privacy", "Cybersecurity & Privacy Computing"], "Cybersecurity & AI Solutions");
+    migratePlaceholder(en, "project.9.type", ["Cybersecurity / Privacy", "Cybersecurity & Privacy Computing", "Cybersecurity & AI Solutions", "Cybersecurity &amp; AI Solutions"], "HR Technology & AI Recruitment");
     migratePlaceholder(en, "project.9.time", ["Date to add"], "Nov 2023");
-    migratePlaceholder(en, "project.9.title", ["Privacy Protection Project 02"], "Deloitte CyberAce Cybersecurity Training Camp");
+    migratePlaceholder(en, "project.9.title", ["Privacy Protection Project 02", "Deloitte CyberAce Cybersecurity Training Camp", "COSEC: AI-Assisted Recruitment Matching", "Deloitte × AWS CyberAce Case Competition"], "Deloitte × AWS CyberAce Training Camp");
     migratePlaceholder(
       en,
       "project.9.body",
@@ -3715,26 +3992,27 @@ sql_draft:
         "Led a team in the Deloitte x AWS CyberAce cybersecurity training camp and reached the finals; in the AI track, designed COSEC, a generative-AI maintenance solution based on a simulated client RFP, covering requirements analysis, data processing, competitor analysis, and market research.",
         "Led a team to the finals of the Deloitte x AWS CyberAce cybersecurity training camp, translating a simulated client RFP into business pain points, data needs, and security scenarios while designing COSEC, a generative-AI operations solution; the project integrated data processing, competitor analysis, market research, and final pitching, demonstrating end-to-end analytical delivery from client need framing to solution design.",
       ],
-      "Led a team to the Deloitte x AWS CyberAce finals, translating a simulated client RFP into security scenarios and business requirements, designing the COSEC generative-AI operations solution, and delivering competitor research, solution rationale, and the final pitch.",
+      "Led a five-person finalist team to design an AI-assisted recruitment workflow for HR teams: structuring role requirements, extracting résumé evidence, assessing candidate-to-role fit, and generating an explainable match recommendation for recruiter review.",
     );
     migrateContainingText(
       en,
       "project.9.body",
-      ["Add privacy protection", "Led a team in the Deloitte", "Led a team to the finals"],
-      "Led a team to the Deloitte x AWS CyberAce finals, translating a simulated client RFP into security scenarios and business requirements, designing the COSEC generative-AI operations solution, and delivering competitor research, solution rationale, and the final pitch.",
+      ["Add privacy protection", "Led a team in the Deloitte", "Led a team to the finals", "Led a team to the Deloitte"],
+      "Led a five-person finalist team to design an AI-assisted recruitment workflow for HR teams: structuring role requirements, extracting résumé evidence, assessing candidate-to-role fit, and generating an explainable match recommendation for recruiter review.",
     );
-    migratePlaceholder(en, "project.9.tag.one", ["Privacy"], "Cybersecurity");
-    migratePlaceholder(en, "project.9.tag.two", ["Disclosure Control"], "Artificial Intelligence");
-    migratePlaceholder(en, "project.9.tag.three", ["Compliance"], "User Requirements Analysis");
-    ensureContent(en, "project.9.tag.four", "RFP Response");
-    ensureContent(en, "project.9.detail.one.title", "Project Context");
-    ensureContent(en, "project.9.detail.one.body", "Joined the 2023 CyberAce cybersecurity training camp co-hosted by Deloitte and AWS and reached the finals, working across enterprise cybersecurity, generative AI application, and client-response scenarios.");
-    ensureContent(en, "project.9.detail.two.title", "Solution Design");
-    ensureContent(en, "project.9.detail.two.body", "In the AI track, led the team in designing COSEC, a generative-AI maintenance solution based on a simulated client RFP, clarifying use cases, target users, core features, and delivery logic.");
-    ensureContent(en, "project.9.detail.three.title", "Analysis Process");
-    ensureContent(en, "project.9.detail.three.body", "Coordinated data collection and processing, competitor analysis, and market research, translating client requirements into solution rationale and final presentation materials.");
-    ensureContent(en, "project.9.detail.four.title", "Tools & Skills");
-    ensureContent(en, "project.9.detail.four.body", "Cybersecurity / Artificial Intelligence / User Requirements Analysis / RFP Response");
+    migratePlaceholder(en, "project.9.tag.one", ["Privacy", "Cybersecurity"], "HR Technology");
+    migratePlaceholder(en, "project.9.tag.two", ["Disclosure Control", "Artificial Intelligence"], "AI-assisted Recruitment");
+    migratePlaceholder(en, "project.9.tag.three", ["Compliance", "User Requirements Analysis"], "Candidate–Role Matching");
+    migratePlaceholder(en, "project.9.tag.four", ["RFP Response"], "Human Review");
+    ensureContent(en, "project.9.tag.four", "Human Review");
+    migratePlaceholder(en, "project.9.detail.one.title", ["Project Context"], "HR Business Challenge");
+    migratePlaceholder(en, "project.9.detail.one.body", ["Joined the 2023 CyberAce cybersecurity training camp co-hosted by Deloitte and AWS and reached the finals, working across enterprise cybersecurity, generative AI application, and client-response scenarios."], "HR teams may need to review large volumes of résumés against different role requirements. Manual screening can be time-consuming, inconsistent, and difficult to explain when relevant candidate evidence is distributed across multiple sections of a résumé.");
+    migratePlaceholder(en, "project.9.detail.two.title", ["Solution Design"], "Recruitment Workflow");
+    migratePlaceholder(en, "project.9.detail.two.body", ["In the AI track, led the team in designing COSEC, a generative-AI maintenance solution based on a simulated client RFP, clarifying use cases, target users, core features, and delivery logic."], "COSEC converted job descriptions into structured assessment criteria, extracted supporting skills, experience, and qualification evidence from each résumé, compared that evidence with role requirements, and produced a match recommendation for recruiter review.");
+    migratePlaceholder(en, "project.9.detail.three.title", ["Analysis Process"], "Matching Logic & Human Review");
+    migratePlaceholder(en, "project.9.detail.three.body", ["Coordinated data collection and processing, competitor analysis, and market research, translating client requirements into solution rationale and final presentation materials."], "Rather than automatically accepting or rejecting candidates, the workflow surfaced the résumé evidence behind each match, highlighted missing or uncertain information, and retained the recruiter as the final decision-maker.");
+    migratePlaceholder(en, "project.9.detail.four.title", ["Tools & Skills", "Tools &amp; Skills"], "My Contribution & Outcome");
+    migratePlaceholder(en, "project.9.detail.four.body", ["Cybersecurity / Artificial Intelligence / User Requirements Analysis / RFP Response"], "Led a five-person team in analysing the simulated HR services RFP, converting recruitment pain points into business and system requirements, completing competitor research and workflow design, and presenting the implementation rationale to Deloitte and AWS judges.");
     migratePlaceholder(en, "project.10.type", ["Cybersecurity / Privacy", "Cybersecurity & Privacy Computing"], "LegalTech & Data Compliance");
     migratePlaceholder(en, "project.10.time", ["Date to add"], "May 2023");
     migratePlaceholder(en, "project.10.title", ["Security Analysis Project 03"], "Field Research");
@@ -3810,6 +4088,7 @@ sql_draft:
     ensureContent(en, "project.12.detail.three.body", "Evaluated long-term management threats including invasive species, bushfire, tourism pressure, and climate change, then linked regulatory, economic, and voluntary instruments to policy, community, and scientific monitoring responses.");
     ensureContent(en, "project.12.detail.four.title", "Tools & Skills");
     ensureContent(en, "project.12.detail.four.body", "QGIS mapping / spatial data analysis / protected area management / climate adaptation strategy");
+    migratePlaceholder(en, "project.13.time", ["Oct 2025 – Jan 2026"], "January 2026");
     migratePlaceholder(en, "about.skill.one", ["Requirement Framing"], "Requirements Analysis");
     migratePlaceholder(en, "about.skill.two", ["SQL / Data Cleaning"], "SQL / NoSQL");
     migratePlaceholder(en, "about.skill.three", ["Python Analysis", "Python Analytics"], "Python");
